@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 /* Create A Base 10 Unit For Measurements */ 
 
@@ -17,25 +18,33 @@ html {
 body {
     color: #ffffff; 
     background-color: #000000;
+    /* background: repeating-radial-gradient(#000000 15%, #6CC417 25%);  */
     font-family: Raleway, sans-serif;
+}
+
+/* Background Image */
+#background-image {
+    background: url("../images/background-image.jpg");
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
 }
 
 /* Logo & Score Counter */ 
 
 header {
-    text-align: center;
+    text-align: center; 
+    font-family: VT323;
 }
 
 #logo {
-    font-family: Bangers;
-    font-size: 10rem;
-    text-transform: lowercase !important;
-    text-shadow: #6CC417 3px 2px;
+    text-transform: uppercase;
+    font-size: 15rem;
+    text-shadow: #004e97 2px 8px;
 }
 
 #score-counter {
-    text-align: center;
     margin: 3rem;
-    font-size: 5rem;
-    color: #6CC417;
+    font-size: 7rem;
 }
