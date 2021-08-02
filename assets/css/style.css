@@ -20,3 +20,22 @@ body {
     font-family: Raleway, sans-serif;
 }
 
+/* Logo & Score Counter */ 
+
+header {
+    text-align: center;
+}
+
+#logo {
+    font-family: Bangers;
+    font-size: 10rem;
+    text-transform: lowercase !important;
+    text-shadow: #6CC417 3px 2px;
+}
+
+#score-counter {
+    text-align: center;
+    margin: 3rem;
+    font-size: 5rem;
+    color: #6CC417;
+}
