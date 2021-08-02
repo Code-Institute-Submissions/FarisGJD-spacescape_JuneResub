@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Raleway&display=swap');
+
+/* Create A Base 10 Unit For Measurements */ 
+
+html {
+    font-size: 62.5%; 
+}
+
+/* Create Custom Default Settings For Document */ 
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff; 
+    background-color: #000000;
+    font-family: Raleway, sans-serif;
+}
+
