@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=VT323&display=swap');
 
 /* Create A Base 10 Unit For Measurements */ 
 
@@ -19,7 +17,12 @@ html {
 body {
     color: #ffffff; 
     background-color: #000000;
-    font-family: VT323; 
+    font-family: Orbitron, Space Mono; 
+}
+
+/* Heading Styling */ 
+#logo, h2, h3 {
+    font-family: VT323;
 }
 
 /* Background Image */
@@ -29,6 +32,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-size: cover;
+    position: relative;
 }
 
 /* Logo & Score Counter */ 
@@ -45,7 +49,7 @@ header a {
 #logo {
     text-transform: uppercase;
     font-size: 15rem;
-    text-shadow: #004e97 2px 9px, #004e97 3px 18px, #022345 3px 30px;
+    text-shadow: #004e97 2px 9px, #004e97 3px 18px, #022345 3px 35px;
 }
 
 #score-counter {
@@ -66,6 +70,7 @@ header a {
     align-items: center;
     justify-content: space-between;
     background: url("../images/control-panel.png") center center no-repeat; 
+    image-rendering: pixelated;
     background-size: cover;
     border-style: ridge;
     border-width: 20px;
@@ -96,9 +101,13 @@ header a {
 
 /* Player Charecter */ 
 
-/* #astronaut {
-    height: 20rem;
-    width: 20rem; 
-    background: url("../images/astronaut.png");
+#astronaut {
+    height: 50rem;
+    width: 50rem; 
+    background: url("../images/player-charecter.png");
+    image-rendering: pixelated;
     background-size: cover;
-} */
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
