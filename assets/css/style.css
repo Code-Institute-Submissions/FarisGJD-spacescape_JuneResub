@@ -41,35 +41,37 @@ header {
 #logo {
     text-transform: uppercase;
     font-size: 15rem;
-    text-shadow: #004e97 2px 9px, #004e97 3px 18px;
+    text-shadow: #004e97 2px 9px, #004e97 3px 18px, #022345 3px 30px;
 }
 
 #score-counter {
     margin: 3rem;
     font-size: 7rem;
-    text-shadow: #004e97 2px 5px, #004e97 3px 10px;
+    text-shadow: #004e97 2px 5px, #004e97 3px 8px, #022345 3px 12px;
 }
 
 /* Mission Control Modal */ 
 
 #mission-cntrl {
-    width: 800px;
-    height: 450px; 
+    width: 900px;
+    height: 550px; 
     text-transform: uppercase;
     display: flex;
     margin: auto;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background: url("../images/61cdcac1a6107a4a1860814e4c8ebd9d.jpeg") center center no-repeat; 
+    background: url("../images/control-panel.png") center center no-repeat; 
     background-size: cover;
-    border-radius: 3rem;
-    /* color: #004e97; */
+    border-style: ridge;
+    border-width: 10px;
+    border-color: #022345;
+
 }
 
 #mission-cntrl h2 {
     font-size: 10rem;
-    text-shadow: #000000 2px 5px, #000000 4px 10px;
+    text-shadow: #000000 2px 5px, #022345 4px 10px;
 }
 
 #mission-cntrl h3 {
@@ -78,6 +80,14 @@ header {
     width: 30rem;
     text-align: center;
     border-style: ridge;
+    border-width: 10px;
+    border-color: #022345;
+    margin-bottom: 20px;
+}
+
+#mission-cntrl h3:hover {
+    background-color: #ff0000;
+    cursor: pointer;
 }
 
 /* Player Charecter */ 
