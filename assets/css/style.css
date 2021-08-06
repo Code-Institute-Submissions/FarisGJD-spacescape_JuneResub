@@ -16,7 +16,7 @@ html {
 
 body {
     color: #ffffff; 
-    background-color: #000000;
+    background: repeating-radial-gradient(#000000 15%, #022345 25%);
     font-family: Orbitron, Space Mono; 
 }
 
@@ -82,12 +82,11 @@ header a {
     border-width: 15px;
     border-color: #022345;
     box-shadow: #004e97  0px 0px 0px 2px, #022345 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #022345 0px 0px 0px 16px, #000000 0px 0px 0px 19px;
-    
 }
 
 #mission-cntrl h2 {
     font-size: 10rem;
-    text-shadow: #000000 2px 5px, #004e97 2px 10px, #022345 2px 15px;
+    text-shadow: #004e97 2px 3px, #022345 2px 6px;
 }
 
 #mission-cntrl h3 {
@@ -99,6 +98,7 @@ header a {
     border-width: 10px;
     border-color: #022345;
     margin-bottom: 20px;
+    text-shadow: #004e97 2px 3px, #022345 2px 6px;
 }
 
 #mission-cntrl h3:hover {
