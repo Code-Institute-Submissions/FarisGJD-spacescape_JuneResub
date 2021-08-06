@@ -79,8 +79,10 @@ header a {
     image-rendering: pixelated;
     background-size: cover;
     border-style: ridge;
-    border-width: 20px;
+    border-width: 15px;
     border-color: #022345;
+    box-shadow: #004e97  0px 0px 0px 2px, #022345 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #022345 0px 0px 0px 16px, #000000 0px 0px 0px 19px;
+    
 }
 
 #mission-cntrl h2 {
@@ -104,7 +106,7 @@ header a {
     cursor: pointer;
 }
 
-/* Player Charecter */ 
+/* Player Sprite & Animation */ 
 
 #astronaut {
     height: 45rem;
@@ -115,10 +117,10 @@ header a {
     position: absolute;
     bottom: 1rem;
     left: -10rem;
-    animation: astronaut_floating 6s linear infinite; 
+    animation: zero_gravity 6s linear infinite; 
 }
 
-@keyframes astronaut_floating {
+@keyframes zero_gravity {
     0%, 100% {
         bottom: 0; 
     }
@@ -127,3 +129,5 @@ header a {
         bottom: 1.5rem; 
     }
 }
+
+/* Space Obstacle & Animation */ 
