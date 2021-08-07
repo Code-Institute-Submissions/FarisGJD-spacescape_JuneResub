@@ -81,7 +81,7 @@ header a {
     border-style: ridge;
     border-width: 15px;
     border-color: #022345;
-    box-shadow: #004e97  0px 0px 0px 2px, #022345 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #022345 0px 0px 0px 16px, #000000 0px 0px 0px 19px;
+    box-shadow: #000000  0px 0px 0px 2px, #022345 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #022345 0px 0px 0px 16px, #000000 0px 0px 0px 19px;
 }
 
 #mission-cntrl h2 {
@@ -95,6 +95,7 @@ header a {
     width: 30rem;
     text-align: center;
     border-style: ridge;
+    box-shadow: #000000  0px 0px 0px 2px, #022345 0px 0px 0px 4px;
     border-width: 10px;
     border-color: #022345;
     margin-bottom: 20px;
