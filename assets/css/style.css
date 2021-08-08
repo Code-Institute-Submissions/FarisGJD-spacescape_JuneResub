@@ -16,7 +16,7 @@ html {
 
 body {
     color: #ffffff; 
-    background: repeating-radial-gradient(#000000 15%, #022345 25%);
+    background: repeating-radial-gradient(#000000 15%, #022345 25%) center center no-repeat;
     font-family: Orbitron, Space Mono; 
 }
 
@@ -64,7 +64,7 @@ header a {
     text-shadow: #000000 2px 5px, #004e97 3px 8px, #022345 3px 12px;
 }
 
-/* Mission Control Modal */ 
+/* Mission Control*/ 
 
 #mission-cntrl {
     width: 90rem;
@@ -95,7 +95,7 @@ header a {
     width: 30rem;
     text-align: center;
     border-style: ridge;
-    box-shadow: #000000  0px 0px 0px 2px, #022345 0px 0px 0px 4px;
+    box-shadow: #000000  0px 0px 0px 2px, #022345 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #022345 0px 0px 0px 16px;
     border-width: 10px;
     border-color: #022345;
     margin-bottom: 20px;
@@ -106,6 +106,8 @@ header a {
     background-color: #f22032;
     cursor: pointer;
 }
+
+/* Mission Control Modal */ 
 
 /* Player Sprite & Animation */ 
 
