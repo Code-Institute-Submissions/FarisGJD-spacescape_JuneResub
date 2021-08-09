@@ -75,12 +75,12 @@ header a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background: url("../images/control-panel.jpeg") center center no-repeat; 
+    background: url("../images/mission-control.jpeg") center center no-repeat; 
     image-rendering: pixelated;
     background-size: cover;
     border-style: ridge;
     border-width: 15px;
-    border-color: #022345;
+    border-color: #000000;
     box-shadow: #000000  0px 0px 0px 2px, #022345 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #022345 0px 0px 0px 16px, #000000 0px 0px 0px 19px;
 }
 
@@ -98,7 +98,7 @@ header a {
     border-style: ridge;
     box-shadow: #000000  0px 0px 0px 2px, #022345 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #022345 0px 0px 0px 16px;
     border-width: 10px;
-    border-color: #022345;
+    border-color: #000000;
     margin-bottom: 20px;
     text-shadow: #004e97 2px 3px, #022345 2px 6px;
 }
@@ -128,7 +128,7 @@ header a {
     width: 50%;
     height: 55%;
     background: radial-gradient(circle at center, #045414,  #0c2010, #000000 100%); 
-    background: url("../images/terminal2.jpg") center center no-repeat;
+    background: url("../images/terminal.jpg") center center no-repeat;
     background-size: cover;
     font-size: 1.5rem;
     filter: brightness(110%);
@@ -162,7 +162,7 @@ header a {
 }
 
 .close-modal:hover {
-    color: #000000; 
+    color: #6cfaf6; 
 }
 
 #settings-difficulty {
@@ -184,7 +184,7 @@ header a {
 
 /* Player Sprite & Animation */ 
 
-/* #astronaut {
+/* #astronaut-sprite {
     height: 47rem;
     width: 47rem; 
     background: url("../images/player-sprite.png");
