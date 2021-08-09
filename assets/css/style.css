@@ -87,6 +87,7 @@ header a {
 #mission-cntrl h2 {
     font-size: 10rem;
     text-shadow: #004e97 2px 3px, #022345 2px 6px;
+    font-weight: 300;
 }
 
 #mission-cntrl h3 {
@@ -127,32 +128,30 @@ header a {
     width: 50%;
     height: 55%;
     background: radial-gradient(circle at center, #045414,  #0c2010, #000000 100%); 
-    background: url("../images/terminal.jpg") center center no-repeat;
+    background: url("../images/terminal2.jpg") center center no-repeat;
     background-size: cover;
     font-size: 1.5rem;
+    filter: brightness(110%);
     text-shadow: #000000 2px 2px;
     position: relative;
     border-radius: 100px;
 }
 
-/* .smaller-modal {
-    height: 35%;
-    width: 50%; 
-} */
-
 .inner-modal h4 {
     font-size: 5rem;
     text-align: center;
     margin-top: 2.5rem;
+    font-weight: 900;
 }
 
 .inner-modal p {
-    margin-left: 10rem;
-    padding: 1rem;
     line-height: 4rem;
-    width: 75rem;
-    text-align: center;
+    padding: 4rem 10rem 0 10rem;
 }
+
+/* #settings-grid-layout {
+
+} */
 
 .close-modal {
     position: absolute;
@@ -185,9 +184,9 @@ header a {
 
 /* Player Sprite & Animation */ 
 
-#astronaut {
-    height: 45rem;
-    width: 45rem; 
+/* #astronaut {
+    height: 47rem;
+    width: 47rem; 
     background: url("../images/player-sprite.png");
     image-rendering: pixelated;
     background-size: cover;
@@ -205,11 +204,11 @@ header a {
     50% {
         bottom: 1.5rem; 
     }
-}
+} */
 
 /* Space Obstacle & Animation */ 
 
-.space-obstacle {
+/* .space-obstacle {
     height: 30rem;
     width: 30rem; 
     transform: rotate(45deg);
@@ -243,8 +242,8 @@ header a {
     animation: obstacle 2.5s linear infinite; 
 }
 
-.spaceship {
-    background: url("../images/spaceship.png");
+.ufo {
+    background: url("../images/ufo.png");
     background-size: cover;
 }
 
@@ -284,4 +283,4 @@ header a {
 @keyframes obstacle {
     0%{left: 100vw}
     100%{left: -0}
-}
+} */
