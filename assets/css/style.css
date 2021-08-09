@@ -108,7 +108,7 @@ header a {
     cursor: pointer;
 }
 
-/* Mission Control Modal */ 
+/* Terminal Control Modal */ 
 
 .outer-modal {
     display: flex; 
@@ -149,9 +149,9 @@ header a {
     padding: 4rem 10rem 0 10rem;
 }
 
-/* #settings-grid-layout {
-
-} */
+.shorter-content-modal p {
+    padding: 10rem; 
+}
 
 .close-modal {
     position: absolute;
@@ -162,10 +162,10 @@ header a {
 }
 
 .close-modal:hover {
-    color: #6cfaf6; 
+    color: #000000; 
 }
 
-#settings-difficulty {
+/* #settings-difficulty {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -180,7 +180,7 @@ header a {
 
 .slider {
     border-radius: 3rem;
-}
+} */
 
 /* Player Sprite & Animation */ 
 
