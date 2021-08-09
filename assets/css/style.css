@@ -119,45 +119,51 @@ header a {
     top: 0; 
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
 }
 
 .inner-modal {
     width: 50%;
     height: 55%;
-    background: radial-gradient(circle at center, #022345, #000000 100%); 
-    background: url("../images/terminal1.png") center center no-repeat;
+    background: radial-gradient(circle at center, #045414,  #0c2010, #000000 100%); 
+    background: url("../images/terminal.jpg") center center no-repeat;
     background-size: cover;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-shadow: #000000 2px 2px;
-    border-radius: 20px;
     position: relative;
-    border-style: ridge; 
-    border-width: 15px;
-    border-color: #022345;
+    border-radius: 100px;
 }
 
+/* .smaller-modal {
+    height: 35%;
+    width: 50%; 
+} */
+
 .inner-modal h4 {
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
+    margin-top: 2.5rem;
 }
 
 .inner-modal p {
-    margin-top: 2.5rem;
+    margin-left: 10rem;
     padding: 1rem;
     line-height: 4rem;
+    width: 75rem;
+    text-align: center;
 }
 
 .close-modal {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    left: 50rem;
+    margin-top: 3rem;
     cursor: pointer;
+    font-size: 2.5rem;
 }
 
 .close-modal:hover {
-    color: #022345; 
+    color: #000000; 
 }
 
 #settings-difficulty {
@@ -179,7 +185,7 @@ header a {
 
 /* Player Sprite & Animation */ 
 
-/* #astronaut {
+#astronaut {
     height: 45rem;
     width: 45rem; 
     background: url("../images/player-sprite.png");
@@ -199,6 +205,83 @@ header a {
     50% {
         bottom: 1.5rem; 
     }
-} */
+}
 
 /* Space Obstacle & Animation */ 
+
+.space-obstacle {
+    height: 30rem;
+    width: 30rem; 
+    transform: rotate(45deg);
+    position: absolute; 
+    bottom: 7rem;
+    right: 0; 
+    animation: obstacle 3s linear infinite; 
+}
+
+.meteorite {
+    background: url("../images/meteorite.png");
+    background-size: cover;
+}
+
+.asteroid {
+    background: url("../images/asteroid.png");
+    background-size: cover;
+}
+
+.fire-ball {
+    background: url("../images/fireball.png");
+    background-size: cover;
+}
+
+.alien-obstacle {
+    height: 35rem;
+    width: 35rem; 
+    position: absolute; 
+    bottom: 7rem;
+    right: 0; 
+    animation: obstacle 2.5s linear infinite; 
+}
+
+.spaceship {
+    background: url("../images/spaceship.png");
+    background-size: cover;
+}
+
+.martian {
+    background: url("../images/martian.png");
+    background-size: cover;
+}
+
+.planetary-obstacle {
+    height: 40rem;
+    width: 40rem; 
+    position: absolute; 
+    bottom: 7rem;
+    right: 0; 
+    animation: obstacle 2s linear infinite; 
+}
+
+.planet1 {
+    background: url("../images/planet1.png");
+    background-size: cover;
+}
+
+.planet2 {
+    background: url("../images/planet2.png");
+    background-size: cover;
+    height: 38rem;
+    width: 38rem; 
+}
+
+.planet3 {
+    background: url("../images/planet3.png");
+    background-size: cover;
+    height: 35rem; 
+    width: 35rem;
+}
+
+@keyframes obstacle {
+    0%{left: 100vw}
+    100%{left: -0}
+}
