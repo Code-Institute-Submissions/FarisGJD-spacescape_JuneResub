@@ -17,7 +17,7 @@ html {
 body {
     color: #ffffff; 
     background: repeating-radial-gradient(#000000 15%, #022345 25%) center center no-repeat;
-    font-family: Orbitron, Space Mono; 
+    font-family: Orbitron, sans-serif; 
 }
 
 /* Heading Styling */ 
@@ -120,8 +120,8 @@ header a {
     top: 0; 
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
-    /* opacity: 0;
-    visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
 }
 
 .inner-modal {
@@ -131,17 +131,14 @@ header a {
     background: url("../images/terminal.jpg") center center no-repeat;
     background-size: cover;
     font-size: 1.5rem;
-    filter: brightness(110%);
     text-shadow: #000000 2px 2px;
-    position: relative;
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 .inner-modal h4 {
     font-size: 5rem;
     text-align: center;
     margin-top: 2.5rem;
-    font-weight: 900;
 }
 
 .inner-modal p {
@@ -149,42 +146,50 @@ header a {
     padding: 4rem 10rem 0 10rem;
 }
 
-.shorter-content-modal p {
+#manoeuvers-modal p {
     padding: 10rem; 
 }
 
-.close-modal {
-    position: absolute;
-    left: 50rem;
-    margin-top: 3rem;
-    cursor: pointer;
+#settings-modal-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 12rem;
+}
+
+.settings-options {
+    display: inline-flex;
+    flex-direction: column;
     font-size: 2.5rem;
+    align-items: center;
+}
+
+.settings-options h5 {
+    font-size: 3rem;
+}
+
+.settings-options label {
+    padding: 3rem;
+}
+
+input {
+    cursor: pointer;
+}
+
+.close-modal {
+    font-size: 3.5rem;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .close-modal:hover {
-    color: #000000; 
+    color: #001018; 
 }
-
-/* #settings-difficulty {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-}
-
-#settings-sound {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    float: right;
-}
-
-.slider {
-    border-radius: 3rem;
-} */
 
 /* Player Sprite & Animation */ 
 
-/* #astronaut-sprite {
+#astronaut-sprite {
     height: 47rem;
     width: 47rem; 
     background: url("../images/player-sprite.png");
@@ -204,11 +209,11 @@ header a {
     50% {
         bottom: 1.5rem; 
     }
-} */
+}
 
 /* Space Obstacle & Animation */ 
 
-/* .space-obstacle {
+.space-obstacle {
     height: 30rem;
     width: 30rem; 
     transform: rotate(45deg);
@@ -283,4 +288,4 @@ header a {
 @keyframes obstacle {
     0%{left: 100vw}
     100%{left: -0}
-} */
+}
