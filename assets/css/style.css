@@ -55,39 +55,39 @@ header a {
 #logo {
     text-transform: uppercase;
     font-size: 15rem;
-    text-shadow: #000000 2px 9px, #004e97 3px 18px, #022345 3px 35px;
+    text-shadow: #000000 3px 9px, #2392d2 3px 18px, #006aaf 3px 34px,  #004891 3px 46px, #022345 3px 62px;
 }
 
 #score-counter {
     margin: 3rem;
     font-size: 7rem;
-    text-shadow: #000000 2px 5px, #004e97 3px 8px, #022345 3px 12px;
+    text-shadow: #000000 2px 4px, #2392d2 3px 8px, #006aaf 3px 12px,  #004891 3px 16px, #022345 3px 20px;
 }
 
 /* Mission Controls */ 
 
 #mission-cntrl {
     width: 90rem;
-    height: 55rem; 
+    height: 52rem; 
     text-transform: uppercase;
     display: flex;
-    margin: auto;
     flex-direction: column;
     align-items: center;
+    margin: auto;
+    margin-top: 5.7rem;
     justify-content: space-between;
     background: url("../images/mission-control.jpeg") center center no-repeat; 
     image-rendering: pixelated;
     background-size: cover;
     border-style: ridge;
-    border-width: 15px;
-    border-color: #000000;
-    box-shadow: #000000  0px 0px 0px 2px, #022345 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #022345 0px 0px 0px 16px, #000000 0px 0px 0px 19px;
+    border-width: 5px;
+    border-color: #000000; 
+    box-shadow: #ff3e4f 0px 0px 0px 4px, #022345 0px 0px 0px 8px, #c3262a  0px 0px 0px 12px, #022345 0px 0px 0px 16px, #80121b 0px 0px 0px 20px, #022345 0px 0px 0px 24px, #4f0f32 0px 0px 0px 28px, #022345 0px 0px 0px 32px; 
 }
 
 #mission-cntrl h2 {
-    font-size: 10rem;
-    text-shadow: #004e97 2px 3px, #022345 2px 6px;
-    font-weight: 300;
+    font-size: 12rem;
+    text-shadow: #000000 2px 4px, #ff3e4f 3px 8px, #c3262a 3px 14px, #80121b 3px 20px, #4f0f32 3px 28px;
 }
 
 #mission-cntrl h3 {
@@ -96,15 +96,15 @@ header a {
     width: 30rem;
     text-align: center;
     border-style: ridge;
-    box-shadow: #000000  0px 0px 0px 2px, #022345 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #022345 0px 0px 0px 16px;
-    border-width: 10px;
+    box-shadow: #2392d2 0px 0px 0px 2px, #4f0f32 0px 0px 0px 4px, #006aaf 0px 0px 0px 6px, #4f0f32  0px 0px 0px 8px, #004891 0px 0px 0px 10px, #4f0f32  0px 0px 0px 12px, #022345  0px 0px 0px 14px, #4f0f32 0px 0px 0px 16px;
+    border-width: 5px;
     border-color: #000000;
     margin-bottom: 20px;
-    text-shadow: #004e97 2px 3px, #022345 2px 6px;
+    text-shadow: #ff3e4f 2px 3px, #000000 2px 6px;
 }
 
 #mission-cntrl h3:hover {
-    background-color: #f22032;
+    background-color: #ff3e4f;
     cursor: pointer;
 }
 
@@ -189,7 +189,7 @@ input {
 
 /* Player Sprite & Animation */ 
 
-#astronaut-sprite {
+/* #astronaut-sprite {
     height: 47rem;
     width: 47rem; 
     background: url("../images/player-sprite.png");
@@ -209,11 +209,11 @@ input {
     50% {
         bottom: 1.5rem; 
     }
-}
+} */
 
 /* Space Obstacle & Animation */ 
 
-.space-obstacle {
+/* .space-obstacle {
     height: 30rem;
     width: 30rem; 
     transform: rotate(45deg);
@@ -226,7 +226,7 @@ input {
 .meteorite {
     background: url("../images/meteorite.png");
     background-size: cover;
-}
+} */
 
 /* .asteroid {
     background: url("../images/asteroid.png");
