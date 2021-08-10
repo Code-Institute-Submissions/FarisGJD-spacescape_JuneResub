@@ -33,7 +33,7 @@ body {
     width: 100%;
     background-size: cover;
     position: relative;
-    animation: space_movement 70s linear infinite;
+    animation: space_movement 50s linear infinite;
 }
 
 @keyframes space_movement {
@@ -213,7 +213,7 @@ input {
 
 /* Space Obstacle & Animation */ 
 
-.space-obstacle {
+/* .space-obstacle {
     height: 30rem;
     width: 30rem; 
     transform: rotate(45deg);
@@ -238,6 +238,7 @@ input {
     background-size: cover;
 }
 
+
 .alien-obstacle {
     height: 35rem;
     width: 35rem; 
@@ -246,6 +247,7 @@ input {
     right: 0; 
     animation: obstacle 2.5s linear infinite; 
 }
+
 
 .ufo {
     background: url("../images/ufo.png");
@@ -274,18 +276,14 @@ input {
 .planet2 {
     background: url("../images/planet2.png");
     background-size: cover;
-    height: 38rem;
-    width: 38rem; 
 }
 
 .planet3 {
     background: url("../images/planet3.png");
     background-size: cover;
-    height: 35rem; 
-    width: 35rem;
 }
 
 @keyframes obstacle {
     0%{left: 100vw}
     100%{left: -0}
-}
+} */
