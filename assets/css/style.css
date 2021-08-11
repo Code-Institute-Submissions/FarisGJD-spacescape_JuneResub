@@ -82,12 +82,12 @@ header a {
     border-style: ridge;
     border-width: 5px;
     border-color: #000000; 
-    box-shadow: #ff3e4f 0px 0px 0px 4px, #022345 0px 0px 0px 8px, #c3262a  0px 0px 0px 12px, #022345 0px 0px 0px 16px, #80121b 0px 0px 0px 20px, #022345 0px 0px 0px 24px, #4f0f32 0px 0px 0px 28px, #022345 0px 0px 0px 32px; 
+    box-shadow: #ff3e4f 0px 0px 0px 4px,  #022345  0px 0px 0px 8px, #c3262a  0px 0px 0px 12px,  #004891 0px 0px 0px 16px, #80121b 0px 0px 0px 20px,  #022345 0px 0px 0px 24px, #4f0f32 0px 0px 0px 28px,  #022345  0px 0px 0px 32px;
 }
 
 #mission-cntrl h2 {
     font-size: 12rem;
-    text-shadow: #000000 2px 4px, #ff3e4f 3px 8px, #c3262a 3px 14px, #80121b 3px 20px, #4f0f32 3px 28px;
+    text-shadow: #000000 2px 2px, #ff3e4f 3px 4px, #c3262a 3px 8px, #80121b 3px 12px, #4f0f32 3px 18px, #000000 3px 24px; 
 }
 
 #mission-cntrl h3 {
@@ -96,7 +96,7 @@ header a {
     width: 30rem;
     text-align: center;
     border-style: ridge;
-    box-shadow: #2392d2 0px 0px 0px 2px, #4f0f32 0px 0px 0px 4px, #006aaf 0px 0px 0px 6px, #4f0f32  0px 0px 0px 8px, #004891 0px 0px 0px 10px, #4f0f32  0px 0px 0px 12px, #022345  0px 0px 0px 14px, #4f0f32 0px 0px 0px 16px;
+    box-shadow: #4f0f32 0px 0px 0px 2px,  #022345   0px 0px 0px 4px, #80121b  0px 0px 0px 6px, #004891  0px 0px 0px 8px, #c3262a  0px 0px 0px 10px,  #022345  0px 0px 0px 12px, #ff3e4f 0px 0px 0px 14px,  #022345  0px 0px 0px 16px;
     border-width: 5px;
     border-color: #000000;
     margin-bottom: 20px;
@@ -120,8 +120,8 @@ header a {
     top: 0; 
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
 }
 
 .inner-modal {
@@ -189,7 +189,7 @@ input {
 
 /* Player Sprite & Animation */ 
 
-/* #astronaut-sprite {
+#astronaut-sprite {
     height: 47rem;
     width: 47rem; 
     background: url("../images/player-sprite.png");
@@ -209,11 +209,11 @@ input {
     50% {
         bottom: 1.5rem; 
     }
-} */
+}
 
 /* Space Obstacle & Animation */ 
 
-/* .space-obstacle {
+.space-obstacle {
     height: 30rem;
     width: 30rem; 
     transform: rotate(45deg);
@@ -226,7 +226,7 @@ input {
 .meteorite {
     background: url("../images/meteorite.png");
     background-size: cover;
-} */
+}
 
 /* .asteroid {
     background: url("../images/asteroid.png");
