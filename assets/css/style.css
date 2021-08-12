@@ -213,9 +213,9 @@ input {
 
 /* Space Obstacle & Animation */ 
 
-.space-obstacle {
-    height: 30rem;
-    width: 30rem; 
+/* .space-obstacle {
+    height: 27rem;
+    width: 27rem; 
     transform: rotate(45deg);
     position: absolute; 
     bottom: 7rem;
@@ -236,12 +236,12 @@ input {
 .fire-ball {
     background: url("../images/fireball.png");
     background-size: cover;
-} 
+}  */
 
 
-/* .alien-obstacle {
-    height: 35rem;
-    width: 35rem; 
+.alien-obstacle {
+    height: 30rem;
+    width: 30rem; 
     position: absolute; 
     bottom: 7rem;
     right: 0; 
@@ -257,7 +257,7 @@ input {
 .martian {
     background: url("../images/martian.png");
     background-size: cover;
-} */
+}
 
 /* .planetary-obstacle {
     height: 40rem;
@@ -315,6 +315,11 @@ input {
         height: 25rem; 
         width: 25rem;
     }
+
+    .alien-obstacle {
+        height: 27rem;
+        width: 27rem;
+    }
 }
 
 /* Screen Size: 1024px & Below */
@@ -335,6 +340,11 @@ input {
 
     #astronaut-sprite {
         left: -9rem;
+    }
+
+    .alien-obstacle {
+        height: 25rem;
+        width: 25rem;
     }
 }
 
@@ -361,8 +371,13 @@ input {
     }
 
     .space-obstacle {
-        height: 21rem; 
-        width: 21rem;
+        height: 22rem; 
+        width: 22rem;
+    }
+
+    .alien-obstacle {
+        height: 23rem;
+        width: 23rem;
     }
 }
 
@@ -392,6 +407,11 @@ input {
     .space-obstacle {
         height: 19rem; 
         width: 19rem;
+    }
+
+    .alien-obstacle {
+        height: 21rem;
+        width: 21rem;
     }
 }
 
@@ -428,13 +448,17 @@ input {
         height: 26rem; 
         width: 26rem; 
         left: -7rem;
-        margin-bottom: 3rem;
-    
+        margin-bottom: 2rem;
     }
 
     .space-obstacle {
-        height: 17rem; 
-        width: 17rem;
+        height: 16rem; 
+        width: 16rem;
+    }
+
+    .alien-obstacle {
+        height: 19rem;
+        width: 19rem;
     }
 }
 
@@ -463,12 +487,17 @@ input {
         height: 23rem; 
         width: 23rem; 
         left: -6.5rem; 
-        bottom: 3rem;
+        bottom: 2.5rem;
     }
 
     .space-obstacle {
-        height: 15rem; 
-        width: 15rem;
+        height: 13rem; 
+        width: 13rem;
+    }
+
+    .alien-obstacle {
+        height: 16rem;
+        width: 16rem;
     }
 }
 
@@ -505,12 +534,16 @@ input {
         height: 20rem; 
         width: 20rem; 
         left: -5.5rem;
-        margin-bottom: 4rem;
     }
 
     .space-obstacle {
-        height: 15rem; 
-        width: 15rem;
+        height: 11.5rem; 
+        width: 11.5rem;
+    }
+
+    .alien-obstacle {
+        height: 13rem;
+        width: 13rem;
     }
 }
 
@@ -535,10 +568,5 @@ input {
         width: 17rem; 
         left: -4.5rem;
         margin-bottom: 4rem;
-    }
-
-    .space-obstacle {
-        height: 10rem; 
-        width: 10rem;
     }
 }
