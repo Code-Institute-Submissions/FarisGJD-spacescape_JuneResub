@@ -16,7 +16,7 @@ html {
 
 body {
     color: #ffffff; 
-    background: repeating-radial-gradient(#000000 15%, #022345 25%) center center no-repeat;
+    background: #000000; 
     font-family: Orbitron, sans-serif; 
 }
 
@@ -397,6 +397,7 @@ input {
         height: 30rem; 
         box-shadow: #ff3e4f 0px 0px 0px 2px,  #022345  0px 0px 0px 4px, #c3262a  0px 0px 0px 6px,  #022345  0px 0px 0px 8px, #80121b 0px 0px 0px 10px,  #022345 0px 0px 0px 12px, #4f0f32 0px 0px 0px 14px,  #022345 0px 0px 0px 16px;
         border-width: 2px;
+        border-color: #000000;
     }
 
     #mission-control h2 {
@@ -416,7 +417,7 @@ input {
 @media screen and (max-width: 481px) {
     #logo {
         font-size: 7.5rem;
-        text-shadow: #000000 3px 4px, #2392d2 3px 8px, #006aaf 3px 14px,  #004891 3px 20px, #022345 3px 28px;
+        text-shadow: #000000 3px 2px, #2392d2 3px 4px, #006aaf 3px 8px,  #004891 3px 12px, #022345 3px 16px;
     }
 
     #score-counter {
