@@ -66,7 +66,7 @@ header a {
 
 /* Mission Controls */ 
 
-#mission-cntrl {
+#mission-control {
     width: 90rem;
     height: 52rem; 
     text-transform: uppercase;
@@ -83,15 +83,14 @@ header a {
     border-width: 5px;
     border-color: #000000; 
     box-shadow: #ff3e4f 0px 0px 0px 4px,  #022345  0px 0px 0px 8px, #c3262a  0px 0px 0px 12px,  #022345  0px 0px 0px 16px, #80121b 0px 0px 0px 20px,  #022345 0px 0px 0px 24px, #4f0f32 0px 0px 0px 28px,  #022345 0px 0px 0px 32px;
-    display: none;
 }
 
-#mission-cntrl h2 {
+#mission-control h2 {
     font-size: 12rem;
     text-shadow: #000000 2px 2px, #ff3e4f 3px 4px, #c3262a 3px 8px, #80121b 3px 12px, #4f0f32 3px 18px, #000000 3px 24px;
 }
 
-#mission-cntrl h3 {
+#mission-control h3 {
     font-size: 6rem;
     background-color: #000000;
     width: 30rem;
@@ -104,7 +103,7 @@ header a {
     text-shadow: #ff3e4f 2px 3px, #000000 2px 6px;
 }
 
-#mission-cntrl h3:hover {
+#mission-control h3:hover {
     background-color: #ff3e4f;
     cursor: pointer;
 }
@@ -291,6 +290,76 @@ input {
 
 /* Media Queries */ 
 
+/* Screen Size: 1200px & Below */
+@media screen and (max-width: 1200px) {
+    #mission-control {
+        width: 80rem; 
+        height: 48rem; 
+    }
+
+    #mission-control h2 {
+        font-size: 10rem;
+    }
+
+    #mission-control h3 {
+        font-size: 5rem; 
+        width: 20rem;
+    }
+}
+
+/* Screen Size: 1024px & Below */
+@media screen and (max-width: 1024px) {
+    #mission-control {
+        width: 70rem; 
+        height: 42rem; 
+    }
+
+    #mission-control h2 {
+        font-size: 9rem; 
+    }
+
+    #mission-control h3 {
+        font-size: 4rem; 
+        width: 17rem;
+    }
+}
+
+/* Screen Size: 900px & Below */ 
+@media screen and (max-width: 900px) {
+    #mission-control {
+        width: 65rem; 
+        height: 38rem; 
+    }
+
+    #mission-control h2 {
+        font-size: 8rem; 
+    }
+
+    #mission-control h3 {
+        font-size: 3rem; 
+        width: 15rem;
+        text-shadow: #ff3e4f 1px 2px, #000000 1px 3px;
+    }
+}
+
+/* Screen Size: 769px & Below */ 
+@media screen and (max-width: 769px) {
+    #mission-control {
+        width: 55rem; 
+        height: 36rem; 
+        box-shadow: #ff3e4f 0px 0px 0px 3px,  #022345  0px 0px 0px 6px, #c3262a  0px 0px 0px 9px,  #022345  0px 0px 0px 12px, #80121b 0px 0px 0px 15px,  #022345 0px 0px 0px 18px, #4f0f32 0px 0px 0px 21px,  #022345 0px 0px 0px 24px;
+    }
+
+    #mission-control h2 {
+        font-size: 7rem; 
+    }
+
+    #mission-control h3 {
+        font-size: 2.5rem; 
+        width: 13rem; 
+    }
+}
+
 /* Screen Size: 650px & Below */
 @media screen and (max-width: 650px) {
     #logo { 
@@ -302,6 +371,43 @@ input {
         font-size: 5.5rem;
         text-shadow: #000000 2px 3px, #2392d2 3px 6px, #006aaf 3px 10px,  #004891 3px 14px, #022345 3px 18px;
     }
+
+    #mission-control {
+        width: 45rem; 
+        height: 30rem; 
+    }
+
+    #mission-control h2 {
+        font-size: 6rem; 
+        margin-bottom: 20px;
+    }
+
+    #mission-control h3 {
+        font-size: 2.5rem; 
+        width: 13rem;
+        box-shadow: #4f0f32 0px 0px 0px 1px,  #2392d2 0px 0px 0px 2px, #80121b  0px 0px 0px 3px, #006aaf 0px 0px 0px 4px, #c3262a  0px 0px 0px 5px, #004891  0px 0px 0px 6px, #ff3e4f 0px 0px 0px 7px,  #0b0f13  0px 0px 0px 8px;
+    }
+}
+
+/* Screen Size: 550px & Below */ 
+@media screen and (max-width: 550px) {
+    #mission-control {
+        width: 40rem; 
+        height: 30rem; 
+        box-shadow: #ff3e4f 0px 0px 0px 2px,  #022345  0px 0px 0px 4px, #c3262a  0px 0px 0px 6px,  #022345  0px 0px 0px 8px, #80121b 0px 0px 0px 10px,  #022345 0px 0px 0px 12px, #4f0f32 0px 0px 0px 14px,  #022345 0px 0px 0px 16px;
+    }
+
+    #mission-control h2 {
+        font-size: 5rem; 
+        text-shadow: #000000 2px 1px, #ff3e4f 3px 2px, #c3262a 3px 4px, #80121b 3px 6px, #4f0f32 3px 8px, #000000 3px 10px;
+    }
+
+    #mission-control h3 {
+        font-size: 2rem; 
+        width: 10rem;
+        text-shadow: #ff3e4f 1px 1px, #000000 1px 2px;
+    }
+
 }
 
 /* Screen Size: 481px & Below */ 
@@ -315,6 +421,22 @@ input {
         font-size: 3.5rem;
         text-shadow: #000000 2px 1px, #2392d2 3px 2px, #006aaf 3px 4px,  #004891 3px 6px, #022345 3px 8px;
     }
+
+    #mission-control {
+        width: 27rem; 
+        height: 17rem; 
+        box-shadow: #ff3e4f 0px 0px 0px 1px,  #022345  0px 0px 0px 2px, #c3262a  0px 0px 0px 3px,  #022345  0px 0px 0px 4px, #80121b 0px 0px 0px 5px,  #022345 0px 0px 0px 6px, #4f0f32 0px 0px 0px 7px,  #022345 0px 0px 0px 8px;
+    }
+
+    #mission-control h2 {
+        font-size: 3rem; 
+        text-shadow: #000000 2px 1px, #ff3e4f 3px 2px, #c3262a 3px 3px, #80121b 3px 4px, #4f0f32 3px 5px, #000000 3px 6px;
+    }
+
+    #mission-control h3 {
+        font-size: 1rem; 
+        width: 5rem;
+    }
 }
 
 /* Screen Size: 320px & Below */ 
@@ -322,5 +444,21 @@ input {
     #logo {
         font-size: 6.5rem;
         text-shadow: #000000 3px 3px, #2392d2 3px 6px, #006aaf 3px 10px,  #004891 3px 14px, #022345 3px 18px;
+    }
+
+    #mission-control {
+        width: 25rem; 
+        height: 15rem; 
+    }
+
+    #mission-control h2 {
+        font-size: 2.5rem; 
+    }
+
+
+    #mission-control h3 {
+        font-size: 0.8rem; 
+        width: 5rem;
+        height: 1.6rem;
     }
 }
