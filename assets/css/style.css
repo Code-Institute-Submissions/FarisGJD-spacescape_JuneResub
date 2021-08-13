@@ -125,12 +125,12 @@ header a {
 }
 
 .inner-modal {
-    width: 50%;
-    height: 55%;
-    background: radial-gradient(circle at center, #045414,  #0c2010, #000000 100%); 
-    background: url("../images/terminal.jpg") center center no-repeat;
+    width: 95rem;
+    height: 60rem;
+    background: radial-gradient(circle at center, #004891,  #022345, #000000 100%); 
+    background: url("../images/terminal.jpg") center center;
     background-size: cover;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-shadow: #000000 2px 2px; 
     border-radius: 50px;
 }
@@ -138,12 +138,13 @@ header a {
 .inner-modal h4 {
     font-size: 5rem;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
 }
 
 .inner-modal p {
-    line-height: 4rem;
-    padding: 4rem 10rem 0 10rem;
+    line-height: 3.5rem;
+    padding: 0 5rem;
+    margin: 2rem;
 }
 
 #manoeuvers-modal p {
@@ -153,7 +154,7 @@ header a {
 #settings-modal-content {
     display: flex;
     justify-content: space-between;
-    padding: 12rem;
+    margin: 12rem;
 }
 
 .settings-options {
@@ -168,7 +169,7 @@ header a {
 }
 
 .settings-options label {
-    padding: 3rem;
+    margin: 3rem;
 }
 
 input {
@@ -176,7 +177,7 @@ input {
 }
 
 .close-modal {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     cursor: pointer;
     text-align: center;
     display: flex;
@@ -184,7 +185,7 @@ input {
 }
 
 .close-modal:hover {
-    color: #001018; 
+    color: #ff3e4f;
 }
 
 /* Player Sprite & Animation */ 
@@ -213,7 +214,7 @@ input {
 
 /* Game Obstacles & Animation */ 
 
-/* .space-obstacle {
+.space-obstacle {
     height: 27rem;
     width: 35rem; 
     transform: rotate(45deg);
@@ -286,7 +287,7 @@ input {
 @keyframes obstacle {
     0%{left: 100vw}
     100%{left: -0}
-} */
+}
 
 /* Media Queries */ 
 
@@ -355,6 +356,25 @@ input {
         height: 29rem; 
         width: 29rem;
     }
+
+    .inner-modal {
+        width: 85rem;
+        height: 50rem;
+    }
+
+    .inner-modal h4 {
+        font-size: 3.5rem;
+    }
+
+    .inner-modal p {
+        font-size: 1.7rem;
+        line-height: 3.4rem;
+    }
+
+    .close-modal {
+        font-size: 1.5rem;
+    }
+
 }
 
 /* Screen Size: 900px & Below */ 
@@ -393,6 +413,33 @@ input {
         height: 26rem; 
         width: 26rem;
     }
+
+    .inner-modal {
+        width: 75rem;
+        height: 40rem;
+        overflow-y: scroll;
+        
+    }
+
+    .inner-modal p {
+        margin: 5.2rem;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #ff3e4f; 
+        border-radius: 20px;
+    }
+      
+
+    .close-modal {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
 }
 
 /* Screen Size: 769px & Below */ 
@@ -431,6 +478,25 @@ input {
     .planetary-obstacle  {
         height: 23rem; 
         width: 23rem;
+    }
+
+    .inner-modal {
+        width: 65rem;
+        height: 30rem;
+    }
+
+    .inner-modal h4 {
+        margin-top: 2rem; 
+        font-size: 3rem;
+    }
+
+    .inner-modal p {
+        margin: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .close-modal {
+        font-size: 1.5rem;
     }
 }
 
@@ -483,6 +549,15 @@ input {
     .planetary-obstacle  {
         height: 20rem; 
         width: 20rem;
+    }
+
+    .inner-modal {
+        width: 55rem;
+        height: 20rem;
+    }
+
+    .inner-modal h4 {
+        font-size: 3rem;
     }
 }
 
