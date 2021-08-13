@@ -156,7 +156,7 @@ header a {
 #settings-modal-content {
     display: flex;
     justify-content: space-between;
-    margin: 12rem;
+    margin: 11rem;
 }
 
 .settings-options {
@@ -439,6 +439,18 @@ input {
     line-height: 3rem;
     }
 
+    #settings-modal-content {
+        margin: 9rem;
+    }
+
+    .settings-options  {
+        font-size: 2rem;
+    }
+
+    .settings-options h5 {
+        font-size: 2.5rem;
+    }
+
 }
 
 /* Screen Size: 769px & Below */ 
@@ -511,6 +523,18 @@ input {
         margin-bottom: 3rem;
     }
 
+    #settings-modal-content {
+        margin: 7rem;
+    }
+
+    .settings-options  {
+        font-size: 1.5rem;
+    }
+
+    .settings-options h5 {
+        font-size: 2rem;
+    }
+
 }
 
 /* Screen Size: 650px & Below */
@@ -572,6 +596,19 @@ input {
     .inner-modal p {
         line-height: 2.7rem;
     }
+    
+    #settings-modal-content {
+        margin: 6rem 6rem 2rem 6rem;
+    }
+
+    .settings-options  {
+        font-size: 1.3rem;
+    }
+
+    .settings-options h5 {
+        font-size: 1.8rem;
+    }
+
 }
 
 /* Screen Size: 550px & Below */ 
@@ -686,6 +723,18 @@ input {
         width: 40rem;
         height: 23rem;
     }
+        
+    #settings-modal-content {
+        margin: 3rem 3rem 1rem 3rem;
+    }
+
+    .settings-options  {
+        font-size: 1.3rem;
+    }
+
+    .settings-options h5 {
+        font-size: 1.8rem;
+    }
 }
 
 /* Screen Size: 400px & Below */ 
@@ -701,6 +750,18 @@ input {
 
     .inner-modal p {
         padding: 0 2rem;
+    }
+    
+    .settings-options  {
+        font-size: 1.2rem;
+    }
+
+    .settings-options label {
+        margin: 2rem;
+    }
+
+    .settings-options h5 {
+        font-size: 1.3rem;
     }
 }
 
@@ -739,5 +800,24 @@ input {
     .inner-modal p {
         font-size: 1.2rem;
         padding: 0 1rem;
+    }
+
+    .settings-options h5 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .settings-options  {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .settings-options label {
+        margin: 2rem;
+    }
+
+    #settings-modal-content {
+        margin-top: 0.5rem;
+        justify-content:center;
     }
 }
