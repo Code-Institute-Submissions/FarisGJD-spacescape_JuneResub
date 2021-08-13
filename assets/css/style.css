@@ -191,7 +191,7 @@ input {
 
 #astronaut-sprite {
     height: 40rem;
-    width: 40rem; 
+    width: 30rem; 
     background: url("../images/player-sprite.png");
     image-rendering: pixelated;
     background-size: cover;
@@ -211,11 +211,11 @@ input {
     }
 }
 
-/* Space Obstacle & Animation */ 
+/* Game Obstacles & Animation */ 
 
 /* .space-obstacle {
     height: 27rem;
-    width: 27rem; 
+    width: 35rem; 
     transform: rotate(45deg);
     position: absolute; 
     bottom: 7rem;
@@ -224,19 +224,19 @@ input {
 }
 
 .meteorite {
-    background: url("../images/meteorite.png");
+    background: url("../images/meteorite.png") center center;
     background-size: cover;
 }
 
 .asteroid {
-    background: url("../images/asteroid.png");
+    background: url("../images/asteroid.png") center center;
     background-size: cover;
 }
 
 .fire-ball {
-    background: url("../images/fireball.png");
+    background: url("../images/fireball.png") center center;
     background-size: cover;
-}  */
+} 
 
 
 .alien-obstacle {
@@ -259,9 +259,9 @@ input {
     background-size: cover;
 }
 
-/* .planetary-obstacle {
-    height: 40rem;
-    width: 40rem; 
+.planetary-obstacle {
+    height: 35rem;
+    width: 35rem; 
     position: absolute; 
     bottom: 7rem;
     right: 0; 
@@ -281,12 +281,12 @@ input {
 .planet3 {
     background: url("../images/planet3.png");
     background-size: cover;
-}  */
+} 
 
 @keyframes obstacle {
     0%{left: 100vw}
     100%{left: -0}
-}
+} */
 
 /* Media Queries */ 
 
@@ -308,7 +308,6 @@ input {
 
     #astronaut-sprite {
         height: 35rem; 
-        width: 35rem; 
     }
 
     .space-obstacle {
@@ -319,6 +318,11 @@ input {
     .alien-obstacle {
         height: 27rem;
         width: 27rem;
+    }
+
+    .planetary-obstacle  {
+        height: 32rem; 
+        width: 32rem;
     }
 }
 
@@ -346,6 +350,11 @@ input {
         height: 25rem;
         width: 25rem;
     }
+
+    .planetary-obstacle  {
+        height: 29rem; 
+        width: 29rem;
+    }
 }
 
 /* Screen Size: 900px & Below */ 
@@ -367,7 +376,7 @@ input {
 
     #astronaut-sprite {
         height: 33rem; 
-        width: 33rem; 
+        width: 30rem; 
     }
 
     .space-obstacle {
@@ -378,6 +387,11 @@ input {
     .alien-obstacle {
         height: 23rem;
         width: 23rem;
+    }
+
+    .planetary-obstacle  {
+        height: 26rem; 
+        width: 26rem;
     }
 }
 
@@ -412,6 +426,11 @@ input {
     .alien-obstacle {
         height: 21rem;
         width: 21rem;
+    }
+
+    .planetary-obstacle  {
+        height: 23rem; 
+        width: 23rem;
     }
 }
 
@@ -460,6 +479,11 @@ input {
         height: 19rem;
         width: 19rem;
     }
+
+    .planetary-obstacle  {
+        height: 20rem; 
+        width: 20rem;
+    }
 }
 
 /* Screen Size: 550px & Below */ 
@@ -498,6 +522,11 @@ input {
     .alien-obstacle {
         height: 16rem;
         width: 16rem;
+    }
+
+    .planetary-obstacle  {
+        height: 18rem; 
+        width: 18rem;
     }
 }
 
@@ -544,6 +573,11 @@ input {
     .alien-obstacle {
         height: 13rem;
         width: 13rem;
+    }
+
+    .planetary-obstacle  {
+        height: 14rem; 
+        width: 14rem;
     }
 }
 
