@@ -108,7 +108,7 @@ header a {
     cursor: pointer;
 }
 
-/* Terminal Control Modal */ 
+/* Mission Control - Terminal Modal */ 
 
 .outer-modal {
     display: flex; 
@@ -126,7 +126,7 @@ header a {
 
 .inner-modal {
     width: 95rem;
-    height: 60rem;
+    height: 54rem;
     background: radial-gradient(circle at center, #004891,  #022345, #000000 100%); 
     background: url("../images/terminal.jpg") center center;
     background-size: cover;
@@ -142,8 +142,8 @@ header a {
 }
 
 .inner-modal p {
-    line-height: 3.5rem;
-    padding: 0 5rem;
+    line-height: 3.1rem;
+    padding: 0 6rem;
     margin: 2rem;
 }
 
