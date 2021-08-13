@@ -358,8 +358,8 @@ input {
     }
 
     .inner-modal {
-        width: 85rem;
-        height: 50rem;
+        width: 90rem;
+        height: 51rem;
     }
 
     .inner-modal h4 {
@@ -415,29 +415,21 @@ input {
     }
 
     .inner-modal {
-        width: 75rem;
-        height: 40rem;
-        overflow-y: scroll;
-        
+        width: 76rem;
+        height: 44rem;
+    }
+
+    .inner-modal h4 {
+        font-size: 2.7rem;
     }
 
     .inner-modal p {
-        margin: 5.2rem;
+        font-size: 1.4rem;
+        line-height: 3rem;
     }
-
-    ::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: #ff3e4f; 
-        border-radius: 20px;
-    }
-      
 
     .close-modal {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
+        font-size: 1.2rem;
     }
 
 }
@@ -481,23 +473,28 @@ input {
     }
 
     .inner-modal {
-        width: 65rem;
-        height: 30rem;
+        width: 60rem;
+        height: 34rem;
+        overflow-y: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #caf7fb;
+        border-radius: 20px;
     }
 
     .inner-modal h4 {
         margin-top: 2rem; 
-        font-size: 3rem;
-    }
-
-    .inner-modal p {
-        margin: 2rem;
-        font-size: 1.5rem;
     }
 
     .close-modal {
-        font-size: 1.5rem;
+        margin-bottom: 25px;
     }
+
 }
 
 /* Screen Size: 650px & Below */
@@ -552,12 +549,12 @@ input {
     }
 
     .inner-modal {
-        width: 55rem;
-        height: 20rem;
+        width: 50rem;
+        height: 28rem;
     }
 
-    .inner-modal h4 {
-        font-size: 3rem;
+    .inner-modal p {
+        line-height: 2.7rem;
     }
 }
 
@@ -603,6 +600,20 @@ input {
         height: 18rem; 
         width: 18rem;
     }
+
+    .inner-modal {
+        width: 46rem;
+        height: 27rem;
+    }
+
+    .inner-modal h4 {
+        font-size: 2.5rem;
+    }
+
+    .inner-modal p {
+        padding: 0 4rem;
+    }
+
 }
 
 /* Screen Size: 481px & Below */ 
@@ -654,6 +665,27 @@ input {
         height: 14rem; 
         width: 14rem;
     }
+
+    .inner-modal {
+        width: 40rem;
+        height: 23rem;
+    }
+}
+
+/* Screen Size: 400px & Below */ 
+@media screen and (max-width: 400px) {
+    .inner-modal {
+        width: 35rem;
+        height: 20rem;
+    }
+
+    .inner-modal h4 {
+        font-size: 2rem;
+    }
+
+    .inner-modal p {
+        padding: 0 2rem;
+    }
 }
 
 /* Screen Size: 320px & Below */ 
@@ -677,5 +709,18 @@ input {
         width: 17rem; 
         left: -4.5rem;
         margin-bottom: 4rem;
+    }
+
+    .inner-modal {
+        width: 25rem;
+        height: 14rem;
+    }
+
+    .inner-modal h4 {
+        font-size: 1.5rem;
+    }
+
+    .inner-modal p {
+        font-size: 1rem;
     }
 }
