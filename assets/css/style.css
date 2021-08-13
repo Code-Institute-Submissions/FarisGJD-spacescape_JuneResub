@@ -148,7 +148,9 @@ header a {
 }
 
 #manoeuvers-modal p {
-    padding: 10rem; 
+    padding-top: 6rem; 
+    margin-bottom: 4rem;
+    line-height: 3.5rem;
 }
 
 #settings-modal-content {
@@ -431,6 +433,11 @@ input {
     .close-modal {
         font-size: 1.2rem;
     }
+    
+    #manoeuvers-modal p {
+    padding-top: 3rem;
+    line-height: 3rem;
+    }
 
 }
 
@@ -491,8 +498,17 @@ input {
         margin-top: 2rem; 
     }
 
+    #manoeuvers-modal p {
+        margin: 1rem;
+    }
+
     .close-modal {
         margin-bottom: 25px;
+    }
+
+    #manoeuvers-modal p {
+        padding-top: 1rem; 
+        margin-bottom: 3rem;
     }
 
 }
@@ -721,6 +737,7 @@ input {
     }
 
     .inner-modal p {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding: 0 1rem;
     }
 }
