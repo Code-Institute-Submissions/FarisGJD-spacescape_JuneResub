@@ -293,6 +293,25 @@ input {
     100%{left: -0}
 }
 
+/* Media Queries Max Width & Height (Laptops) */ 
+@media screen and (max-width: 1366px), screen and (max-width: 800px) {
+    #mission-control {
+        width: 70rem; 
+        height: 40rem; 
+    }
+
+    #mission-control h2 {
+        font-size: 7.5rem;
+    }
+
+    #mission-control h3 {
+        font-size: 4rem;
+        width: 15rem;
+    }
+}
+
+
+
 /* Media Queries Max Width*/ 
 
 /* Screen Size: 1200px & Below */
@@ -825,32 +844,3 @@ input {
 }
 
 /* Media Queries Max Height */  
-@media screen and (max-height: 850px) {
-    #mission-control {
-        width: 70rem;
-        height: 39rem;
-    }
-
-    #mission-control h2 {
-        font-size: 8rem;
-    }
-
-    #mission-control h3 {
-        font-size: 4rem;
-        width: 20rem;
-    }
-} 
-
-/* Media Queries Max Height */  
-@media screen and (max-height: 770) {
-    #mission-control {
-        width: 85rem; 
-        height: 40rem;
-    }
-}
-/* Screen Size: 280px & Below */ 
-@media screen and (max-height: 280px) {
-    #logo {
-        text-shadow: #000000 3px 1px, #2392d2 3px 2px, #006aaf 3px 3px,  #004891 3px 4px, #022345 3px 5px;
-    }
-}
