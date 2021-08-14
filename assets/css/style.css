@@ -79,9 +79,6 @@ header a {
     background: url("../images/mission-control.jpeg") center center no-repeat; 
     image-rendering: pixelated;
     background-size: cover;
-    border-style: ridge;
-    border-width: 5px;
-    border-color: #000000; 
     box-shadow: #ff3e4f 0px 0px 0px 4px,  #022345  0px 0px 0px 8px, #c3262a  0px 0px 0px 12px,  #022345  0px 0px 0px 16px, #80121b 0px 0px 0px 20px,  #022345 0px 0px 0px 24px, #4f0f32 0px 0px 0px 28px,  #022345 0px 0px 0px 32px;
 }
 
@@ -95,11 +92,10 @@ header a {
     background-color: #000000;
     width: 30rem;
     text-align: center;
-    border-style: ridge;
     box-shadow: #4f0f32 0px 0px 0px 2px,  #2392d2 0px 0px 0px 4px, #80121b  0px 0px 0px 6px, #006aaf 0px 0px 0px 8px, #c3262a  0px 0px 0px 10px, #004891  0px 0px 0px 12px, #ff3e4f 0px 0px 0px 14px,  #022345  0px 0px 0px 16px;
-    border-width: 5px;
+    border: #000000 solid 5px;
     border-color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-shadow: #ff3e4f 2px 3px, #000000 2px 6px;
 }
 
@@ -119,7 +115,7 @@ header a {
     width: 100vw;
     top: 0; 
     left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 1);
     /* opacity: 0;
     visibility: hidden; */
 }
