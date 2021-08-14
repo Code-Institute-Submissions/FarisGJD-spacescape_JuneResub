@@ -827,6 +827,6 @@ input {
 /* Screen Size: 280px & Below */ 
 @media screen and (max-width: 280px) {
     #logo {
-        text-shadow: #000000 3px 2px, #2392d2 3px 4px, #006aaf 3px 6px,  #004891 3px 8px, #022345 3px 10px;
+        text-shadow: #000000 3px 1px, #2392d2 3px 2px, #006aaf 3px 3px,  #004891 3px 4px, #022345 3px 5px;
     }
 }
