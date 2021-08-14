@@ -41,6 +41,26 @@ body {
     100%{background-position: 100vw 0;}
 }
 
+#space-ship {
+    background: url("../images/spaceship.png");
+    height: 500px; 
+    width: 500px;
+    position: absolute;
+    top: 30%;
+    transform: rotate(90deg);
+    animation: ship-movement 20s infinite; 
+}
+
+@keyframes ship-movement
+{
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
+
 /* Logo & Score Counter */ 
 
 header {
@@ -54,7 +74,7 @@ header a {
 
 #logo {
     text-transform: uppercase;
-    font-size: 15rem;
+    font-size: 20rem;
     text-shadow: #000000 0 15px 0px, #2392d2 0 25px 0px, #006aaf 0 35px 0px,  #004891 0 45px 0px, #022345 0 55px 0px;
 }
 
@@ -64,9 +84,42 @@ header a {
     text-shadow: #000000 0 4px 0px, #2392d2 0 8px 0px, #006aaf 0 12px 0px,  #004891 0 16px 0px, #022345 0 20px 0px;
 }
 
-/* Mission Controls */ 
+/* Player Controls */ 
 
- #mission-control {
+#player-controls {
+    width: 90rem;
+    height: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+    justify-content: space-between; 
+    margin-top: 80px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index: 1;
+}
+
+#player-controls h2 {
+    background-color: #000000;
+    width: 40rem;
+    text-align: center;
+    border: #000000 solid 5px;
+    box-shadow: #76f6f0 0px 0px 0px 4px, #2392d2  0px 0px 0px 8px, #000000 0px 0px 0px 12px, #006aaf 0px 0px 0px 16px, #000000 0px 0px 0px 20px, #004891 0px 0px 0px 24px, #000000 0px 0px 0px 28px, #022345 0px 0px 0px 32px;
+}
+
+
+
+#player-controls h2:hover {
+    background-color: #ff3e4f;
+    cursor: pointer;
+}
+
+ /* .mission-control {
     width: 90rem;
     height: 52rem; 
     text-transform: uppercase;
@@ -80,16 +133,18 @@ header a {
     image-rendering: pixelated;
     background-size: cover;
     box-shadow: #2392d2 0px 0px 0px 4px,  #000000 0px 0px 0px 8px, #006aaf  0px 0px 0px 12px, #000000 0px 0px 0px 16px, #004891  0px 0px 0px 20px, #000000  0px 0px 0px 24px, #022345 0px 0px 0px 28px,  #000000  0px 0px 0px 32px;
+    position: absolute;
+    z-index: 1;
 } 
 
-#mission-control h2 {
+.mission-control h2 {
     font-size: 10rem;
     text-shadow: #000000 2px 4px, #ff3e4f 3px 8px, #c3262a 3px 12px, #80121b 3px 16px, #4f0f32 3px 20px, #000000 3px 24px;
 }
 
 
 
-#mission-control h3 {
+.mission-control h3 {
     font-size: 6rem;
     background-color: #000000;
     width: 30rem;
@@ -100,10 +155,10 @@ header a {
     text-shadow: #ff3e4f 2px 3px, #000000 2px 6px;
 }
 
-#mission-control h3:hover {
+.mission-control h3:hover {
     background-color: #ff3e4f;
     cursor: pointer;
-}
+} */
 
 /* Mission Control - Terminal Modal */ 
 
