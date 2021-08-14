@@ -55,18 +55,18 @@ header a {
 #logo {
     text-transform: uppercase;
     font-size: 15rem;
-    text-shadow: #000000 3px 10px, #2392d2 3px 20px, #006aaf 3px 30px,  #004891 3px 40px, #022345 3px 50px;
+    text-shadow: #000000 0 15px 0px, #2392d2 0 25px 0px, #006aaf 0 35px 0px,  #004891 0 45px 0px, #022345 0 55px 0px;
 }
 
 #score-counter {
     margin: 3rem;
     font-size: 7rem;
-    text-shadow: #000000 2px 4px, #2392d2 2px 8px, #006aaf 2px 12px,  #004891 2px 16px, #022345 2px 20px;
+    text-shadow: #000000 0 4px 0px, #2392d2 0 8px 0px, #006aaf 0 12px 0px,  #004891 0 16px 0px, #022345 0 20px 0px;
 }
 
 /* Mission Controls */ 
 
-#mission-control {
+ #mission-control {
     width: 90rem;
     height: 52rem; 
     text-transform: uppercase;
@@ -79,20 +79,22 @@ header a {
     background: url("../images/mission-control.jpeg") center center no-repeat; 
     image-rendering: pixelated;
     background-size: cover;
-    box-shadow: #ff3e4f 0px 0px 0px 4px,  #022345  0px 0px 0px 8px, #c3262a  0px 0px 0px 12px,  #022345  0px 0px 0px 16px, #80121b 0px 0px 0px 20px,  #022345 0px 0px 0px 24px, #4f0f32 0px 0px 0px 28px,  #022345 0px 0px 0px 32px;
-}
+    box-shadow: #2392d2 0px 0px 0px 4px,  #000000 0px 0px 0px 8px, #006aaf  0px 0px 0px 12px, #000000 0px 0px 0px 16px, #004891  0px 0px 0px 20px, #000000  0px 0px 0px 24px, #022345 0px 0px 0px 28px,  #000000  0px 0px 0px 32px;
+} 
 
 #mission-control h2 {
-    font-size: 12rem;
+    font-size: 10rem;
     text-shadow: #000000 2px 4px, #ff3e4f 3px 8px, #c3262a 3px 12px, #80121b 3px 16px, #4f0f32 3px 20px, #000000 3px 24px;
 }
+
+
 
 #mission-control h3 {
     font-size: 6rem;
     background-color: #000000;
     width: 30rem;
     text-align: center;
-    box-shadow: #4f0f32 0px 0px 0px 2px,  #2392d2 0px 0px 0px 4px, #80121b  0px 0px 0px 6px, #006aaf 0px 0px 0px 8px, #c3262a  0px 0px 0px 10px, #004891  0px 0px 0px 12px, #ff3e4f 0px 0px 0px 14px,  #022345  0px 0px 0px 16px;
+    box-shadow: #2392d2 0px 0px 0px 2px,  #000000 0px 0px 0px 4px, #006aaf  0px 0px 0px 6px, #000000 0px 0px 0px 8px, #004891  0px 0px 0px 10px, #000000  0px 0px 0px 12px, #022345 0px 0px 0px 14px,  #000000  0px 0px 0px 16px;
     border: #000000 solid 5px;
     margin-bottom: 30px;
     text-shadow: #ff3e4f 2px 3px, #000000 2px 6px;
