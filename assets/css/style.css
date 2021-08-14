@@ -55,7 +55,7 @@ header a {
 #logo {
     text-transform: uppercase;
     font-size: 15rem;
-    text-shadow: #000000 3px 9px, #2392d2 3px 18px, #006aaf 3px 34px,  #004891 3px 46px, #022345 3px 62px;
+    text-shadow: #000000 3px 10px, #2392d2 3px 20px, #006aaf 3px 30px,  #004891 3px 40px, #022345 3px 50px;
 }
 
 #score-counter {
@@ -87,7 +87,7 @@ header a {
 
 #mission-control h2 {
     font-size: 12rem;
-    text-shadow: #000000 2px 2px, #ff3e4f 3px 4px, #c3262a 3px 8px, #80121b 3px 12px, #4f0f32 3px 18px, #000000 3px 24px;
+    text-shadow: #000000 2px 4px, #ff3e4f 3px 8px, #c3262a 3px 12px, #80121b 3px 16px, #4f0f32 3px 20px, #000000 3px 24px;
 }
 
 #mission-control h3 {
@@ -293,25 +293,6 @@ input {
     100%{left: -0}
 }
 
-/* Media Queries Max Width & Height (Laptops) */ 
-@media screen and (max-width: 1366px), screen and (max-width: 800px) {
-    #mission-control {
-        width: 70rem; 
-        height: 40rem; 
-    }
-
-    #mission-control h2 {
-        font-size: 7.5rem;
-    }
-
-    #mission-control h3 {
-        font-size: 4rem;
-        width: 15rem;
-    }
-}
-
-
-
 /* Media Queries Max Width*/ 
 
 /* Screen Size: 1200px & Below */
@@ -478,16 +459,16 @@ input {
 @media screen and (max-width: 769px) {
     #mission-control {
         width: 55rem; 
-        height: 36rem; 
+        height: 32rem; 
         box-shadow: #ff3e4f 0px 0px 0px 3px,  #022345  0px 0px 0px 6px, #c3262a  0px 0px 0px 9px,  #022345  0px 0px 0px 12px, #80121b 0px 0px 0px 15px,  #022345 0px 0px 0px 18px, #4f0f32 0px 0px 0px 21px,  #022345 0px 0px 0px 24px;
     }
 
     #mission-control h2 {
-        font-size: 7rem; 
+        font-size: 6.5rem; 
     }
 
     #mission-control h3 {
-        font-size: 2.5rem; 
+        font-size: 2rem; 
         width: 13rem; 
     }
 
@@ -562,17 +543,16 @@ input {
 @media screen and (max-width: 650px) {
     #logo { 
         font-size: 11.5rem;
-        text-shadow: #000000 3px 6px, #2392d2 3px 12px, #006aaf 3px 24px,  #004891 3px 36px, #022345 3px 42px;
+        text-shadow: #000000 3px 8px, #2392d2 3px 16px, #006aaf 3px 24px,  #004891 3px 32px, #022345 3px 40px;
     }
 
     #score-counter {
         font-size: 5.5rem;
-        text-shadow: #000000 2px 3px, #2392d2 2px 6px, #006aaf 2px 10px,  #004891 2px 14px, #022345 2px 18px;
     }
 
     #mission-control {
         width: 45rem; 
-        height: 30rem; 
+        height: 26rem; 
     }
 
     #mission-control h2 {
@@ -636,14 +616,14 @@ input {
 @media screen and (max-width: 550px) {
     #mission-control {
         width: 40rem; 
-        height: 30rem; 
+        height: 23rem; 
         box-shadow: #ff3e4f 0px 0px 0px 2px,  #022345  0px 0px 0px 4px, #c3262a  0px 0px 0px 6px,  #022345  0px 0px 0px 8px, #80121b 0px 0px 0px 10px,  #022345 0px 0px 0px 12px, #4f0f32 0px 0px 0px 14px,  #022345 0px 0px 0px 16px;
         border-style: none;
     }
 
     #mission-control h2 {
         font-size: 5rem; 
-        text-shadow: #000000 2px 1px, #ff3e4f 3px 2px, #c3262a 3px 4px, #80121b 3px 6px, #4f0f32 3px 8px, #000000 3px 10px;
+        text-shadow: #000000 2px 2px, #ff3e4f 3px 4px, #c3262a 3px 6px, #80121b 3px 8px, #4f0f32 3px 10px, #000000 3px 12px;
     }
 
     #mission-control h3 {
@@ -703,20 +683,15 @@ input {
     }
 
     #mission-control {
-        width: 27rem; 
-        height: 17rem; 
+        width: 35rem; 
+        height: 20rem; 
         box-shadow: #ff3e4f 0px 0px 0px 1px,  #022345  0px 0px 0px 2px, #c3262a  0px 0px 0px 3px,  #022345  0px 0px 0px 4px, #80121b 0px 0px 0px 5px,  #022345 0px 0px 0px 6px, #4f0f32 0px 0px 0px 7px,  #022345 0px 0px 0px 8px;
         margin-top: 80px;
     }
 
     #mission-control h2 {
-        font-size: 3rem; 
+        font-size: 4.5rem; 
         text-shadow: #000000 2px 1px, #ff3e4f 3px 2px, #c3262a 3px 3px, #80121b 3px 4px, #4f0f32 3px 5px, #000000 3px 6px;
-    }
-
-    #mission-control h3 {
-        font-size: 1.5rem; 
-        width: 5.5rem;
     }
 
     #astronaut-sprite {
@@ -760,6 +735,21 @@ input {
 
 /* Screen Size: 400px & Below */ 
 @media screen and (max-width: 400px) {
+
+    #mission-control {
+        width: 30rem; 
+        height: 17rem; 
+    }
+
+    #mission-control h2 {
+        font-size: 4rem;
+    }
+
+    #mission-control h3 {
+        font-size: 1.5rem;
+        width: 5rem;
+    }
+
     .inner-modal {
         width: 35rem;
         height: 20rem;
@@ -843,4 +833,39 @@ input {
     }
 }
 
-/* Media Queries Max Height */  
+/* Media Queries Max Width & Height (Laptops) 
+
+/* Screen Width 1366px & Height 800px */ 
+/* @media screen and (max-width: 1366px), screen and (max-width: 800px) {
+
+    #mission-control {
+        width: 70rem; 
+        height: 40rem; 
+    }
+
+    #mission-control h2 {
+        font-size: 7.5rem;
+    }
+
+    #mission-control h3 {
+        font-size: 4rem;
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 1200px), screen and (max-width: 780px) {
+    #mission-control {
+        width: 65rem; 
+        height: 37rem; 
+    }
+
+    #mission-control h2 {
+        font-size: 6.5rem;
+    }
+
+    #mission-control h3 {
+        font-size: 3.5rem;
+        width: 12rem;
+     }
+}  */
+
