@@ -293,7 +293,7 @@ input {
     100%{left: -0}
 }
 
-/* Media Queries */ 
+/* Media Queries Max Width*/ 
 
 /* Screen Size: 1200px & Below */
 @media screen and (max-width: 1200px) {
@@ -824,6 +824,30 @@ input {
     }
 }
 
+/* Media Queries Max Height */  
+@media screen and (max-height: 850px) {
+    #mission-control {
+        width: 70rem;
+        height: 39rem;
+    }
+
+    #mission-control h2 {
+        font-size: 8rem;
+    }
+
+    #mission-control h3 {
+        font-size: 4rem;
+        width: 20rem;
+    }
+} 
+
+/* Media Queries Max Height */  
+@media screen and (max-height: 770) {
+    #mission-control {
+        width: 85rem; 
+        height: 40rem;
+    }
+}
 /* Screen Size: 280px & Below */ 
 @media screen and (max-height: 280px) {
     #logo {
