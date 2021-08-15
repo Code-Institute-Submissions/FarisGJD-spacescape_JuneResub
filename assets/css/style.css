@@ -25,7 +25,7 @@ body {
     font-family: VT323;
 }
 
-/* Background Image & Animation */
+/* Background Image & Spaceship Animations */
 #background-image {
     background: url("../images/background-image-horizon.jpg");
     image-rendering: pixelated;
@@ -48,16 +48,16 @@ body {
     position: absolute;
     top: 30%;
     transform: rotate(90deg);
-    animation: ship-movement 20s infinite; 
+    animation: ship-movement 30s infinite; 
 }
 
 @keyframes ship-movement
 {
     from {
-        left: 0;
+        left: -525px;
     }
     to {
-        left: 100%;
+        left: 100vw;
     }
 }
 
@@ -73,8 +73,9 @@ header a {
 }
 
 #logo {
+    display: inline-block;
     text-transform: uppercase;
-    font-size: 20rem;
+    font-size: 18rem;
     text-shadow: #000000 0 15px 0px, #2392d2 0 25px 0px, #006aaf 0 35px 0px,  #004891 0 45px 0px, #022345 0 55px 0px;
 }
 
@@ -95,13 +96,14 @@ header a {
     font-size: 5rem;
     text-transform: uppercase;
     justify-content: space-between; 
-    margin-top: 80px;
+    margin-top: 40px;
     position: absolute;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
     z-index: 1;
+    /* box-shadow: #76f6f0 0px 0px 0px 4px, #2392d2  0px 0px 0px 8px, #000000 0px 0px 0px 12px, #006aaf 0px 0px 0px 16px, #000000 0px 0px 0px 20px, #004891 0px 0px 0px 24px, #000000 0px 0px 0px 28px, #022345 0px 0px 0px 32px; */
 }
 
 #player-controls h2 {
@@ -109,14 +111,29 @@ header a {
     width: 40rem;
     text-align: center;
     border: #000000 solid 5px;
-    box-shadow: #76f6f0 0px 0px 0px 4px, #2392d2  0px 0px 0px 8px, #000000 0px 0px 0px 12px, #006aaf 0px 0px 0px 16px, #000000 0px 0px 0px 20px, #004891 0px 0px 0px 24px, #000000 0px 0px 0px 28px, #022345 0px 0px 0px 32px;
+    box-shadow: #000000 0px 0px 0px 4px, #2392d2  0px 0px 0px 8px, #000000 0px 0px 0px 12px, #006aaf 0px 0px 0px 16px, #000000 0px 0px 0px 20px, #004891 0px 0px 0px 24px, #000000 0px 0px 0px 28px, #022345 0px 0px 0px 32px;
+    text-shadow: #ff3e4f 2px 3px, #000000 2px 6px;
 }
-
-
 
 #player-controls h2:hover {
     background-color: #ff3e4f;
     cursor: pointer;
+}
+
+#vortex {
+    width: 55rem;
+    height: 55rem;
+    border-radius: 100%;
+    background-color: #000000;
+    transform: rotateX(89deg);
+    position: absolute;
+    top: 70rem; 
+    left: 75rem;
+    animation: vortex-spin 6s linear infinite;
+}
+
+@keyframes vortex-spin {
+    
 }
 
  /* .mission-control {
