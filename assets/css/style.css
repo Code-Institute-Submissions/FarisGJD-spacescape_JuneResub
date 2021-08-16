@@ -393,6 +393,17 @@ input {
         font-size: 7rem;
     }
 
+    #player-controls {
+        width: 35rem;
+        height: 45rem;
+        font-size: 4.5rem;
+        
+    }
+
+    #player-controls h2 {
+        width: 35rem; 
+    }
+
     #astronaut-sprite {
         height: 33rem; 
         width: 30rem; 
@@ -462,16 +473,21 @@ input {
         text-shadow: #000000 0 13px 0px, #2392d2 0 26px 0px, #006aaf 0 39px 0px,  #004891 0 52px 0px, #022345 0 65px 0px;
     }
 
-    #player-controls { 
-        width: 45rem;
-        height: 55rem;
-        font-size: 4.5rem;
+    #player-controls {
+        width: 30rem;
+        height: 40rem;
+        font-size: 4rem;      
     }
 
     #player-controls h2 {
-        width: 35rem;
+        width: 30rem; 
+        box-shadow: #76f6f0 0px 0px 0px 3px, #000000 0px 0px 0px 6px, #2392d2 0px 0px 0px 9px, #000000 0px 0px 0px 12px, #006aaf 0px 0px 0px 15px, #000000 0px 0px 0px 18px, #004891 0px 0px 0px 21px, #000000 0px 0px 0px 24px, #022345 0px 0px 0px 27px; 
     }
-   
+
+    #player-controls h2:hover {
+        box-shadow: #ffdd5c 0px 0px 0px 3px, #000000 0px 0px 0px 6px, #feaf34 0px 0px 0px 9px, #000000 0px 0px 0px 12px, #fe9200 0px 0px 0px 15px, #000000 0px 0px 0px 18px, #fb6a04 0px 0px 0px 21px, #000000 0px 0px 0px 24px, #ff5100 0px 0px 0px 27px;
+    }
+
     #astronaut-sprite {
         height: 29rem; 
         width: 29rem; 
@@ -556,30 +572,16 @@ input {
         margin-top: 5rem;
     }
 
-    #player-controls { 
-        width: 40rem;
-        height: 50rem;
-        font-size: 4rem;
+    #player-controls {
+        width: 25rem;
+        height: 35rem;
+        font-size: 3.5rem;      
     }
 
     #player-controls h2 {
-        width: 30rem;
+        width: 25rem;  
     }
 
-    #score-counter {
-        font-size: 5.5rem;
-    }
-
-    #player-controls { 
-        width: 40rem;
-        height: 50rem;
-        font-size: 4.5rem;
-    }
-
-    #player-controls h2 {
-        width: 30rem;
-    }
-   
 
     #astronaut-sprite {
         height: 26rem; 
@@ -643,16 +645,22 @@ input {
         text-shadow: #000000 0 3px 0px, #2392d2 0 6px 0px, #006aaf 0 9px 0px,  #004891 0 12px 0px, #022345 0 15px 0px;
     }
 
-    #player-controls { 
-        width: 35rem;
-        height: 45rem;
-        font-size: 3.5rem;
+    #player-controls {
+        width: 20rem;
+        height: 30rem;
+        font-size: 3rem;      
     }
 
     #player-controls h2 {
-        width: 25rem;
+        width: 20rem; 
+        box-shadow: #76f6f0 0px 0px 0px 2px, #000000 0px 0px 0px 4px, #2392d2 0px 0px 0px 6px, #000000 0px 0px 0px 8px, #006aaf 0px 0px 0px 10px, #000000 0px 0px 0px 12px, #004891 0px 0px 0px 14px, #000000 0px 0px 0px 16px, #022345 0px 0px 0px 18px; 
     }
-  
+
+    #player-controls h2:hover {
+        box-shadow: #ffdd5c 0px 0px 0px 2px, #000000 0px 0px 0px 4px, #feaf34 0px 0px 0px 6px, #000000 0px 0px 0px 8px, #fe9200 0px 0px 0px 10px, #000000 0px 0px 0px 12px, #fb6a04 0px 0px 0px 14px, #000000 0px 0px 0px 16px, #ff5100 0px 0px 0px 18px;
+        text-shadow: #000000 2px 2px, #000000 2px 4px;
+    }
+
     #astronaut-sprite {
         height: 23rem; 
         width: 23rem; 
@@ -708,16 +716,18 @@ input {
     }
 
 
-    #player-controls { 
-        width: 30rem;
-        height: 40rem;
-        font-size: 3rem;
+    #player-controls {
+        width: 15rem;
+        height: 25rem;
+        font-size: 2.5rem;      
     }
 
     #player-controls h2 {
-        width: 20rem;
+        width: 15rem;  
     }
-  
+
+   
+
     #astronaut-sprite {
         height: 20rem; 
         width: 20rem; 
@@ -775,15 +785,20 @@ input {
         margin-top: 2rem;
     }
 
-
-    #player-controls { 
-        width: 27rem;
-        height: 37rem;
-        font-size: 2.7rem;
+    #player-controls {
+        width: 10rem;
+        height: 25rem;
+        font-size: 1.5rem;      
     }
 
     #player-controls h2 {
-        width: 17rem;
+        width: 10rem; 
+        box-shadow: #76f6f0 0px 0px 0px 1px, #000000 0px 0px 0px 2px, #2392d2 0px 0px 0px 3px, #000000 0px 0px 0px 4px, #006aaf 0px 0px 0px 5px, #000000 0px 0px 0px 6px, #004891 0px 0px 0px 7px, #000000 0px 0px 0px 8px, #022345 0px 0px 0px 9px; 
+    }
+
+    #player-controls h2:hover {
+        box-shadow: #ffdd5c 0px 0px 0px 1px, #000000 0px 0px 0px 2px, #feaf34 0px 0px 0px 3px, #000000 0px 0px 0px 4px, #fe9200 0px 0px 0px 5px, #000000 0px 0px 0px 6px, #fb6a04 0px 0px 0px 7px, #000000 0px 0px 0px 8px, #ff5100 0px 0px 0px 9px;
+        text-shadow: #000000 2px 2px, #000000 2px 2px;
     }
 
     .inner-modal {
@@ -827,17 +842,6 @@ input {
     #score-counter {
         font-size: 3.5rem;
         margin-top: 1.5rem;
-    }
-
-
-    #player-controls { 
-        width: 25rem;
-        height: 35rem;
-        font-size: 2.5rem;
-    }
-
-    #player-controls h2 {
-        width: 15rem;
     }
 
     #astronaut-sprite {
