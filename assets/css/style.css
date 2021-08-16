@@ -44,10 +44,10 @@ body {
 #spaceship {
     background: url("../images/spaceship.png");
     background-size: cover;
-    height: 500px; 
-    width: 500px;
+    height: 58rem; 
+    width: 58rem;
     position: absolute;
-    top: 40%;
+    top: 33%;
     transform: rotate(90deg);
     animation: ship-movement 30s infinite; 
 }
@@ -55,7 +55,7 @@ body {
 @keyframes ship-movement
 {
     from {
-        left: -525px;
+        left: -600px;
     }
     to {
         left: 100vw;
