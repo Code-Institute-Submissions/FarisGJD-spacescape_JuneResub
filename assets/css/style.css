@@ -41,12 +41,12 @@ body {
     100%{background-position: 100vw 0;}
 }
 
-#space-ship {
+#spaceship {
     background: url("../images/spaceship.png");
     height: 500px; 
     width: 500px;
     position: absolute;
-    top: 30%;
+    top: 40%;
     transform: rotate(90deg);
     animation: ship-movement 30s infinite; 
 }
@@ -88,8 +88,8 @@ header a {
 /* Player Controls */ 
 
 #player-controls {
-    width: 90rem;
-    height: 52rem;
+    width: 50rem;
+    height: 60rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,7 +110,7 @@ header a {
     width: 40rem;
     text-align: center;
     border: #000000 solid 5px;
-    box-shadow: #76f6f0 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #2392d2 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #006aaf 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #004891 0px 0px 0px 28px, #000000 0px 0px 0px 32px, #022345 0px 0px 0px 36px;   
+    box-shadow: #76f6f0 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #2392d2 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #006aaf 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #004891 0px 0px 0px 28px, #000000 0px 0px 0px 32px, #022345 0px 0px 0px 36px;  
 }
 
 #player-controls h2:hover {
@@ -309,19 +309,6 @@ input {
 
 /* Screen Size: 1200px & Below */
 @media screen and (max-width: 1200px) {
-    #mission-control {
-        width: 80rem; 
-        height: 48rem; 
-    }
-
-    #mission-control h2 {
-        font-size: 11rem;
-    }
-
-    #mission-control h3 {
-        font-size: 5rem; 
-        width: 26rem;
-    }
 
     #astronaut-sprite {
         height: 35rem; 
@@ -345,20 +332,6 @@ input {
 
 /* Screen Size: 1024px & Below */
 @media screen and (max-width: 1024px) {
-    #mission-control {
-        width: 70rem; 
-        height: 42rem; 
-    }
-
-    #mission-control h2 {
-        font-size: 9rem; 
-    }
-
-    #mission-control h3 {
-        font-size: 4.5rem; 
-        width: 23rem;
-        margin-top: 28px;
-    }
 
     #astronaut-sprite {
         left: -9rem;
@@ -396,21 +369,7 @@ input {
 
 /* Screen Size: 900px & Below */ 
 @media screen and (max-width: 900px) {
-    #mission-control {
-        width: 60rem; 
-        height: 40rem; 
-    }
-
-    #mission-control h2 {
-        font-size: 8rem; 
-    }
-
-    #mission-control h3 {
-        font-size: 4rem; 
-        width: 20rem;
-        text-shadow: #ff3e4f 1px 2px, #000000 1px 3px;
-    }
-
+ 
     #astronaut-sprite {
         height: 33rem; 
         width: 30rem; 
@@ -470,21 +429,21 @@ input {
 
 /* Screen Size: 769px & Below */ 
 @media screen and (max-width: 769px) {
-    #mission-control {
-        width: 55rem; 
-        height: 38rem; 
-        box-shadow: #ff3e4f 0px 0px 0px 3px,  #022345  0px 0px 0px 6px, #c3262a  0px 0px 0px 9px,  #022345  0px 0px 0px 12px, #80121b 0px 0px 0px 15px,  #022345 0px 0px 0px 18px, #4f0f32 0px 0px 0px 21px,  #022345 0px 0px 0px 24px;
+
+    #logo {
+        font-size: 15rem;
     }
 
-    #mission-control h2 {
-        font-size: 7rem; 
+    #player-controls { 
+        width: 45rem;
+        height: 55rem;
+        font-size: 4.5rem;
     }
 
-    #mission-control h3 {
-        font-size: 3.5rem; 
-        width: 18rem;
+    #player-controls h2 {
+        width: 35rem;
     }
-
+   
     #astronaut-sprite {
         height: 29rem; 
         width: 29rem; 
@@ -554,29 +513,34 @@ input {
 
 /* Screen Size: 650px & Below */
 @media screen and (max-width: 650px) {
-    #logo { 
-        font-size: 11.5rem;
-        text-shadow: #000000 3px 8px, #2392d2 3px 16px, #006aaf 3px 24px,  #004891 3px 32px, #022345 3px 40px;
+    #logo {
+        font-size: 13rem;
+    }
+
+    #player-controls { 
+        width: 40rem;
+        height: 50rem;
+        font-size: 4rem;
+    }
+
+    #player-controls h2 {
+        width: 30rem;
     }
 
     #score-counter {
         font-size: 5.5rem;
     }
 
-    #mission-control {
-        width: 50rem; 
-        height: 35rem; 
+    #player-controls { 
+        width: 40rem;
+        height: 50rem;
+        font-size: 4.5rem;
     }
 
-    #mission-control h2 {
-        font-size: 6rem; 
+    #player-controls h2 {
+        width: 30rem;
     }
-
-    #mission-control h3 {
-        font-size: 3rem; 
-        width: 16rem;
-        margin-bottom: 23px;
-    }
+   
 
     #astronaut-sprite {
         height: 26rem; 
@@ -625,24 +589,21 @@ input {
 
 /* Screen Size: 550px & Below */ 
 @media screen and (max-width: 550px) {
-    #mission-control {
-        width: 45rem; 
-        height: 33rem; 
-        box-shadow: #ff3e4f 0px 0px 0px 1px,  #022345  0px 0px 0px 2px, #c3262a  0px 0px 0px 3px,  #022345  0px 0px 0px 4px, #80121b 0px 0px 0px 5px,  #022345 0px 0px 0px 6px, #4f0f32 0px 0px 0px 7px,  #022345 0px 0px 0px 8px;
+
+    #logo {
+        font-size: 11rem;
     }
 
-    #mission-control h2 {
-        font-size: 6rem; 
-        text-shadow: #000000 2px 2px, #ff3e4f 3px 4px, #c3262a 3px 6px, #80121b 3px 8px, #4f0f32 3px 10px, #000000 3px 12px;
+    #player-controls { 
+        width: 35rem;
+        height: 45rem;
+        font-size: 3.5rem;
     }
 
-    #mission-control h3 {
-        font-size: 3rem; 
-        width: 15rem;
-        text-shadow: #ff3e4f 1px 1px, #000000 1px 2px;
-        box-shadow: #4f0f32 0px 0px 0px 1px,  #2392d2 0px 0px 0px 2px, #80121b  0px 0px 0px 3px, #006aaf 0px 0px 0px 4px, #c3262a  0px 0px 0px 5px, #004891  0px 0px 0px 6px, #ff3e4f 0px 0px 0px 7px,  #022345  0px 0px 0px 8px;
+    #player-controls h2 {
+        width: 25rem;
     }
-
+  
     #astronaut-sprite {
         height: 23rem; 
         width: 23rem; 
@@ -683,7 +644,7 @@ input {
 /* Screen Size: 481px & Below */ 
 @media screen and (max-width: 481px) {
     #logo {
-        font-size: 7.5rem;
+        font-size: 9rem;
         text-shadow: #000000 3px 2px, #2392d2 3px 4px, #006aaf 3px 8px,  #004891 3px 12px, #022345 3px 16px;
     }
 
@@ -692,22 +653,16 @@ input {
         text-shadow: #000000 2px 1px, #2392d2 2px 2px, #006aaf 2px 4px,  #004891 2px 6px, #022345 2px 8px;
     }
 
-    #mission-control {
-        width: 37rem; 
-        height: 30rem; 
-        margin-top: 80px;
+    #player-controls { 
+        width: 30rem;
+        height: 40rem;
+        font-size: 3rem;
     }
 
-    #mission-control h2 {
-        font-size: 5rem; 
-        text-shadow: #000000 2px 1px, #ff3e4f 3px 2px, #c3262a 3px 3px, #80121b 3px 4px, #4f0f32 3px 5px, #000000 3px 6px;
+    #player-controls h2 {
+        width: 20rem;
     }
-
-    #mission-control h3 {
-        font-size: 2.5rem; 
-        width: 12rem;
-    }
-
+  
     #astronaut-sprite {
         height: 20rem; 
         width: 20rem; 
@@ -749,20 +704,19 @@ input {
 
 /* Screen Size: 400px & Below */ 
 @media screen and (max-width: 400px) {
-
-    #mission-control {
-        width: 30rem; 
-        height: 25rem; 
+    #logo {
+        font-size: 7.5rem;
+        text-shadow: #000000 3px 2px, #2392d2 3px 6px, #006aaf 3px 10px,  #004891 3px 14px, #022345 3px 18px;
     }
 
-    #mission-control h2 {
-        font-size: 4rem;
+    #player-controls { 
+        width: 27rem;
+        height: 37rem;
+        font-size: 2.7rem;
     }
 
-    #mission-control h3 {
-        font-size: 2rem;
-        width: 10rem;
-        margin-bottom: 12px;
+    #player-controls h2 {
+        width: 17rem;
     }
 
     .inner-modal {
@@ -794,23 +748,18 @@ input {
 /* Screen Size: 320px & Below */ 
 @media screen and (max-width: 320px) {
     #logo {
-        font-size: 6.5rem;
+        font-size: 6rem;
         text-shadow: #000000 3px 2px, #2392d2 3px 6px, #006aaf 3px 10px,  #004891 3px 14px, #022345 3px 18px;
     }
 
-    #mission-control {
-        width: 26rem; 
-        height: 22rem; 
+    #player-controls { 
+        width: 25rem;
+        height: 35rem;
+        font-size: 2.5rem;
     }
 
-    #mission-control h2 {
-        font-size: 3rem; 
-    }
-
-    #mission-control h3 {
-        font-size: 1.3rem;
-        width: 6.5rem;
-        margin-top: 26px;
+    #player-controls h2 {
+        width: 15rem;
     }
 
     #astronaut-sprite {
