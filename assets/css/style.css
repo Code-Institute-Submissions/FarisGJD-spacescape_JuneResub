@@ -120,48 +120,7 @@ header a {
     text-shadow: #000000 2px 3px, #000000 2px 6px;
 }
 
- /* .mission-control {
-    width: 90rem;
-    height: 52rem; 
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    margin-top: 57px;
-    justify-content: space-between;
-    background: url("../images/mission-control.jpeg") center center no-repeat; 
-    image-rendering: pixelated;
-    background-size: cover;
-    box-shadow: #2392d2 0px 0px 0px 4px,  #000000 0px 0px 0px 8px, #006aaf  0px 0px 0px 12px, #000000 0px 0px 0px 16px, #004891  0px 0px 0px 20px, #000000  0px 0px 0px 24px, #022345 0px 0px 0px 28px,  #000000  0px 0px 0px 32px;
-    position: absolute;
-    z-index: 1;
-} 
-
-.mission-control h2 {
-    font-size: 10rem;
-    text-shadow: #000000 2px 4px, #ff3e4f 3px 8px, #c3262a 3px 12px, #80121b 3px 16px, #4f0f32 3px 20px, #000000 3px 24px;
-}
-
-
-
-.mission-control h3 {
-    font-size: 6rem;
-    background-color: #000000;
-    width: 30rem;
-    text-align: center;
-    box-shadow: #2392d2 0px 0px 0px 2px,  #000000 0px 0px 0px 4px, #006aaf  0px 0px 0px 6px, #000000 0px 0px 0px 8px, #004891  0px 0px 0px 10px, #000000  0px 0px 0px 12px, #022345 0px 0px 0px 14px,  #000000  0px 0px 0px 16px;
-    border: #000000 solid 5px;
-    margin-bottom: 30px;
-    text-shadow: #ff3e4f 2px 3px, #000000 2px 6px;
-}
-
-.mission-control h3:hover {
-    background-color: #ff3e4f;
-    cursor: pointer;
-} */
-
-/* Mission Control - Terminal Modal */ 
+/* Player Controls - Terminal Modal */ 
 
 .outer-modal {
     display: flex; 
@@ -894,40 +853,4 @@ input {
         justify-content:center;
     }
 }
-
-/* Media Queries Max Width & Height (Laptops) 
-
-/* Screen Width 1366px & Height 800px */ 
-/* @media screen and (max-width: 1366px), screen and (max-width: 800px) {
-
-    #mission-control {
-        width: 70rem; 
-        height: 40rem; 
-    }
-
-    #mission-control h2 {
-        font-size: 7.5rem;
-    }
-
-    #mission-control h3 {
-        font-size: 4rem;
-        width: 15rem;
-    }
-}
-
-@media screen and (max-width: 1200px), screen and (max-width: 780px) {
-    #mission-control {
-        width: 65rem; 
-        height: 37rem; 
-    }
-
-    #mission-control h2 {
-        font-size: 6.5rem;
-    }
-
-    #mission-control h3 {
-        font-size: 3.5rem;
-        width: 12rem;
-     }
-}  */
 
