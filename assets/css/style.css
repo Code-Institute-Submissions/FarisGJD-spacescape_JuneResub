@@ -77,27 +77,27 @@ header a {
     display: inline-block;
     text-transform: uppercase;
     font-size: 18rem;
-    text-shadow: #000000 0 15px 0px, #2392d2 0 25px 0px, #006aaf 0 35px 0px,  #004891 0 45px 0px, #022345 0 55px 0px;
+    text-shadow: #000000 0 18px 0px, #2392d2 0 36px 0px, #006aaf 0 54px 0px,  #004891 0 72px 0px, #022345 0 90px 0px;
 }
 
 #score-counter {
-    margin: 3rem;
-    font-size: 7rem;
+    font-size: 7.5rem;
     text-shadow: #000000 0 4px 0px, #2392d2 0 8px 0px, #006aaf 0 12px 0px,  #004891 0 16px 0px, #022345 0 20px 0px;
+    margin-top: 6rem;
 }
 
 /* Player Controls */ 
 
 #player-controls {
-    width: 50rem;
-    height: 60rem;
+    width: 40rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 5rem;
     text-transform: uppercase;
     justify-content: space-between; 
-    margin-top: 40px;
+    margin-top: 6rem;
     position: absolute;
     left: 0; 
     right: 0; 
@@ -310,6 +310,7 @@ input {
 
 /* Screen Size: 1200px & Below */
 @media screen and (max-width: 1200px) {
+    
 
     #spaceship {
         height: 300px;
@@ -538,6 +539,7 @@ input {
  
     #logo {
         font-size: 13rem;
+        text-shadow: #000000 0 10px 0px, #2392d2 0 20px 0px, #006aaf 0 30px 0px,  #004891 0 40px 0px, #022345 0 50px 0px;
     }
 
     #player-controls { 
@@ -619,6 +621,7 @@ input {
  
     #logo {
         font-size: 11rem;
+        text-shadow: #000000 0 7px 0px, #2392d2 0 14px 0px, #006aaf 0 21px 0px,  #004891 0 28px 0px, #022345 0 35px 0px;
     }
 
     #player-controls { 
@@ -677,7 +680,7 @@ input {
  
     #logo {
         font-size: 9rem;
-        text-shadow: #000000 3px 2px, #2392d2 3px 4px, #006aaf 3px 8px,  #004891 3px 12px, #022345 3px 16px;
+        text-shadow: #000000 0 7px 0px, #2392d2 0 14px 0px, #006aaf 0 21px 0px,  #004891 0 28px 0px, #022345 0 29px 0px;
     }
 
     #score-counter {
@@ -743,7 +746,7 @@ input {
  
     #logo {
         font-size: 7.5rem;
-        text-shadow: #000000 3px 2px, #2392d2 3px 6px, #006aaf 3px 10px,  #004891 3px 14px, #022345 3px 18px;
+        text-shadow: #000000 0 3px 0px, #2392d2 0 6px 0px, #006aaf 0 9px 0px,  #004891 0 12px 0px, #022345 0 15px 0px;
     }
 
     #player-controls { 
