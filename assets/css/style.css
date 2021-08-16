@@ -55,7 +55,7 @@ body {
 @keyframes ship-movement
 {
     from {
-        left: -600px;
+        left: -620px;
     }
     to {
         left: 100vw;
@@ -380,11 +380,18 @@ input {
 
 /* Screen Size: 900px & Below */ 
 @media screen and (max-width: 900px) {
+ 
     #spaceship {
         height: 255px;
         width: 255px;
     }
- 
+
+    #logo {
+        font-size: 15rem;
+        text-shadow: #000000 0 15px 0px, #2392d2 0 30px 0px, #006aaf 0 45px 0px,  #004891 0 55px 0px, #022345 0 70px 0px;
+
+    }
+
     #astronaut-sprite {
         height: 33rem; 
         width: 30rem; 
@@ -450,7 +457,8 @@ input {
     }
  
     #logo {
-        font-size: 15rem;
+        font-size: 13rem;
+        text-shadow: #000000 0 13px 0px, #2392d2 0 26px 0px, #006aaf 0 39px 0px,  #004891 0 52px 0px, #022345 0 65px 0px;
     }
 
     #player-controls { 
@@ -538,8 +546,8 @@ input {
     }
  
     #logo {
-        font-size: 13rem;
-        text-shadow: #000000 0 10px 0px, #2392d2 0 20px 0px, #006aaf 0 30px 0px,  #004891 0 40px 0px, #022345 0 50px 0px;
+        font-size: 12rem;
+        text-shadow: #000000 0 12px 0px, #2392d2 0 24px 0px, #006aaf 0 36px 0px,  #004891 0 48px 0px, #022345 0 60px 0px;
     }
 
     #player-controls { 
@@ -620,8 +628,8 @@ input {
     }
  
     #logo {
-        font-size: 11rem;
-        text-shadow: #000000 0 7px 0px, #2392d2 0 14px 0px, #006aaf 0 21px 0px,  #004891 0 28px 0px, #022345 0 35px 0px;
+        font-size: 10rem;
+        text-shadow: #000000 0 10px 0px, #2392d2 0 20px 0px, #006aaf 0 30px 0px,  #004891 0 40px 0px, #022345 0 50px 0px;
     }
 
     #player-controls { 
@@ -680,7 +688,7 @@ input {
  
     #logo {
         font-size: 9rem;
-        text-shadow: #000000 0 7px 0px, #2392d2 0 14px 0px, #006aaf 0 21px 0px,  #004891 0 28px 0px, #022345 0 29px 0px;
+        text-shadow: #000000 0 9px 0px, #2392d2 0 18px 0px, #006aaf 0 27px 0px,  #004891 0 36px 0px, #022345 0 45px 0px;
     }
 
     #score-counter {
@@ -745,9 +753,10 @@ input {
     }
  
     #logo {
-        font-size: 7.5rem;
-        text-shadow: #000000 0 3px 0px, #2392d2 0 6px 0px, #006aaf 0 9px 0px,  #004891 0 12px 0px, #022345 0 15px 0px;
+        font-size: 7rem;
+        text-shadow: #000000 0 7px 0px, #2392d2 0 14px 0px, #006aaf 0 21px 0px,  #004891 0 28px 0px, #022345 0 35px 0px;
     }
+
 
     #player-controls { 
         width: 27rem;
@@ -794,7 +803,7 @@ input {
  
     #logo {
         font-size: 6rem;
-        text-shadow: #000000 3px 2px, #2392d2 3px 6px, #006aaf 3px 10px,  #004891 3px 14px, #022345 3px 18px;
+        text-shadow: #000000 0 6px 0px, #2392d2 0 12px 0px, #006aaf 0 18px 0px,  #004891 0 24px 0px, #022345 0 30px 0px;
     }
 
     #player-controls { 
