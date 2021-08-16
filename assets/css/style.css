@@ -43,6 +43,7 @@ body {
 
 #spaceship {
     background: url("../images/spaceship.png");
+    background-size: cover;
     height: 500px; 
     width: 500px;
     position: absolute;
@@ -310,6 +311,11 @@ input {
 /* Screen Size: 1200px & Below */
 @media screen and (max-width: 1200px) {
 
+    #spaceship {
+        height: 300px;
+        width: 300px;
+    }
+
     #astronaut-sprite {
         height: 35rem; 
     }
@@ -332,6 +338,10 @@ input {
 
 /* Screen Size: 1024px & Below */
 @media screen and (max-width: 1024px) {
+    #spaceship {
+        height: 256px;
+        width: 256px;
+    }
 
     #astronaut-sprite {
         left: -9rem;
@@ -369,6 +379,10 @@ input {
 
 /* Screen Size: 900px & Below */ 
 @media screen and (max-width: 900px) {
+    #spaceship {
+        height: 255px;
+        width: 255px;
+    }
  
     #astronaut-sprite {
         height: 33rem; 
@@ -429,7 +443,11 @@ input {
 
 /* Screen Size: 769px & Below */ 
 @media screen and (max-width: 769px) {
-
+    #spaceship {
+        height: 193px;
+        width: 193px;
+    }
+ 
     #logo {
         font-size: 15rem;
     }
@@ -513,6 +531,11 @@ input {
 
 /* Screen Size: 650px & Below */
 @media screen and (max-width: 650px) {
+    #spaceship {
+        height: 162px;
+        width: 162px;
+    }
+ 
     #logo {
         font-size: 13rem;
     }
@@ -589,7 +612,11 @@ input {
 
 /* Screen Size: 550px & Below */ 
 @media screen and (max-width: 550px) {
-
+    #spaceship {
+        height: 137px;
+        width: 137px;
+    }
+ 
     #logo {
         font-size: 11rem;
     }
@@ -643,6 +670,11 @@ input {
 
 /* Screen Size: 481px & Below */ 
 @media screen and (max-width: 481px) {
+    #spaceship {
+        height: 120px;
+        width: 120px;
+    }
+ 
     #logo {
         font-size: 9rem;
         text-shadow: #000000 3px 2px, #2392d2 3px 4px, #006aaf 3px 8px,  #004891 3px 12px, #022345 3px 16px;
@@ -704,6 +736,11 @@ input {
 
 /* Screen Size: 400px & Below */ 
 @media screen and (max-width: 400px) {
+    #spaceship {
+        height: 100px;
+        width: 100px;
+    }
+ 
     #logo {
         font-size: 7.5rem;
         text-shadow: #000000 3px 2px, #2392d2 3px 6px, #006aaf 3px 10px,  #004891 3px 14px, #022345 3px 18px;
@@ -747,6 +784,11 @@ input {
 
 /* Screen Size: 320px & Below */ 
 @media screen and (max-width: 320px) {
+    #spaceship {
+        height: 80px;
+        width: 80px;
+    }
+ 
     #logo {
         font-size: 6rem;
         text-shadow: #000000 3px 2px, #2392d2 3px 6px, #006aaf 3px 10px,  #004891 3px 14px, #022345 3px 18px;
