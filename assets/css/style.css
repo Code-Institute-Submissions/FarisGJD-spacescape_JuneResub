@@ -79,12 +79,12 @@ header a {
     display: inline-block;
     text-transform: uppercase;
     font-size: 18rem;
-    text-shadow: #000000 0 18px 0px, #2392d2 0 36px 0px, #006aaf 0 54px 0px,  #004891 0 72px 0px, #022345 0 90px 0px;
+    text-shadow: #000000 0 18px 0, #76f6f0 0 22px 0, #2392d2 0 36px 0, #006aaf 0 54px 0,  #004891 0 72px 0, #022345 0 90px 0;
 }
 
 #score-counter {
     font-size: 7.5rem;
-    text-shadow: #000000 0 4px 0px, #2392d2 0 8px 0px, #006aaf 0 12px 0px,  #004891 0 16px 0px, #022345 0 20px 0px;
+    text-shadow: #000000 0 4px 0, #2392d2 0 8px 0, #006aaf 0 12px 0,  #004891 0 16px 0, #022345 0 20px 0;
     margin-top: 6rem;
 }
 
@@ -112,7 +112,7 @@ header a {
     background-color: #000000;
     width: 40rem;
     text-align: center;
-    border: #000000 outset 5px;
+    border: #222222 outset 10px;
     box-shadow: #76f6f0 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #2392d2 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #006aaf 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #004891 0px 0px 0px 28px, #000000 0px 0px 0px 32px, #022345 0px 0px 0px 36px;
 }
 
@@ -391,8 +391,7 @@ input {
 
     #logo {
         font-size: 15rem;
-        text-shadow: #000000 0 15px 0px, #2392d2 0 30px 0px, #006aaf 0 45px 0px,  #004891 0 55px 0px, #022345 0 70px 0px;
-
+        text-shadow: #000000 0 15px 0, #76f6f0 0 18px 0, #2392d2 0 30px 0, #006aaf 0 45px 0,  #004891 0 55px 0, #022345 0 70px 0;
     }
 
     #score-counter {
@@ -402,12 +401,12 @@ input {
     #player-controls {
         width: 35rem;
         height: 45rem;
-        font-size: 4.5rem;
-        
+        font-size: 4.5rem;  
     }
 
     #player-controls h2 {
         width: 35rem; 
+        border: #222222 outset 8px;
     }
 
     #astronaut-sprite {
@@ -477,7 +476,7 @@ input {
 
     #logo {
         font-size: 13rem;
-        text-shadow: #000000 0 13px 0px, #2392d2 0 26px 0px, #006aaf 0 39px 0px,  #004891 0 52px 0px, #022345 0 65px 0px;
+        text-shadow: #000000 0 13px 0, #76f6f0 0 15px 0, #2392d2 0 26px 0, #006aaf 0 39px 0,  #004891 0 52px 0, #022345 0 65px 0;
     }
 
     #player-controls {
@@ -488,11 +487,12 @@ input {
 
     #player-controls h2 {
         width: 30rem; 
-        box-shadow: #76f6f0 0px 0px 0px 3px, #000000 0px 0px 0px 6px, #2392d2 0px 0px 0px 9px, #000000 0px 0px 0px 12px, #006aaf 0px 0px 0px 15px, #000000 0px 0px 0px 18px, #004891 0px 0px 0px 21px, #000000 0px 0px 0px 24px, #022345 0px 0px 0px 27px; 
+        box-shadow: #76f6f0 0 0 0 3px, #000000 0 0 0 6px, #2392d2 0 0 0 9px, #000000 0 0 0 12px, #006aaf 0 0 0 15px, #000000 0 0 0 18px, #004891 0 0 0 21px, #000000 0 0 0 24px, #022345 0 0 0 27px; 
+        border: #222222 outset 7px;
     }
 
     #player-controls h2:hover {
-        box-shadow: #ffdd5c 0px 0px 0px 3px, #000000 0px 0px 0px 6px, #feaf34 0px 0px 0px 9px, #000000 0px 0px 0px 12px, #fe9200 0px 0px 0px 15px, #000000 0px 0px 0px 18px, #fb6a04 0px 0px 0px 21px, #000000 0px 0px 0px 24px, #ff5100 0px 0px 0px 27px;
+        box-shadow: #ffdd5c 0 0 0 3px, #000000 0 0 0 6px, #feaf34 0 0 0 9px, #000000 0 0 0 12px, #fe9200 0 0 0 15px, #000000 0 0 0 18px, #fb6a04 0 0 0 21px, #000000 0 0 0 24px, #ff5100 0 0 0 27px;
     }
 
     #astronaut-sprite {
@@ -562,7 +562,7 @@ input {
 
     #logo {
         font-size: 12rem;
-        text-shadow: #000000 0 12px 0px, #2392d2 0 24px 0px, #006aaf 0 36px 0px,  #004891 0 48px 0px, #022345 0 60px 0px;
+        text-shadow: #000000 0 12px 0, #76f6f0 0 14px 0, #2392d2 0 24px 0, #006aaf 0 36px 0,  #004891 0 48px 0, #022345 0 60px 0;
     }
 
     #score-counter {
@@ -636,12 +636,12 @@ input {
 
     #logo {
         font-size: 10rem;
-        text-shadow: #000000 0 10px 0px, #2392d2 0 20px 0px, #006aaf 0 30px 0px,  #004891 0 40px 0px, #022345 0 50px 0px;
+        text-shadow: #000000 0 10px 0, #76f6f0 0 12px 0, #2392d2 0 20px 0, #006aaf 0 30px 0,  #004891 0 40px 0, #022345 0 50px 0;
     }
 
     #score-counter {
         font-size: 5rem;
-        text-shadow: #000000 0 3px 0px, #2392d2 0 6px 0px, #006aaf 0 9px 0px,  #004891 0 12px 0px, #022345 0 15px 0px;
+        text-shadow: #000000 0 3px 0, #2392d2 0 6px 0, #006aaf 0 9px 0,  #004891 0 12px 0, #022345 0 15px 0;
     }
 
     #player-controls {
@@ -652,11 +652,12 @@ input {
 
     #player-controls h2 {
         width: 20rem; 
-        box-shadow: #76f6f0 0px 0px 0px 2px, #000000 0px 0px 0px 4px, #2392d2 0px 0px 0px 6px, #000000 0px 0px 0px 8px, #006aaf 0px 0px 0px 10px, #000000 0px 0px 0px 12px, #004891 0px 0px 0px 14px, #000000 0px 0px 0px 16px, #022345 0px 0px 0px 18px; 
+        box-shadow: #76f6f0 0 0 0 2px, #000000 0 0 0 4px, #2392d2 0 0 0 6px, #000000 0 0 0 8px, #006aaf 0 0 0 10px, #000000 0 0 0 12px, #004891 0 0 0 14px, #000000 0 0 0 16px, #022345 0 0 0 18px; 
+        border: #222222 outset 6px;
     }
 
     #player-controls h2:hover {
-        box-shadow: #ffdd5c 0px 0px 0px 2px, #000000 0px 0px 0px 4px, #feaf34 0px 0px 0px 6px, #000000 0px 0px 0px 8px, #fe9200 0px 0px 0px 10px, #000000 0px 0px 0px 12px, #fb6a04 0px 0px 0px 14px, #000000 0px 0px 0px 16px, #ff5100 0px 0px 0px 18px;
+        box-shadow: #ffdd5c 0 0 0 2px, #000000 0 0 0 4px, #feaf34 0 0 0 6px, #000000 0 0 0 8px, #fe9200 0 0 0 10px, #000000 0 0 0 12px, #fb6a04 0 0 0 14px, #000000 0 0 0 16px, #ff5100 0 0 0 18px;
         text-shadow: #000000 2px 2px, #000000 2px 4px;
     }
 
@@ -707,7 +708,7 @@ input {
  
     #logo {
         font-size: 9rem;
-        text-shadow: #000000 0 9px 0px, #2392d2 0 18px 0px, #006aaf 0 27px 0px,  #004891 0 36px 0px, #022345 0 45px 0px;
+        text-shadow: #000000 0 9px 0, #76f6f0 0 11px 0, #2392d2 0 18px 0, #006aaf 0 27px 0,  #004891 0 36px 0, #022345 0 45px 0;
     }
 
     #score-counter {
@@ -724,6 +725,7 @@ input {
 
     #player-controls h2 {
         width: 15rem;  
+        border: #222222 outset 5px;
     }
 
    
@@ -777,12 +779,12 @@ input {
  
     #logo {
         font-size: 7rem;
-        text-shadow: #000000 0 5px 0px, #2392d2 0 10px 0px, #006aaf 0 15px 0px,  #004891 0 20px 0px, #022345 0 25px 0px;
+        text-shadow: #000000 0 5px 0, #76f6f0 0 7px 0, #2392d2 0 10px 0, #006aaf 0 15px 0,  #004891 0 20px 0, #022345 0 25px 0;
     }
 
     #score-counter {
         font-size: 4rem;
-        text-shadow: #000000 0 3px 0px, #2392d2 0 6px 0px, #006aaf 0 9px 0px,  #004891 0 12px 0px, #022345 0 15px 0px;
+        text-shadow: #000000 0 3px 0, #2392d2 0 6px 0, #006aaf 0 9px 0,  #004891 0 12px 0, #022345 0 15px 0;
         margin-top: 2rem;
     }
 
@@ -794,11 +796,11 @@ input {
 
     #player-controls h2 {
         width: 10rem; 
-        box-shadow: #76f6f0 0px 0px 0px 1px, #000000 0px 0px 0px 2px, #2392d2 0px 0px 0px 3px, #000000 0px 0px 0px 4px, #006aaf 0px 0px 0px 5px, #000000 0px 0px 0px 6px, #004891 0px 0px 0px 7px, #000000 0px 0px 0px 8px, #022345 0px 0px 0px 9px; 
+        box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px; 
     }
 
     #player-controls h2:hover {
-        box-shadow: #ffdd5c 0px 0px 0px 1px, #000000 0px 0px 0px 2px, #feaf34 0px 0px 0px 3px, #000000 0px 0px 0px 4px, #fe9200 0px 0px 0px 5px, #000000 0px 0px 0px 6px, #fb6a04 0px 0px 0px 7px, #000000 0px 0px 0px 8px, #ff5100 0px 0px 0px 9px;
+        box-shadow: #ffdd5c 0 0 0 1px, #000000 0 0 0 2px, #feaf34 0 0 0 3px, #000000 0 0 0 4px, #fe9200 0 0 0 5px, #000000 0 0 0 6px, #fb6a04 0 0 0 7px, #000000 0 0 0 8px, #ff5100 0 0 0 9px;
         text-shadow: #000000 2px 2px, #000000 2px 2px;
     }
 
@@ -838,7 +840,7 @@ input {
  
     #logo {
         font-size: 6rem;
-        text-shadow: #000000 0 4px 0px, #2392d2 0 8px 0px, #006aaf 0 12px 0px,  #004891 0 16px 0px, #022345 0 20px 0px;
+        text-shadow: #000000 0 4px 0, #76f6f0 0 6px 0, #2392d2 0 8px 0, #006aaf 0 12px 0,  #004891 0 16px 0, #022345 0 20px 0;
     }
 
     #score-counter {
