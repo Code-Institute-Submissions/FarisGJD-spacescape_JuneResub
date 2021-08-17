@@ -29,11 +29,13 @@ body {
 #background-image {
     background: url("../images/background-image-horizon.jpg");
     image-rendering: pixelated;
+    filter: saturate(130%);
     min-height: 100vh;
     width: 100%;
     background-size: cover;
     position: relative;
     animation: space_movement 50s linear infinite;
+   
 }
 
 @keyframes space_movement {
@@ -142,7 +144,7 @@ header a {
     width: 95rem;
     height: 54rem;
     background: radial-gradient(circle at center, #004891,  #022345, #000000 100%); 
-    background: url("../images/terminal.jpg") center center;
+    background: url("../images/shutterstock_1624416850.jpg") center center;
     background-size: cover;
     font-size: 2rem;
     text-shadow: #000000 2px 2px; 
@@ -770,7 +772,7 @@ input {
     #spaceship {
         width: 20rem;
         height: 20rem;
-        top: 48rem;
+        top: 42.5rem;
     }
  
     #logo {
