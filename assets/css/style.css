@@ -112,7 +112,7 @@ header a {
     background-color: #000000;
     width: 40rem;
     text-align: center;
-    border: #000000 solid 5px;
+    border: #000000 outset 5px;
     box-shadow: #76f6f0 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #2392d2 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #006aaf 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #004891 0px 0px 0px 28px, #000000 0px 0px 0px 32px, #022345 0px 0px 0px 36px;
 }
 
@@ -144,7 +144,7 @@ header a {
     width: 95rem;
     height: 54rem;
     background: radial-gradient(circle at center, #004891,  #022345, #000000 100%); 
-    background: url("../images/shutterstock_1624416850.jpg") center center;
+    background: url("../images/terminal.jpg") center center;
     background-size: cover;
     font-size: 2rem;
     text-shadow: #000000 2px 2px; 
