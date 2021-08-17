@@ -52,7 +52,7 @@ body {
     animation: ship-movement 20s infinite; 
 }
 
-/* @keyframes ship-movement
+@keyframes ship-movement
 {
     from {
         left: -620px;
@@ -60,7 +60,7 @@ body {
     to {
         left: 100vw;
     }
-} */
+}
 
 /* Logo & Score Counter */ 
 
@@ -111,7 +111,7 @@ header a {
     width: 40rem;
     text-align: center;
     border: #000000 solid 5px;
-    box-shadow: #76f6f0 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #2392d2 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #006aaf 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #004891 0px 0px 0px 28px, #000000 0px 0px 0px 32px, #022345 0px 0px 0px 36px;  
+    box-shadow: #76f6f0 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #2392d2 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #006aaf 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #004891 0px 0px 0px 28px, #000000 0px 0px 0px 32px, #022345 0px 0px 0px 36px;
 }
 
 #player-controls h2:hover {
@@ -147,10 +147,8 @@ header a {
     font-size: 2rem;
     text-shadow: #000000 2px 2px; 
     border-radius: 50px;
-    overflow-y: auto;  
+    overflow-y: auto;
 }
-
-
 
 .inner-modal h4 {
     font-size: 5rem;
