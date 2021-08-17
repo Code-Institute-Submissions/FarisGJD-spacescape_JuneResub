@@ -34,11 +34,10 @@ body {
     width: 100%;
     background-size: cover;
     position: relative;
-    animation: space_movement 50s linear infinite;
-   
+    animation: space-movement 50s linear infinite;
 }
 
-@keyframes space_movement {
+@keyframes space-movement {
     0%{background-position: 0 0;}
     100%{background-position: 100vw 0;}
 }
@@ -114,6 +113,14 @@ header a {
     text-align: center;
     border: #222222 outset 10px;
     box-shadow: #76f6f0 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #2392d2 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #006aaf 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #004891 0px 0px 0px 28px, #000000 0px 0px 0px 32px, #022345 0px 0px 0px 36px;
+    animation: zero-gravity-controls 6s ease-in-out infinite; 
+}
+
+@keyframes zero-gravity-controls {
+    0% {transform: translateY(0px);}
+    50%{transform: translateY(15px);}
+    100%{transform: translateY(0px);}
+    
 }
 
 #player-controls h2:hover {
@@ -218,10 +225,10 @@ input {
     position: absolute;
     bottom: 1rem;
     left: -10rem;
-    animation: zero_gravity 6s linear infinite; 
+    animation: zero-gravity-sprite 6s linear infinite; 
 }
 
-@keyframes zero_gravity {
+@keyframes zero-gravity-sprite {
     0%, 100% {
         bottom: 0; 
     }
@@ -631,7 +638,7 @@ input {
     #spaceship {
         width: 30rem;
         height: 30rem;
-        top: 26rem;
+        top: 27rem;
     }
 
     #logo {
