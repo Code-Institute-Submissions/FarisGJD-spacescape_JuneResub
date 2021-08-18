@@ -63,43 +63,6 @@ body {
     }
 }
 
-.shooting-star {
-    position: absolute;
-    top: 10%;
-    left: 95%;
-    width: 7px; 
-    height: 7px;
-    background-color: #ff5100;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255, 221, 92, 0.4), 0 0 0 8px rgba(254, 175, 52, 0.7), 0 0 0  20px rgba(251, 106, 4, 1); 
-    animation: shooting-star 3s linear infinite; 
-}
-
-span::before {
-    content: ''; 
-    position: absolute; 
-    top: 50%; 
-    transform: translateY(-50%); 
-    width: 300px; 
-    height: 10px; 
-    background: linear-gradient(90deg, #76f6f0, transparent);
-}
-
-@keyframes shooting-star {
-    0% {transform: rotate(315deg) translateX(0);
-        opacity: 1;
-    }
-   
-
-    70% {
-        opacity: 0; 
-    }
-
-    100% {transform: rotate(315deg) translateX(-1000px);
-    opacity: 1;
-    }    
-}
-
 /* Logo & Score Counter */ 
 
 header {
