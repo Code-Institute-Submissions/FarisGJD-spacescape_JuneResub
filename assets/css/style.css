@@ -906,14 +906,15 @@ input {
 /* Screen Width: 1280px & Screen Height: 800px */ 
 @media only screen and (device-width: 1280px) and (device-height: 800px) {
     #player-controls {
-        font-size: 3rem;
+        font-size: 2rem;
         flex-direction: row;
         justify-content: center;
+        padding-bottom: 12rem;
     }
 
     #player-controls h2 {
-        width: 25rem;
-        margin: 9rem;
+        width: 20rem;
+        margin: 8rem;
     }
 }
 
