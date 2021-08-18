@@ -876,6 +876,7 @@ input {
 }
 
 /* Laptop Specific Media Queries - Max Width & Height */ 
+/* Screen Width: 2560px
 /* Screen Width: 1600px & Screen Height: 900px */ 
 @media only screen and (device-width: 1600px) and (device-height: 900px) {
     #player-controls {
@@ -892,10 +893,13 @@ input {
 @media only screen and (device-width: 1366px) and (device-height: 768px) {
     #player-controls {
         font-size: 4rem;
+        flex-direction: row;
+        justify-content: center;
     }
 
     #player-controls h2 {
         width: 30rem;
+        margin: 6rem;
     }
 }
 
@@ -903,6 +907,13 @@ input {
 @media only screen and (device-width: 1280px) and (device-height: 800px) {
     #player-controls {
         font-size: 3rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #player-controls h2 {
+        width: 25rem;
+        margin: 9rem;
     }
 }
 
