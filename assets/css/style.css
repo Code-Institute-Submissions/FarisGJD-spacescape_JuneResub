@@ -953,5 +953,10 @@ input {
     }
 }
 
-
-
+/* Phone Landscape Mode Specific Media Queries Max-Height */ 
+/* Screen Size: 100px & Below */ 
+@media screen and (max-height: 100px) {
+    #logo {
+        text-shadow: #000000 0 2px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 8px 0,  #004891 0 10px 0, #022345 0 12px 0  #76f6f0 0 14px 0;
+    }
+}
