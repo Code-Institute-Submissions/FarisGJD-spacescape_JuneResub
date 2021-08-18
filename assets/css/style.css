@@ -876,12 +876,12 @@ input {
 }
 
 /* Laptop Specific Media Queries - Max Width & Height */ 
-/* Screen Width: 2560px
 /* Screen Width: 1600px & Screen Height: 900px */ 
 @media only screen and (device-width: 1600px) and (device-height: 900px) {
     #player-controls {
         flex-direction: row;
         justify-content: center;
+        height: 40rem;
     }
 
     #player-controls h2 {
@@ -895,6 +895,7 @@ input {
         font-size: 4rem;
         flex-direction: row;
         justify-content: center;
+        height: 38rem;
     }
 
     #player-controls h2 {
@@ -909,12 +910,16 @@ input {
         font-size: 2rem;
         flex-direction: row;
         justify-content: center;
-        padding-bottom: 12rem;
+        height: 40rem;
     }
 
     #player-controls h2 {
         width: 20rem;
         margin: 8rem;
+    }
+
+    #player-controls h2:hover {
+        text-shadow: #000000 2px 3px, #000000 2px 4px;
     }
 }
 
