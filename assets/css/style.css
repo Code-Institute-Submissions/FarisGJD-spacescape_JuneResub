@@ -311,7 +311,7 @@ input {
     100%{left: -0}
 }
 
-/* Media Queries Max Width*/ 
+/* General Media Queries - Max Width */ 
 
 /* Screen Size: 1200px & Below */
 @media screen and (max-width: 1200px) {
@@ -874,4 +874,37 @@ input {
         font-size: 1rem;
     }
 }
+
+/* Laptop Specific Media Queries - Max Width & Height */ 
+/* Screen Width: 1600px & Screen Height: 900px */ 
+@media only screen and (device-width: 1600px) and (device-height: 900px) {
+    #player-controls {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #player-controls h2 {
+        margin: 5rem;
+    }   
+}
+
+/* Screen Width: 1366px & Screen Height: 768x */ 
+@media only screen and (device-width: 1366px) and (device-height: 768px) {
+    #player-controls {
+        font-size: 4rem;
+    }
+
+    #player-controls h2 {
+        width: 30rem;
+    }
+}
+
+/* Screen Width: 1280px & Screen Height: 800px */ 
+@media only screen and (device-width: 1280px) and (device-height: 800px) {
+    #player-controls {
+        font-size: 3rem;
+    }
+}
+
+
 
