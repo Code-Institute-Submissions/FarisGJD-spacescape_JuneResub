@@ -35,6 +35,7 @@ body {
     background-size: cover;
     position: relative;
     animation: space-movement 50s linear infinite;
+    overflow: hidden;
 }
 
 @keyframes space-movement {
