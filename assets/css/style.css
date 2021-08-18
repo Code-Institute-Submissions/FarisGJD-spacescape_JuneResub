@@ -879,15 +879,15 @@ input {
 /* Screen Width: 1600px & Screen Height: 900px */ 
 @media only screen and (device-width: 1600px) and (device-height: 900px) {
     #spaceship {
-        height: 58rem;
-        width: 58rem;
+        height: 50rem;
+        width: 50rem;
         top: 45rem;
     }
 
     #player-controls {
         flex-direction: row;
         justify-content: center;
-        height: 30rem;
+        height: 25rem;
     }
 
     #player-controls h2 {
@@ -898,14 +898,14 @@ input {
 /* Screen Width: 1366px & Screen Height: 768x */ 
 @media only screen and (device-width: 1366px) and (device-height: 768px) {
     #spaceship {
-        height: 48rem;
-        width: 48rem;
+        height: 40rem;
+        width: 40rem;
         top: 43rem;
     }
 
     #logo {
         font-size: 15rem;
-        text-shadow: #000000 0 15px 0, #76f6f0 0 18px 0, #2392d2 0 30px 0, #006aaf 0 45px 0,  #004891 0 60px 0, #022345 0 75px 0, #76f6f0 0 78px 0;
+        text-shadow: #000000 0 16px 0, #76f6f0 0 19px 0, #2392d2 0 32px 0, #006aaf 0 48px 0,  #004891 0 61px 0, #022345 0 76px 0, #76f6f0 0 79px 0;
     }
 
 
@@ -913,7 +913,7 @@ input {
         font-size: 4rem;
         flex-direction: row;
         justify-content: center;
-        height: 20rem;
+        height: 15rem;
     }
 
     #player-controls h2 {
@@ -926,8 +926,8 @@ input {
 @media only screen and (device-width: 1280px) and (device-height: 800px) {
 
     #spaceship {
-        height: 40rem;
-        width: 40rem;
+        height: 35rem;
+        width: 35rem;
         top: 45rem;
     }
 
