@@ -878,10 +878,16 @@ input {
 /* Laptop Specific Media Queries - Max Width & Height */ 
 /* Screen Width: 1600px & Screen Height: 900px */ 
 @media only screen and (device-width: 1600px) and (device-height: 900px) {
+    #spaceship {
+        height: 58rem;
+        width: 58rem;
+        top: 45rem;
+    }
+
     #player-controls {
         flex-direction: row;
         justify-content: center;
-        height: 40rem;
+        height: 30rem;
     }
 
     #player-controls h2 {
@@ -891,11 +897,17 @@ input {
 
 /* Screen Width: 1366px & Screen Height: 768x */ 
 @media only screen and (device-width: 1366px) and (device-height: 768px) {
+    #spaceship {
+        height: 48rem;
+        width: 48rem;
+        top: 43rem;
+    }
+
     #player-controls {
         font-size: 4rem;
         flex-direction: row;
         justify-content: center;
-        height: 38rem;
+        height: 20rem;
     }
 
     #player-controls h2 {
@@ -906,11 +918,18 @@ input {
 
 /* Screen Width: 1280px & Screen Height: 800px */ 
 @media only screen and (device-width: 1280px) and (device-height: 800px) {
+
+    #spaceship {
+        height: 40rem;
+        width: 40rem;
+        top: 45rem;
+    }
+
     #player-controls {
         font-size: 2rem;
         flex-direction: row;
         justify-content: center;
-        height: 40rem;
+        height: 20rem;
     }
 
     #player-controls h2 {
