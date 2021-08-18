@@ -464,7 +464,7 @@ input {
 }
 
 /* Screen Size: 769px & Below */ 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 769px){
     #spaceship {
         width: 40rem;
         height: 40rem;
@@ -546,7 +546,7 @@ input {
 
     #logo {
         font-size: 12rem;
-        text-shadow: #000000 0 12px 0, #76f6f0 0 15px 0, #2392d2 0 24px 0, #006aaf 0 36px 0,  #004891 0 48px 0, #022345 0 60px 0 #76f6f0 0 63px 0;
+        text-shadow: #000000 0 12px 0, #76f6f0 0 15px 0, #2392d2 0 24px 0, #006aaf 0 36px 0,  #004891 0 48px 0, #022345 0 60px 0, #76f6f0 0 63px 0;
     }
 
     #score-counter {
@@ -692,7 +692,7 @@ input {
  
     #logo {
         font-size: 9rem;
-        text-shadow: #000000 0 9px 0, #76f6f0 0 12px 0, #2392d2 0 18px 0, #006aaf 0 27px 0,  #004891 0 36px 0, #022345 0 45px 0  #76f6f0 0 48px 0;
+        text-shadow: #000000 0 9px 0, #76f6f0 0 12px 0, #2392d2 0 18px 0, #006aaf 0 27px 0,  #004891 0 36px 0, #022345 0 45px 0,  #76f6f0 0 48px 0;
     }
 
     #score-counter {
@@ -766,7 +766,7 @@ input {
 
     #score-counter {
         font-size: 4rem;
-        text-shadow: #000000 0 3px 0,  #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0,  #004891 0 12px 0, #022345 0 15px 0  #76f6f0 0 16px 0;
+        text-shadow: #000000 0 3px 0,  #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0,  #004891 0 12px 0, #022345 0 15px 0,  #76f6f0 0 16px 0;
         margin-top: 2rem;
     }
 
@@ -822,7 +822,7 @@ input {
  
     #logo {
         font-size: 6rem;
-        text-shadow: #000000 0 4px 0, #76f6f0 0 6px 0, #2392d2 0 8px 0, #006aaf 0 12px 0,  #004891 0 16px 0, #022345 0 20px 0  #76f6f0 0 8px 0;
+        text-shadow: #000000 0 4px 0, #76f6f0 0 6px 0, #2392d2 0 8px 0, #006aaf 0 12px 0,  #004891 0 16px 0, #022345 0 20px 0,  #76f6f0 0 22px 0;
     }
 
     #score-counter {
@@ -872,6 +872,172 @@ input {
 
     .close-modal {
         font-size: 1rem;
+    }
+}
+
+/* General Media Queries - Max Height */ 
+/* Screen Height: 540px */ 
+@media screen and (max-height: 540px) {
+    #logo {
+        font-size: 10rem;
+        text-shadow: #000000 0 10px 0, #76f6f0 0 13px 0, #2392d2 0 20px 0, #006aaf 0 30px 0,  #004891 0 40px 0, #022345 0 50px 0,  #76f6f0 0 53px 0;
+    }
+    
+    #score-counter {
+        font-size: 4rem;
+        text-shadow: #000000 0 3px 0,  #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0,  #004891 0 12px 0, #022345 0 15px 0,  #76f6f0 0 16px 0;
+        margin-top: 4rem;
+    }
+
+    #spaceship {
+        height: 30rem;
+        width: 30rem;
+        top: 30rem;
+    }
+
+    #player-controls {
+        height: 8rem;
+        font-size: 3rem;
+        flex-direction: row; 
+        justify-content: center;
+    }
+
+    #player-controls h2 {
+        width: 17rem; 
+        box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px; 
+        margin: 3rem;
+    }
+
+    #player-controls h2:hover {
+        box-shadow: #ffdd5c 0 0 0 1px, #000000 0 0 0 2px, #feaf34 0 0 0 3px, #000000 0 0 0 4px, #fe9200 0 0 0 5px, #000000 0 0 0 6px, #fb6a04 0 0 0 7px, #000000 0 0 0 8px, #ff5100 0 0 0 9px;
+        text-shadow: #000000 2px 2px, #000000 2px 2px;
+    }
+
+}
+
+/* Screen Height: 450px */ 
+@media screen and (max-height: 450px) {
+    #logo {
+        font-size: 7rem;
+        text-shadow: #000000 0 5px 0, #76f6f0 0 7px 0, #2392d2 0 10px 0, #006aaf 0 15px 0,  #004891 0 20px 0, #022345 0 25px 0, #76f6f0 0 27px 0;
+    }
+
+    #score-counter {
+        font-size: 2.5rem;
+        text-shadow: #000000 0 1px 0,  #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0,  #004891 0 5px 0, #022345 0 6px 0,  #76f6f0 0 7px 0;
+        margin-top: 2.5rem;
+    }
+
+    #spaceship {
+        height: 20rem;
+        width: 20rem;
+        top: 25rem;
+    }
+
+    #player-controls {
+        height: 10rem;
+        font-size: 2rem;
+        flex-direction: row; 
+        justify-content: center;
+    }
+
+    #player-controls h2 {
+        width: 14rem; 
+        box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px; 
+        margin: 3rem;
+    }
+}
+
+/* Screen Height: 400px - Orientation Landscape */ 
+@media screen and (max-height: 400px) {
+    #logo {
+        font-size: 6rem;
+        text-shadow: #000000 0 4px 0, #76f6f0 0 6px 0, #2392d2 0 8px 0, #006aaf 0 12px 0,  #004891 0 16px 0, #022345 0 20px 0,  #76f6f0 0 22px 0;
+    }
+
+    #score-counter {
+        font-size: 2rem;
+        text-shadow: #000000 0 1px 0,  #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0,  #004891 0 5px 0, #022345 0 6px 0,  #76f6f0 0 7px 0;
+        margin-top: 2.5rem;
+    }
+
+    #spaceship {
+        height: 20rem;
+        width: 20rem;
+        top: 20rem;
+    }
+
+    #player-controls {
+        height: 5rem;
+        font-size: 2rem;
+        flex-direction: row; 
+        justify-content: center;
+    }
+
+    #player-controls h2 {
+        width: 12rem; 
+        box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px; 
+        margin: 3rem;
+    }
+}
+
+/* Screen Height: 370px - Orientation Landscape */ 
+@media screen and (max-height: 370px) {
+    #logo {
+        font-size: 5rem;
+        text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0,  #004891 0 12px 0, #022345 0 15px 0,  #76f6f0 0 16px 0;
+    }
+
+    #score-counter {
+        font-size: 2rem;
+        text-shadow: #000000 0 1px 0,  #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0,  #004891 0 5px 0, #022345 0 6px 0,  #76f6f0 0 7px 0;
+        margin-top: 1.5rem;
+    }
+
+    #spaceship {
+        height: 15rem;
+        width: 15rem;
+        top: 15rem;
+    }
+
+    #player-controls {
+        height: 1rem;
+        font-size: 1.5rem;
+        flex-direction: row; 
+        justify-content: center;
+    }
+
+    #player-controls h2 {
+        width: 9rem; 
+        box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px; 
+        margin: 3rem;
+    }
+}
+
+/* Device Specific Media Queries */ 
+/* Screen Width: 1024px & Screen Height: 768px */ 
+@media only screen and (device-width: 1024px) and (device-height: 768px) {
+    #spaceship {
+        height: 33rem;
+        width: 33rem;
+        top: 45rem;
+    }
+    #logo {
+        font-size: 15rem;
+        text-shadow: #000000 0 15px 0, #76f6f0 0 18px 0, #2392d2 0 30px 0, #006aaf 0 45px 0,  #004891 0 60px 0, #022345 0 75px 0, #76f6f0 0 78px 0;
+    }
+    #player-controls {
+        font-size: 2rem;
+        flex-direction: row;
+        justify-content: center;
+        height: 20rem;
+    }
+    #player-controls h2 {
+        width: 15rem;
+        margin: 8rem;
+    }
+    #player-controls h2:hover {
+        text-shadow: #000000 2px 3px, #000000 2px 4px;
     }
 }
 
@@ -950,13 +1116,5 @@ input {
 
     #player-controls h2:hover {
         text-shadow: #000000 2px 3px, #000000 2px 4px;
-    }
-}
-
-/* Phone Landscape Mode Specific Media Queries Max-Height */ 
-/* Screen Size: 100px & Below */ 
-@media screen and (max-height: 100px) {
-    #logo {
-        text-shadow: #000000 0 2px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 8px 0,  #004891 0 10px 0, #022345 0 12px 0  #76f6f0 0 14px 0;
     }
 }
