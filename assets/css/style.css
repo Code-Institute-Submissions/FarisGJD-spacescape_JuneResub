@@ -144,8 +144,8 @@ header a {
     left: 0;
     background-color: rgb(0, 0, 0, 0.9);
     z-index: 2;
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
 }
 
 .inner-modal {
@@ -368,15 +368,6 @@ input {
         height: 51rem;
     }
 
-    .inner-modal h4 {
-        font-size: 3.5rem;
-    }
-
-    .inner-modal p {
-        font-size: 1.7rem;
-        line-height: 3.4rem;
-    }
-
     .close-modal {
         font-size: 1.5rem;
     }
@@ -434,15 +425,6 @@ input {
     .inner-modal {
         width: 76rem;
         height: 44rem;
-    }
-
-    .inner-modal h4 {
-        font-size: 2.7rem;
-    }
-
-    .inner-modal p {
-        font-size: 1.4rem;
-        line-height: 3rem;
     }
 
     .close-modal {
@@ -519,7 +501,7 @@ input {
     }
 
     .inner-modal h4 {
-        margin-top: 2rem; 
+        font-size: 4rem;
     }
 
     #settings-modal-content {
@@ -591,6 +573,11 @@ input {
         width: 50rem;
         height: 28rem;
     }
+
+    .inner-modal h4 {
+        font-size: 3rem;
+    }
+
 
     .inner-modal p {
         line-height: 2.7rem;
@@ -913,6 +900,14 @@ input {
         text-shadow: #000000 2px 2px, #000000 2px 2px;
     }
 
+    .inner-modal {
+        font-size: 1.8rem;
+    }
+
+    .inner-modal h4 {
+        font-size: 4rem;
+    }
+
 }
 
 /* Screen Height: 450px */ 
@@ -945,6 +940,19 @@ input {
         width: 14rem; 
         box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px; 
         margin: 3rem;
+    }
+
+    .inner-modal {
+        width: 50rem;
+        height: 28rem;
+    }
+
+    .inner-modal h4 {
+        font-size: 3rem;
+    }
+
+    .inner-modal p {
+        line-height: 2.7rem;
     }
 }
 
@@ -1011,6 +1019,19 @@ input {
         width: 9rem; 
         box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px; 
         margin: 3rem;
+    }
+}
+
+/* Screen Height: 320px - Orientation Landscape */ 
+@media screen and (max-height: 320px) {
+    .inner-modal {
+        width: 42rem;
+        height: 23rem;
+        font-size: 1.5rem;
+    }
+
+    .inner-modal h4 {
+        font-size: 2.5rem;
     }
 }
 
