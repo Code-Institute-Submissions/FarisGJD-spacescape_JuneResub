@@ -113,7 +113,7 @@ header a {
     width: 40rem;
     text-align: center;
     border: #222222 outset 10px;
-    box-shadow: #76f6f0 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #2392d2 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #006aaf 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #004891 0px 0px 0px 28px, #000000 0px 0px 0px 32px, #022345 0px 0px 0px 36px;
+    box-shadow: #76f6f0 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #2392d2 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #006aaf 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #004891 0px 0px 0px 28px, #000000 0px 0px 0px 32px;
     animation: zero-gravity-controls 6s ease-in-out infinite; 
 }
 
@@ -1090,7 +1090,6 @@ input {
 
 /* Screen Width: 1280px & Screen Height: 800px */ 
 @media only screen and (device-width: 1280px) and (device-height: 800px) {
-
     #spaceship {
         height: 33rem;
         width: 33rem;
