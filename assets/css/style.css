@@ -222,7 +222,7 @@ input {
     position: absolute;
     bottom: 1rem;
     left: -10rem;
-    animation: zero-gravity-sprite 6s linear infinite,; 
+    animation: zero-gravity-sprite 6s linear infinite; 
 }
 
 @keyframes zero-gravity-sprite {
