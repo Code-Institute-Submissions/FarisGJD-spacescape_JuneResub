@@ -1,5 +1,4 @@
-// Waits For DOM To Finnish Loading Before Starting The  Game
-document.addEventListener ("DOMContentLoaded")
+
 function gameStart() {
 
 }
