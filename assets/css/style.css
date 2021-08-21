@@ -42,7 +42,7 @@ body {
     0%{background-position: 0 0;}
     100%{background-position: 100vw 0;}
 }
-
+/* 
 #spaceship {
     background: url("../images/spaceship.png");
     background-size: cover;
@@ -51,7 +51,7 @@ body {
     position: absolute;
     top: 14rem;
     transform: rotate(90deg);
-    animation: ship-movement 20s infinite; 
+    animation: ship-movement 20s infinite linear; 
 }
 
 @keyframes ship-movement
@@ -62,7 +62,7 @@ body {
     to {
         left: 100%;
     }
-}
+} */
 
 /* Logo & Score Counter */ 
 
@@ -106,7 +106,6 @@ header a {
     margin-left: auto; 
     margin-right: auto; 
     z-index: 1;
-    display: none;
 }
 
 #player-controls h2 {
@@ -147,6 +146,7 @@ header a {
     z-index: 2;
     opacity: 0;
     visibility: hidden;
+    transition: visibility 0s opacity 0,5s;
 }
 
 .inner-modal {
@@ -198,6 +198,11 @@ input {
     cursor: pointer;
 }
 
+.modal-toggle {
+    visibility: visible; 
+    opacity: 1;
+}
+
 .close-modal {
     font-size: 2rem;
     padding-bottom: 30px;
@@ -225,7 +230,7 @@ input {
     animation: zero-gravity-sprite 6s linear infinite; 
 }
 
-@keyframes zero-gravity-sprite {
+/* @keyframes zero-gravity-sprite {
     0%, 100% {
         bottom: 0; 
     }
@@ -233,13 +238,13 @@ input {
     50% {
         bottom: 1.5rem; 
     }
-}
+} */
 
 .animate-sprite {
-    animation: jump 300ms linear 
+    animation: sprite-jump 300ms linear; 
 }
 
-@keyframes jump {
+@keyframes sprite-jump {
     0% {top: 150px;}
     30% {top:100px;}
     70%{top: 100px;}
@@ -265,7 +270,7 @@ input {
     background-size: cover;
 }
 
-.asteroid {
+/* .asteroid {
     background: url("../images/asteroid.png") center center;
     background-size: cover;
 }
@@ -318,7 +323,7 @@ input {
 .planet3 {
     background: url("../images/planet3.png");
     background-size: cover;
-} 
+}  */
 
 @keyframes obstacle {
     0%{left: 100vw}

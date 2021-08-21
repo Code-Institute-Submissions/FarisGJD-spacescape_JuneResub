@@ -1,43 +1,13 @@
+// Global Varibales
 
-function gameStart() {
+var modalBtn = document.querySelector('.open-modal'); 
+var modalBg = document.querySelector('.outer-modal');
+var modalClose = document.querySelector('.close-modal'); 
 
-}
+modalBtn.addEventListener('click', function() {
+    modalBg.classList.add('modal-toggle')
+}); 
 
-function openModels() {
-
-}
-
-function activateHardMode() {
-
-}
-
-function hardMode () {
-
-}
-
-function toggleSound() {
-
-}
-
-function gameSounds() {
-
-} 
-
-function playerControls() {
-
-}
-
-function obstacleDetection () {
-
-}
-
-function scoreCounter () {
-
-}
-
-function gameOver() {
-
-}
-
-
-
+modalClose.addEventListener('click', function () {
+    modalBg.classList.remove('modal-toggle'); 
+}); 
