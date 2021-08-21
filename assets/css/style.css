@@ -42,7 +42,7 @@ body {
     0%{background-position: 0 0;}
     100%{background-position: 100vw 0;}
 }
-/* 
+
 #spaceship {
     background: url("../images/spaceship.png");
     background-size: cover;
@@ -62,7 +62,7 @@ body {
     to {
         left: 100%;
     }
-} */
+}
 
 /* Logo & Score Counter */ 
 
@@ -230,7 +230,7 @@ input {
 }
 
 .animate-sprite {
-    animation: sprite-jump 500ms linear; 
+    animation: sprite-jump 0.6s linear; 
 }
 
 @keyframes sprite-jump {
@@ -251,7 +251,7 @@ input {
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: obstacle 3s linear infinite; 
+    animation: obstacle 6s linear infinite; 
 }
 
 .meteorite {
@@ -259,7 +259,7 @@ input {
     background-size: cover;
 }
 
-/* .asteroid {
+.asteroid {
     background: url("../images/asteroid.png") center center;
     background-size: cover;
 }
@@ -276,7 +276,7 @@ input {
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: obstacle 2.5s linear infinite; 
+    animation: obstacle 5s linear infinite; 
 }
 
 
@@ -296,7 +296,7 @@ input {
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: obstacle 2s linear infinite; 
+    animation: obstacle 4s linear infinite; 
 }
 
  .planet1 {
@@ -312,11 +312,11 @@ input {
 .planet3 {
     background: url("../images/planet3.png");
     background-size: cover;
-}  */
+} 
 
 @keyframes obstacle {
-    0%{left: 100vw}
-    100%{left: -0}
+    0%{left: 100%;}
+    100%{left: -18%;}
 }
 
 /* General Media Queries - Max Width */ 

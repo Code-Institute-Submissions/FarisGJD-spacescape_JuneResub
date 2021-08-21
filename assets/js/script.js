@@ -1,17 +1,13 @@
-// Global Varibales
-
-const sprite = document.getElementById('astronaut-sprite');
-const scoreCounter = document.getElementById('score-counter');
-
-
-
 // Sprite Controls 
+let sprite = document.getElementById("astronaut-sprite");
+let scoreCounter = document.getElementById("score-counter");
+let spaceObstacle = document.getElementsByClassName("space-obstacle"); 
 
 function jump () {
     sprite.classList.add('animate-sprite'); 
     setTimeout(() => {
         sprite.classList.remove('animate-sprite'); 
-    }, 400); 
+    }, 800); 
 }
 
 document.addEventListener('keypress', () => {
@@ -19,41 +15,26 @@ document.addEventListener('keypress', () => {
         jump(); 
 
     }
-   
-});     
+});    
+
+//Game Over Detection 
+
+let gameOver = setInterval(function () {
+    console.log("check"); 
+}, 10); 
 
 
+// Player Settings - Modal 
 
+const modalBtn = document.querySelector('.open-modal'); 
+const modalBg = document.querySelector('.outer-modal');
+const modalClose = document.querySelector('.close-modal'); 
 
+modalBtn.addEventListener('click', function() {
+    modalBg.classList.add('modal-toggle')
+}); 
 
-
-
-
-// const sprite = document.getElementById('astronaut-sprite');
-// console.log(sprite)
-
-// function jump() {
-//     sprite.classList.add('animate-sprite'); 
-//     setTimeout(() => {
-//         sprite.classList.remove('animate-sprite'); 
-//     }, 500); 
-// }
-
-// document.addEventListener('click', () => {
-//     if (!sprite.classList.contains('animate-sprite')) {
-//         jump(); 
-//     }
-// }); 
-
-// var modalBtn = document.querySelector('.open-modal'); 
-// var modalBg = document.querySelector('.outer-modal');
-// var modalClose = document.querySelector('.close-modal'); 
-
-// modalBtn.addEventListener('click', function() {
-//     modalBg.classList.add('modal-toggle')
-// }); 
-
-// modalClose.addEventListener('click', function () {
-//     modalBg.classList.remove('modal-toggle'); 
-// }); 
+modalClose.addEventListener('click', function () {
+    modalBg.classList.remove('modal-toggle'); 
+}); 
 
