@@ -34,7 +34,7 @@ body {
     width: 100%;
     background-size: cover;
     position: relative;
-    animation: space-movement 50s linear infinite;
+    animation: space-movement 40s linear infinite;
     overflow: hidden;
 }
 
@@ -227,21 +227,10 @@ input {
     position: absolute;
     bottom: 1rem;
     left: -10rem;
-    animation: zero-gravity-sprite 6s linear infinite; 
 }
 
-/* @keyframes zero-gravity-sprite {
-    0%, 100% {
-        bottom: 0; 
-    }
-
-    50% {
-        bottom: 1.5rem; 
-    }
-} */
-
 .animate-sprite {
-    animation: sprite-jump 300ms linear; 
+    animation: sprite-jump 500ms linear; 
 }
 
 @keyframes sprite-jump {
