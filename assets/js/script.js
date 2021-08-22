@@ -10,7 +10,7 @@ function jump () {
     }, 800); 
 }
 
-document.addEventListener('keypress', () => {
+document.addEventListener('click', () => {
     if(!sprite.classList.contains('animate-sprite')) {
         jump(); 
 
@@ -20,7 +20,9 @@ document.addEventListener('keypress', () => {
 //Game Over Detection 
 
 let gameOver = setInterval(function () {
-    console.log("check"); 
+
+    let spriteUpper = window.getComputedStyle(sprite).getPropertyValue("Upper"); 
+    
 }, 10); 
 
 
