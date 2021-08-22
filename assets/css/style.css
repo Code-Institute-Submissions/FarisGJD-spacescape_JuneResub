@@ -99,13 +99,18 @@ header a {
     font-size: 5rem;
     text-transform: uppercase;
     justify-content: space-between; 
-    margin-top: 6rem;
     position: absolute;
     left: 0; 
     right: 0; 
+    top: 37%; 
     margin-left: auto; 
     margin-right: auto; 
     z-index: 1;
+}
+
+#player-controls a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #player-controls h2 {
