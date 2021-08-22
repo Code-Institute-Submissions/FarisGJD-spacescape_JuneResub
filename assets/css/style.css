@@ -49,7 +49,7 @@ body {
     height: 58rem; 
     width: 58rem;
     position: absolute;
-    top: 14rem;
+    top: 11.5%;
     transform: rotate(90deg);
     animation: ship-movement 20s infinite linear; 
 }
@@ -102,7 +102,8 @@ header a {
     position: absolute;
     left: 0; 
     right: 0; 
-    top: 37%; 
+    top: 34%;
+    /* margin-top: 20rem; */
     margin-left: auto; 
     margin-right: auto; 
     z-index: 1;
@@ -147,7 +148,7 @@ header a {
     width: 100vw;
     top: 0; 
     left: 0;
-    background-color: rgb(0, 0, 0, 0.9);
+    background-color: rgb(0, 0, 0, 0.7);
     z-index: 2;
     opacity: 0;
     visibility: hidden;
@@ -331,7 +332,7 @@ input {
     #spaceship {
         width: 55rem;
         height: 55rem;
-        top: 15rem;
+        top: 10rem;
     }
 
     #astronaut-sprite {
@@ -359,7 +360,7 @@ input {
     #spaceship {
         width: 50rem;
         height: 50rem;
-        top: 17rem;
+        top: 12rem;
     }
 
     #astronaut-sprite {
@@ -392,7 +393,7 @@ input {
     #spaceship {
         width: 45rem;
         height: 45rem;
-        top: 35rem;
+        top: 33rem;
     }
 
     #logo {
@@ -463,7 +464,7 @@ input {
     #spaceship {
         width: 40rem;
         height: 40rem;
-        top: 33rem;
+        top: 36rem;
     }
 
     #logo {
@@ -474,7 +475,7 @@ input {
     #player-controls {
         width: 30rem;
         height: 40rem;
-        font-size: 4rem;      
+        font-size: 4rem;    
     }
 
     #player-controls h2 {
@@ -536,7 +537,7 @@ input {
      #spaceship {
         width: 35rem;
         height: 35rem;
-        top: 30rem;
+        top: 33rem;
     }
 
     #logo {
@@ -615,7 +616,7 @@ input {
     #spaceship {
         width: 30rem;
         height: 30rem;
-        top: 27rem;
+        top: 38rem;
     }
 
     #logo {
@@ -687,7 +688,7 @@ input {
     #spaceship {
         width: 25rem;
         height: 25rem;
-        top: 34rem;
+        top: 36rem;
     }
  
     #logo {
@@ -756,7 +757,7 @@ input {
     #spaceship {
         width: 20rem;
         height: 20rem;
-        top: 42.5rem;
+        top: 49rem;
     }
  
     #logo {
@@ -773,7 +774,8 @@ input {
     #player-controls {
         width: 10rem;
         height: 25rem;
-        font-size: 1.5rem;      
+        font-size: 1.5rem;  
+        top: 30%;    
     }
 
     #player-controls h2 {
@@ -817,7 +819,7 @@ input {
     #spaceship {
         width: 15rem;
         height: 15rem;
-        top: 45rem;
+        top: 43rem;
     }
  
     #logo {
@@ -939,7 +941,7 @@ input {
     #spaceship {
         height: 20rem;
         width: 20rem;
-        top: 25rem;
+        top: 20rem;
     }
 
     #player-controls {
@@ -1018,11 +1020,12 @@ input {
     #spaceship {
         height: 15rem;
         width: 15rem;
-        top: 15rem;
+        top: 18rem;
     }
 
     #player-controls {
         height: 1rem;
+        top: 45%;
         font-size: 1.5rem;
         flex-direction: row; 
         justify-content: center;
@@ -1046,9 +1049,13 @@ input {
     .inner-modal h4 {
         font-size: 2.5rem;
     }
+
+    #player-controls {
+        top: 55%;
+    }
 }
 
-/* Device Specific Media Queries */ 
+/* Device Specific Media Queries - Laptop & Phones */ 
 /* Screen Width: 1024px & Screen Height: 768px */ 
 @media only screen and (device-width: 1024px) and (device-height: 768px) {
     #spaceship {
@@ -1075,19 +1082,20 @@ input {
     }
 }
 
-/* Laptop Specific Media Queries - Max Width & Height */ 
+
 /* Screen Width: 1600px & Screen Height: 900px */ 
 @media only screen and (device-width: 1600px) and (device-height: 900px) {
     #spaceship {
         height: 47rem;
         width: 47rem;
-        top: 48rem;
+        top: 52rem;
     }
 
     #player-controls {
         flex-direction: row;
         justify-content: center;
         height: 25rem;
+        top: 42%;
     }
 
     #player-controls h2 {
@@ -1100,7 +1108,7 @@ input {
     #spaceship {
         height: 37rem;
         width: 37rem;
-        top: 41rem;
+        top: 48rem;
     }
 
     #logo {
@@ -1114,6 +1122,7 @@ input {
         flex-direction: row;
         justify-content: center;
         height: 15rem;
+        top: 45%; 
     }
 
     #player-controls h2 {
@@ -1151,3 +1160,13 @@ input {
         text-shadow: #000000 2px 3px, #000000 2px 4px;
     }
 }
+
+/* Screen Width: 411px & Screen Height: 823px */ 
+@media only screen and (device-width: 411px) and (device-height: 823px) {
+    #spaceship {
+        width: 20rem;
+        height: 20rem;
+        top: 42rem;
+    } 
+}
+

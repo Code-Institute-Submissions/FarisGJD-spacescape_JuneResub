@@ -35,16 +35,14 @@ document.addEventListener("touchstart", () => {
 
 
 // Player Settings - Modals 
-
-const modalBtnRules = document.querySelector(".open-rules-modal"); 
+const modalBtn = document.querySelector(".open-modal"); 
 const modalBg = document.querySelector(".outer-modal");
 const modalClose = document.querySelector(".close-modal"); 
 
-modalBtnRules.addEventListener("click", function() {
+modalBtn.addEventListener("click", function() {
     modalBg.classList.add("modal-toggle")
 }); 
 
 modalClose.addEventListener("click", function () {
     modalBg.classList.remove("modal-toggle")
 }); 
-
