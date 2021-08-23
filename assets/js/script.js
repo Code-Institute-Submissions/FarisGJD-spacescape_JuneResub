@@ -22,20 +22,22 @@ document.addEventListener("keypress", () => {
     }
 });    
 
-// Game Over Detection & Score Counter Increase 
+// Game Over & Score Counter Detection 
 setInterval (() => {
     scoreCounter.innerText++;
     const spriteTop = parseInt(window.getComputedStyle(sprite)
     .getPropertyValue("top")); 
     const obstacleLeft = parseInt(window.getComputedStyle(spaceObstacle)
     .getPropertyValue("left")); 
+    console.log(obstacleLeft)
 
 
-    if (obstacleLeft < 180 && obstacleLeft > 0 && spriteTop > 300) {
+    if (obstacleLeft < 50 && obstacleLeft > 0 && spriteTop > 250) {
         alert("Game Over! You Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
-}, 180); 
+}, 50); 
+
 
 
 
