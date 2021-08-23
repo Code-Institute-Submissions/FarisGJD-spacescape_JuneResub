@@ -1,48 +1,58 @@
 // Sprite Controls 
 let sprite = document.getElementById("astronaut-sprite");
 let scoreCounter = document.getElementById("score-counter");
-let spaceObstacle = document.getElementsByClassName("space-obstacle"); 
+let spaceObstacle = document.querySelector(".space-obstacle");
+console.log(spaceObstacle);
 
-function jump () {
+function  locomotionJump () {
     sprite.classList.add("animate-sprite"); 
     setTimeout(() => {
         sprite.classList.remove("animate-sprite"); 
-    }, 800); 
+    }, 700); 
 }
-
-document.addEventListener("keypress", () => {
-    if(!sprite.classList.contains("animate-sprite")) {
-        jump(); 
-
-    }
-});    
-
 
 document.addEventListener("touchstart", () => {
     if(!sprite.classList.contains("animate-sprite")) {
-        jump(); 
+        locomotionJump(); 
+    }
+});   
 
+document.addEventListener("keypress", () => {
+    if(!sprite.classList.contains("animate-sprite")) {
+        locomotionJump (); 
     }
 });    
 
-// //Game Over Detection 
+// Game Over Detection & Score Counter Increase 
+setInterval (() => {
+    scoreCounter.innerText++;
+    const spriteTop = parseInt(window.getComputedStyle(sprite)
+    .getPropertyValue("top")); 
+    const obstacleLeft = parseInt(window.getComputedStyle(spaceObstacle)
+    .getPropertyValue("left")); 
 
-// let gameOver = setInterval(function () {
 
-//     let spriteUpper = window.getComputedStyle(sprite).getPropertyValue("Upper"); 
-    
-// }, 10); 
+    if (obstacleLeft < 100 && obstacleLeft > 0 && spriteTop > 300) {
+        alert("Game Over");
+        location.reload();
+    }
+
+}, 100); 
+
 
 
 // Player Settings - Modals 
-const modalBtn = document.querySelector(".open-modal"); 
-const modalBg = document.querySelector(".outer-modal");
-const modalClose = document.querySelector(".close-modal"); 
+// let modalBtn = document.querySelector(".open-modal"); 
+// let modalBg = document.querySelector(".outer-modal");
+// let modalClose = document.querySelector(".close-modal"); 
 
-modalBtn.addEventListener("click", function() {
-    modalBg.classList.add("modal-toggle")
-}); 
+// modalBtn.addEventListener("click", function () {
+//     modalBg.classList.add("modal-toggle")
+// }); 
 
-modalClose.addEventListener("click", function () {
-    modalBg.classList.remove("modal-toggle")
-}); 
+// modalClose.addEventListener("click", function () {
+//     modalBg.classList.remove("modal-toggle")
+// }); 
+
+// Ingame Audio
+

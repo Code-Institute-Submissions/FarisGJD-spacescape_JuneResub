@@ -40,7 +40,7 @@
         </div>
 
         <div>
-            <h2 class="open-settings-modal">Settings</h2>
+            <h2 class="open-modal">Settings</h2>
         </div>
     </section>
     
@@ -76,7 +76,7 @@
                         <h5>Sound Options</h5>
                         <label>
                             <input type="checkbox">
-                            <span class="slider-toggle">On</span>
+                            <span id="sound-toggle">On</span>
                         </label>
                     </div>
                 </div>
@@ -85,6 +85,11 @@
         </div>
     </section>
     </main>
+
+    <script>
+        let gameBackground = new Audio("assets/audio/game-background-sound.mp4"); 
+audio.play(); 
+    </script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

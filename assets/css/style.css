@@ -103,7 +103,6 @@ header a {
     left: 0; 
     right: 0; 
     top: 34%;
-    /* margin-top: 20rem; */
     margin-left: auto; 
     margin-right: auto; 
     z-index: 1;
@@ -236,14 +235,14 @@ input {
 }
 
 .animate-sprite {
-    animation: sprite-jump 0.6s linear; 
+    animation: sprite-jump 0.8s linear; 
 }
 
 @keyframes sprite-jump {
-    0% {top: 150px;}
-    30% {top:100px;}
+    0% {top: 300px;}
+    30% {top: 100px;}
     70%{top: 100px;}
-    100%{top: 150px;}
+    100%{top: 300px;}
 }
 
 
@@ -251,13 +250,15 @@ input {
 /* Game Obstacles & Animation */ 
 
 .space-obstacle {
+    height: 23rem;
+    width: 30rem;
     height: 27rem;
     width: 35rem; 
     transform: rotate(45deg);
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: obstacle 6s linear infinite; 
+    animation: obstacle 4s linear infinite; 
 }
 
 .meteorite {
@@ -276,13 +277,13 @@ input {
 } 
 
 
-.alien-obstacle {
+/* .alien-obstacle {
     height: 30rem;
     width: 30rem; 
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: obstacle 5s linear infinite; 
+    animation: obstacle 3s linear infinite; 
 }
 
 
@@ -302,7 +303,7 @@ input {
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: obstacle 4s linear infinite; 
+    animation: obstacle 2s linear infinite; 
 }
 
  .planet1 {
@@ -318,11 +319,21 @@ input {
 .planet3 {
     background: url("../images/planet3.png");
     background-size: cover;
-} 
+}  */
 
 @keyframes obstacle {
     0%{left: 100%;}
     100%{left: -18%;}
+}
+
+#container {
+    height: 295px;
+    width: 100%;
+    background-color: purple;
+    position: absolute;
+    top: 62%;
+    z-index: -1;
+   
 }
 
 /* General Media Queries - Max Width */ 
