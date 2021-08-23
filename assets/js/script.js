@@ -1,8 +1,6 @@
 // Sprite Controls 
 let sprite = document.getElementById("astronaut-sprite");
 let scoreCounter = document.getElementById("score-counter");
-let spaceObstacle = document.querySelector(".space-obstacle");
-
 
 function  locomotionJump () {
     sprite.classList.add("animate-sprite"); 
@@ -24,6 +22,7 @@ document.addEventListener("keypress", () => {
 });    
 
 // Game Over & Score Counter Detection 
+let spaceObstacle = document.querySelector(".space-obstacle");
 setInterval (() => {
     scoreCounter.innerText++;
     const spriteTop = parseInt(window.getComputedStyle(sprite)
@@ -32,29 +31,41 @@ setInterval (() => {
     .getPropertyValue("left")); 
 
     if (obstacleLeft < 50 && obstacleLeft > 0 && spriteTop > 250) {
-        // alert("Game Over! You Got A Score Of: " + scoreCounter.innerText);
-        // location.reload();
+        alert("GAME OVER!!! \nTHE METEORITE HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
+        location.reload();
     }
 }, 50); 
 
-// Random Obstacle Generator 
-const spaceObstacleMeteorite = document.getElementsByClassName("meteorite");
-const spaceObstacleAsteroid = document.getElementsByClassName("asteroid");  
-const spaceObstacleFireBall = document.getElementsByClassName("fire-ball");  
-const spaceObstacles = [spaceObstacleMeteorite + spaceObstacleAsteroid + spaceObstacleFireBall]; 
+let alienObstacle = document.querySelector(".alien-obstacle");
 
-console.log(spaceObstacles);
+setInterval (() => {
+    scoreCounter.innerText++;
+    const spriteTop = parseInt(window.getComputedStyle(sprite)
+    .getPropertyValue("top")); 
+    const obstacleLeft = parseInt(window.getComputedStyle(alienObstacle)
+    .getPropertyValue("left")); 
 
-function randomObstacleGenerator () {
-    Math.random(spaceObstacle);  
-};
+    if (obstacleLeft < 50 && obstacleLeft > 0 && spriteTop > 250) {
+        alert("GAME OVER!!! \nTHE ALIENS HAVE CAPTURED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
+        location.reload();
+    }
+    console.log(obstacleLeft); 
+}, 50); 
 
+// let planetaryObstacle = document.querySelector(".planetary-obstacle");
 
-// let spaceObstacleRandom = Math.floor(Math.random() * 10);
+// setInterval (() => {
+//     scoreCounter.innerText++;
+//     const spriteTop = parseInt(window.getComputedStyle(sprite)
+//     .getPropertyValue("top")); 
+//     const obstacleLeft = parseInt(window.getComputedStyle(planetaryObstacle)
+//     .getPropertyValue("left")); 
 
-// console.log(spaceObstacleRandom); 
-
-
+//     if (obstacleLeft < 80 && obstacleLeft > 0 && spriteTop > 300) {
+//         alert("Game Over! You Got A Score Of: " + scoreCounter.innerText);
+//         location.reload();
+//     }
+// }, 80); 
 
 // Player Settings - Modals 
 // let modalBtn = document.querySelector(".open-modal"); 
@@ -68,6 +79,4 @@ function randomObstacleGenerator () {
 // modalClose.addEventListener("click", function () {
 //     modalBg.classList.remove("modal-toggle")
 // }); 
-
-// Ingame Audio
 
