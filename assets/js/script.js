@@ -2,7 +2,6 @@
 let sprite = document.getElementById("astronaut-sprite");
 let scoreCounter = document.getElementById("score-counter");
 let spaceObstacle = document.querySelector(".space-obstacle");
-console.log(spaceObstacle);
 
 function  locomotionJump () {
     sprite.classList.add("animate-sprite"); 
@@ -32,12 +31,11 @@ setInterval (() => {
     .getPropertyValue("left")); 
 
 
-    if (obstacleLeft < 100 && obstacleLeft > 0 && spriteTop > 300) {
-        alert("Game Over");
+    if (obstacleLeft < 180 && obstacleLeft > 0 && spriteTop > 300) {
+        alert("Game Over! You Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
-
-}, 100); 
+}, 180); 
 
 
 
