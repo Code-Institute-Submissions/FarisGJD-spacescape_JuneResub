@@ -277,7 +277,7 @@ input {
 } 
 
 
-/* .alien-obstacle {
+.alien-obstacle {
     height: 30rem;
     width: 30rem; 
     position: absolute; 
@@ -319,7 +319,7 @@ input {
 .planet3 {
     background: url("../images/planet3.png");
     background-size: cover;
-}  */
+} 
 
 @keyframes obstacle {
     0%{left: 100%;}
