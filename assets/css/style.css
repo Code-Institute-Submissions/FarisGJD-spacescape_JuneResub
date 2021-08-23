@@ -235,7 +235,7 @@ input {
 }
 
 .animate-sprite {
-    animation: sprite-jump 0.8s linear; 
+    animation: sprite-jump 1s linear; 
 }
 
 @keyframes sprite-jump {
@@ -247,16 +247,14 @@ input {
 
 /* Game Obstacles & Animation */ 
 
-.space-obstacle {
+.meteorite-obstacle {
     height: 23rem;
     width: 30rem;
-    height: 27rem;
-    width: 35rem; 
     transform: rotate(45deg);
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: space-obstacle 4s linear infinite; 
+    animation: meteorite-obstacle 4s linear infinite; 
 }
 
 .meteorite {
@@ -264,19 +262,39 @@ input {
     background-size: cover;
 }
 
-@keyframes space-obstacle {
+@keyframes meteorite-obstacle {
     0%{left: 100%;}
     100%{left: -18%;}
 }
 
-.alien-obstacle {
+.fire-obstacle {
+    height: 19rem;
+    width: 25rem; 
+    transform: rotate(45deg);
+    position: absolute; 
+    bottom: 10rem;
+    right: 0; 
+    animation: fire-obstacle 15s linear infinite; 
+}
+
+.fire-ball {
+    background: url("../images/fireball.png") center center;
+    background-size: cover;
+} 
+
+@keyframes fire-obstacle {
+    0%{left: 400%;}
+    100%{left: -400%;}
+}
+
+
+.ufo-obstacle {
     height: 30rem;
     width: 30rem; 
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: alien-obstacle 10s linear infinite; 
-    transform: rotate(360deg);
+    animation: alien-obstacle 20s linear infinite; 
 }
 
 .ufo {
@@ -284,24 +302,38 @@ input {
     background-size: cover;
 }
 
+@keyframes alien-obstacle {
+    0%{left: 600%;}
+    100%{left: -600%;}
+}
+
+.alien-obstacle {
+    height: 32rem;
+    width: 32rem; 
+    position: absolute; 
+    bottom: 7rem;
+    right: 0; 
+    animation: alien-obstacle 35s linear infinite; 
+}
+
+
 .martian {
     background: url("../images/martian.png");
     background-size: cover;
 }
 
 @keyframes alien-obstacle {
-    0%{left: 100%;}
-    100%{left: -500%;}
+    0%{left: 1000%;}
+    100%{left: -1000%;}
 }
 
-
-.planetary-obstacle {
-    height: 35rem;
-    width: 35rem; 
+.planetary-obstacle1 {
+    height: 34rem;
+    width: 34rem; 
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: obstacle 2s linear infinite; 
+    animation: planetary-obstacle1 40s linear infinite; 
 }
 
  .planet1 {
@@ -310,9 +342,18 @@ input {
 }
 
 
-@keyframes obstacle {
-    0%{left: 100%;}
-    100%{left: -1000%;}
+@keyframes planetary-obstacle1 {
+    0%{left: 1500%;}
+    100%{left: -1500%;}
+}
+
+.planetary-obstacle2 {
+    height: 35rem;
+    width: 35rem; 
+    position: absolute; 
+    bottom: 7rem;
+    right: 0; 
+    animation: planetary-obstacle1 45s linear infinite; 
 }
 
 .planet2 {
@@ -320,10 +361,10 @@ input {
     background-size: cover;
 }
 
-.planet3 {
-    background: url("../images/planet3.png");
-    background-size: cover;
-} 
+@keyframes planetary-obstacle2 {
+    0%{left: 2000%;}
+    100%{left: -2000%;}
+}
 
 #container {
     height: 295px;

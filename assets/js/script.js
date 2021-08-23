@@ -6,7 +6,7 @@ function  locomotionJump () {
     sprite.classList.add("animate-sprite"); 
     setTimeout(() => {
         sprite.classList.remove("animate-sprite"); 
-    }, 700); 
+    }, 800); 
 }
 
 document.addEventListener("touchstart", () => {
@@ -21,51 +21,94 @@ document.addEventListener("keypress", () => {
     }
 });    
 
-// Game Over & Score Counter Detection 
-let spaceObstacle = document.querySelector(".space-obstacle");
+// Obstacles, Game Over & Score Counter Detection 
+let meteoriteObstacle = document.querySelector(".meteorite-obstacle");
 setInterval (() => {
     scoreCounter.innerText++;
     const spriteTop = parseInt(window.getComputedStyle(sprite)
     .getPropertyValue("top")); 
-    const obstacleLeft = parseInt(window.getComputedStyle(spaceObstacle)
+    const meteoriteObstacleLeft = parseInt(window.getComputedStyle(meteoriteObstacle)
     .getPropertyValue("left")); 
 
-    if (obstacleLeft < 50 && obstacleLeft > 0 && spriteTop > 250) {
+    if (meteoriteObstacleLeft < 20 && meteoriteObstacleLeft > 0 && spriteTop > 250) {
         alert("GAME OVER!!! \nTHE METEORITE HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
-}, 50); 
+}, 20); 
+
+
+let fireObstacle = document.querySelector(".fire-ball"); 
+setInterval (() => {
+    scoreCounter.innerText++;
+    const spriteTop = parseInt(window.getComputedStyle(sprite)
+    .getPropertyValue("top")); 
+    const fireObstacleleft = parseInt(window.getComputedStyle(fireObstacle)
+    .getPropertyValue("left")); 
+
+    if (fireObstacleleft < 30 && fireObstacleleft > 0 && spriteTop > 250) {
+        alert("GAME OVER!!! \nTHE FIREBALL HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
+        location.reload();
+    }
+}, 30); 
+
+let ufoObstacle = document.querySelector(".ufo-obstacle");
+
+setInterval (() => {
+    const spriteTop = parseInt(window.getComputedStyle(sprite)
+    .getPropertyValue("top")); 
+    const ufoObstacleLeft = parseInt(window.getComputedStyle(ufoObstacle)
+    .getPropertyValue("left")); 
+
+    if (ufoObstacleLeft < 40 && ufoObstacleLeft > 0 && spriteTop > 250) {
+        alert("GAME OVER!!! \nTHE ALIENS HAVE CAPTURED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
+        location.reload();
+    }
+    console.log(obstacleLeft); 
+}, 40); 
 
 let alienObstacle = document.querySelector(".alien-obstacle");
 
 setInterval (() => {
-    scoreCounter.innerText++;
     const spriteTop = parseInt(window.getComputedStyle(sprite)
     .getPropertyValue("top")); 
-    const obstacleLeft = parseInt(window.getComputedStyle(alienObstacle)
+    const alienObstacleLeft = parseInt(window.getComputedStyle(alienObstacle)
     .getPropertyValue("left")); 
 
-    if (obstacleLeft < 50 && obstacleLeft > 0 && spriteTop > 250) {
+    if (alienObstacleLeft < 50 && alienObstacleLeft > 0 && spriteTop > 250) {
         alert("GAME OVER!!! \nTHE ALIENS HAVE CAPTURED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
     console.log(obstacleLeft); 
 }, 50); 
 
-// let planetaryObstacle = document.querySelector(".planetary-obstacle");
+let planetaryObstacle1 = document.querySelector(".planetary-obstacle1");
 
-// setInterval (() => {
-//     scoreCounter.innerText++;
-//     const spriteTop = parseInt(window.getComputedStyle(sprite)
-//     .getPropertyValue("top")); 
-//     const obstacleLeft = parseInt(window.getComputedStyle(planetaryObstacle)
-//     .getPropertyValue("left")); 
+setInterval (() => {
+    const spriteTop = parseInt(window.getComputedStyle(sprite)
+    .getPropertyValue("top")); 
+    const planetaryObstacle1Left = parseInt(window.getComputedStyle(planetaryObstacle1)
+    .getPropertyValue("left")); 
 
-//     if (obstacleLeft < 80 && obstacleLeft > 0 && spriteTop > 300) {
-//         alert("Game Over! You Got A Score Of: " + scoreCounter.innerText);
-//         location.reload();
-//     }
-// }, 80); 
+    if (planetaryObstacle1Left < 60 && planetaryObstacle1Left > 0 && spriteTop > 300) {
+        alert("GAME OVER!!! \n THE PLANETS MASSIVE GRAVITATIONAL PULL HAS DRAWN YOU IN \nYou Got A Score Of: " + scoreCounter.innerText);
+        location.reload();
+    }
+}, 60); 
+
+let planetaryObstacle2  = document.querySelector(".planetary-obstacle2");
+
+setInterval (() => {
+    const spriteTop = parseInt(window.getComputedStyle(sprite)
+    .getPropertyValue("top")); 
+    const planetaryObstacle2Left = parseInt(window.getComputedStyle(planetaryObstacle2)
+    .getPropertyValue("left")); 
+
+    if (planetaryObstacle2Left < 70 && planetaryObstacle2Left > 0 && spriteTop > 320) {
+        alert("GAME OVER!!! \n THE PLANETS MASSIVE GRAVITATIONAL PULL HAS DRAWN YOU IN \nYou Got A Score Of: " + scoreCounter.innerText);
+        location.reload();
+    }
+}, 70); 
+
 
 // Player Settings - Modals 
 // let modalBtn = document.querySelector(".open-modal"); 
