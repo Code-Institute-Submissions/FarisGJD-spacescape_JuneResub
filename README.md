@@ -22,12 +22,12 @@
     * [Skeleton](#skeleton)
     * [Surface](#surface)
         * [Colour Scheme](#colour-scheme)
-        * [Typography](#typograpnhy)
+        * [Typography](#typography)
         * [Imagery](#imagery)
         * [Features](#features)
-4. [Technologies Used](#tech-used)
-5. [Search Engine Optimization](#seo)
-6. [Bugs & Issues](#bugs)
+4. [Technologies Used](#technologies-used)
+5. [Search Engine Optimization](#search-engine-optimization)
+6. [Bugs & Issues](#bugs-&-issues)
 7. [Testing](#testing)
     * [Device Testing](#device-testing)
     * [Browser Testing](#browser-testing)
@@ -36,13 +36,14 @@
 8. [Validation](#validation)
     * [HTML Validator](#html-validator)
     * [CSS Validator](#css-validator)
+    * [JavaScript Validator](#javascript-validator)
     * [Google Mobile-Freindly Test](#google-mobile-freindly-test)
     * [Lighthouse](#lighthouse)
 9. [Deployment](#deployment)
     * [Repository Forking](#repository-forking)
     * [Repository Cloning](#repository-cloning)
 10. [Credits](#credits)
-11. [Acknowledgements](#aknowledgements)
+11. [Bibliography](#Bibliography)
 
 ***
 # Introduction
@@ -416,7 +417,7 @@ GitHub repositories exist remotely online. Cloning a repository means you create
 [Back To Top](#spacescape)
 
 ***
-# Credit 
+# Credits
 **The functionality of the game was based on and heavily amended:**  
 -	Code With Ania Kubow (Youtube). 
 -	Keep Coding (Youtube). 
