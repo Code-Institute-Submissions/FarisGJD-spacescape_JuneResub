@@ -39,7 +39,6 @@ setInterval (() => {
 
 let fireObstacle = document.querySelector(".fire-ball"); 
 setInterval (() => {
-    scoreCounter.innerText++;
     const spriteTop = parseInt(window.getComputedStyle(sprite)
     .getPropertyValue("top")); 
     const fireObstacleleft = parseInt(window.getComputedStyle(fireObstacle)
@@ -121,4 +120,19 @@ modalBtn.addEventListener("click", function () {
 modalClose.addEventListener("click", function () {
     modalBg.classList.remove("modal-toggle")
 }); 
+
+// JavaScript Obstacle Detection Media Queries 
+const meteoriteMq = window.matchMedia ("(max-height: 400px)");
+setInterval (() => {
+    scoreCounter.innerText++;
+    const spriteTop = parseInt(window.getComputedStyle(sprite)
+    .getPropertyValue("top")); 
+    const meteoriteObstacleLeft = parseInt(window.getComputedStyle(meteoriteObstacle)
+    .getPropertyValue("left")); 
+
+    if (meteoriteObstacleLeft < 20 && meteoriteObstacleLeft > 0 && spriteTop > 30) {
+        alert("GAME OVER!!! \nTHE METEORITE HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
+        location.reload();
+    }
+}, 20); 
 
