@@ -158,23 +158,42 @@ The inception of Spacescape resulted from the gap in the market for Retrogaming 
 
 
 ### index.html:
--	Header – introduces MIND**X** official logo and familiarises the user with the site’s navigational planes, leveraging their prior experience. 
--	Background Image & Ethos – reinforces the identity of the website and creates and eye-catching landing page.  
--	Footer – provides social media and contact details so that when the user concludes they can get in contact.  
+-	Header – introduces the SPACESCAPE logo, giving the user a first glimpse into the theme behind the game. 
+-	 Animated Background Images – both indicative of the overall premiss and style of the game, confirming the user’s expectations. 
+-	Animated In Game Options – act as a navigation for the user as well as introducing the story behind the game. 
 
-### guided-meditation.html:
--	Header – keeps the site consistent, offers another call to action & provides easy navigation (e.g., sticky header).  
--	Intro To MINDX & MBCT – creates brand awareness and begins to address user stories, as well as introduces the key concepts of the brand (USP). 
--	Mindfulness Meditations 1 – 4 – most important and visited part of the website, lessons build on each other in terms of relevance and difficulty making the next exercise easier. 
--	Footer – again keeps the site consistent creating familiarity. 
-
-### sign-up.html:
--	Header – creates uniformity and establishes conventions. 
--	Call To Action Signup Form – allows users to create an account with MINDX in a bid to develop a core client base.  
--	Interactive Image – creates interest around the page whilst strengthening the brand. 
--	Footer – gives another opportunity to get in touch and explore.   
+### game.html:
+-	Header – keeps with the consistency of the site and a navigation to the home page. 
+-	Game – the main landscape of the site which includes interactive and responsive player sprite and obstacles. 
+-	Game Over Alert Box – validates and gives feedback to the user such as game over, score and restarts the page. 
 
 [Back To Top](#mindx)
 
 ***
 # Skeleton 
+Balsamic was used to create wireframes, thus determining the basic navigation and design interface of the site. Since Spacescape’s appeal and exclusivity leverages the Retrogaming standard, a simple layout as well stylistic choices suggestive of this are implemented. For example, games such as Super Mario All-Stars (1993), The Legend Of Zelda A Link To The Past (1992) and Street Fighter II Turbo (1992) etc… all implore a basic navigation and controls, 16-bit graphics, garish yet complementary colours and animations. Finally, since Spacescape is a game, confirmation, validation and feedback are extremely important to the overall functionality and user experience.  
+
+### Balsamic Wireframes:
+![Site Wireframe](assets/readme-assets/index.png)  
+
+![Site Wireframe](assets/readme-assets/game.png)  
+
+![Site Wireframe](assets/readme-assets/index-phone.png)  
+
+![Site Wireframe](assets/readme-assets/game-phone.png)  
+ 
+
+[Back To Top](#mindx)
+
+***
+# Surface
+
+## Colour Scheme  
+Spacescape uses a rich and varied colour story as expected with retro gamming, specifically 8bit. The main colour pairings are #76f6f0, #2392d2, #006aaf, #004891, #022345 which are all different shades of blue emulating the coldness of deep space as well as reflecting the background image. 
+![Color Scheme](assets/readme-assets/spacescape-main-colours.png)
+
+The next colour grouping is #ffdd5c, #feaf34, #fea200, #fb6a04 and #ff5100 which range from yellow to orange and mimic a spaceships flame and are used for validation to suggest something is action (blasting off). They also act as a tease colour story for future releases. 
+![Color Scheme](assets/readme-assets/validation-and-future-colours.png)
+
+Finally #00000, #ffffff and #ff3e4f are used as accents (e.g. font colours and further validation). 
+![Color Scheme](assets/readme-assets/accenting-colours.png)
