@@ -235,7 +235,7 @@ input {
 }
 
 .animate-sprite {
-    animation: sprite-jump 0.4s linear; 
+    animation: sprite-jump 0.6s linear; 
 }
 
 @keyframes sprite-jump {
@@ -294,7 +294,7 @@ input {
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: alien-obstacle 20s linear infinite; 
+    animation: alien-obstacle 25s linear infinite; 
 }
 
 .ufo {
@@ -313,7 +313,7 @@ input {
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: alien-obstacle 30s linear infinite; 
+    animation: alien-obstacle 35s linear infinite; 
 }
 
 
@@ -1002,12 +1002,13 @@ input {
     .meteorite-obstacle {
         height: 6rem;
         width: 13rem;
-        bottom: 10rem;
+        bottom: 9rem;
     }
 
     .fire-obstacle {
         height: 7rem;
         width: 6rem;
+        bottom: 8rem;
     }
 
     .ufo-obstacle {
@@ -1184,10 +1185,10 @@ input {
     }
 
     @keyframes sprite-jump {
-        0% {top: -50px;}
+        0% {top: -75px;}
         30% {top: -25px;}
-        70% {top: 25px;}
-        100% {top: 50px;}
+        70% {top: 50px;}
+        100% {top: 75px;}
     }
 
     .animate-sprite {
@@ -1205,25 +1206,25 @@ input {
     }
 
     .ufo-obstacle {
-        height: 15rem;
-        width: 15rem;
+        height: 14rem;
+        width: 14rem;
     }
 
     .martian-obstacle {
+        height: 15rem;
+        width: 15rem;
+
+    }
+
+    .planetary-obstacle1 {
         height: 16rem;
         width: 16rem;
 
     }
 
-    .planetary-obstacle1 {
-        height: 17rem;
-        width: 17rem;
-
-    }
-
     .planetary-obstacle2 {
-        height: 18rem;
-        width: 18rem;
+        height: 16rem;
+        width: 16rem;
 
     }
 

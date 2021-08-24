@@ -6,7 +6,7 @@ function  locomotionJump () {
     sprite.classList.add("animate-sprite"); 
     setTimeout(() => {
         sprite.classList.remove("animate-sprite"); 
-    }, 450); 
+    }, 700); 
 }
 
 document.addEventListener("touchstart", () => {
@@ -88,7 +88,7 @@ setInterval (() => {
     const planetaryObstacle1Left = parseInt(window.getComputedStyle(planetaryObstacle1)
     .getPropertyValue("left")); 
 
-    if (planetaryObstacle1Left < 60 && planetaryObstacle1Left > 0 && spriteTop > 140) {
+    if (planetaryObstacle1Left < 55 && planetaryObstacle1Left > 0 && spriteTop > 140) {
         alert("GAME OVER!!! \n THE PLANETS MASSIVE GRAVITATIONAL PULL HAS DRAWN YOU IN \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
@@ -102,7 +102,7 @@ setInterval (() => {
     const planetaryObstacle2Left = parseInt(window.getComputedStyle(planetaryObstacle2)
     .getPropertyValue("left")); 
 
-    if (planetaryObstacle2Left < 70 && planetaryObstacle2Left > 0 && spriteTop > 140) {
+    if (planetaryObstacle2Left < 60 && planetaryObstacle2Left > 0 && spriteTop > 140) {
         alert("GAME OVER!!! \n THE PLANETS MASSIVE GRAVITATIONAL PULL HAS DRAWN YOU IN \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
