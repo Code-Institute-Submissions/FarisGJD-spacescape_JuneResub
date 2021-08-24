@@ -283,3 +283,169 @@ Various SEO techniques were implemented in order to prove the quantity and quali
 -	Initially the sprite had a zero-gravity animation similar to the player options. This was causing issues with the JavaScript code to make the sprite jump which meant the initial animation had to be removed. 
 -	Collision detection was another problem as the computer was used to calculate the distance between the top of the sprite and the left of the obstacle. This caused issues as obstacles ranged in size and speed meaning it was not getting a 100% accurate reading. To resolve this, various speeds, size changes, sprite jump height and JavaScript measurements were tweaked to get the best overall result. 
 -	Finally on mobile landscape orientation the collision detection was not working meaning more tweaks as above. 
+
+[Back To Top](#spacescape)
+
+***
+# Testing 
+Each section of the site and overall game were tested for responsiveness, validation, feedback and conformation during and after completion. This was mainly done using Google Chrome Developer Tools, especially the console to help debug JavaScript code and the adaptable display for media queries. Below are examples of what each section was tested for: 
+
+### Header
+-	Logo redirects to home page. 
+-	Score counter increments players progress. 
+
+### Background Images 
+-	Image animation moves at a consistent speed on all screen sizes. 
+-	Animation overflow not activating the browsers default scroll property. 
+
+### index.html 
+-	Player options change colour when hovered over. 
+-	Play button functions and redirects to correct location. 
+-	Rules modal responds to users’ inputs. 
+
+### game.html 
+-	Sprite jump function is at a reasonable and consistent height on all screen sizes. 
+-	Obstacles move at a steady speed on all screen sizes (not too fast, not too slow). 
+-	Game over detection works as best it can. Some discrepancies are apparent due to the computer constantly calculating both sprite and obstacle position which is affected by screen sizes. 
+-	Game over alert gives the correct message for its relevant obstacle. 
+-	Game reloads when the user loses and score counter decreases to 0 and starts again. 
+
+## Device Testing 
+Spacescape relies heavily on device accessibility for a good user experience. This is especially true for the gameplay which is stringent when it comes to sizing discrepancies which would render the game useless if not addressed. Furthermore, the mechanics (JavaScript) of the game were also specific to dramatic size differences from what they were originally coded for (Desktop). Therefore, different device sizes were tested to ensure the game function as intended. 
+
+### Desktop/Tablet
+These were the easiest and least problematic of the defined screens as they had a good width – height ratio. As a result, testing was minimal. The only issue arose was sizing of different elements which was as expected. 
+
+### Laptop
+As mentioned previously laptops caused an issue in terms of the player controls which is why custom media queries based off of popular screen sizes were used to address this – 1200px(w) & 800px (h), 1366px(w) & 768px (h), 1600px (w) & 900px (h) and 1024px width & 768px (h). 
+
+### Mobile
+This caused the biggest issue for the overall game as the dramatic sizing ratios at times caused the game to be useless. The game had to be re tweaked several times for the different screen sizes and a middle ground compromise was made. This means that the game over detection might not work at 100% accuracy but the opportunity cost of cross device functionality could not be forgone. 
+
+Another issue was landscape orientation which Spacescape would rely heavily on as this was a popular was mobile games would play. Therefore, specific max-height media queries were implemented to cater to this – 540px, 450px, 400px, 370px and 320px. A big lesson learned from this was for a site such as Spacescape (game) designing for mobile first would have been a smarter choice. 
+
+## Browser Testing 
+The site was tested on the following browsers to check for compatibility: 
+-	Chrome (created on) 
+-	Firefox 
+-	Safari 
+All browsers worked fine except for when additional popups appeared such as when downloading things off the internet or when viewing the GitHub page on mobile screen which have the additional navigation at the bottom. This was fixed by moving elements closer to the middle. 
+
+## Peer Review Testing 
+Friends, family members and colleagues were asked to access the project through various means. The feedback was as mentioned previous: 
+-	Screen popups shifting player sprite and obstacles. 
+-	Sprite kept dying as collision detection was not addressed for all screen sizes. 
+-	Player Controls were overflowing on laptop screens. 
+
+## User Stories Testing 
+### As a First Time Visitor: 
+1.	When entering the site the user is greeted with the animated background image, logo and player controls all of which are space and retro game themed giving the gamer a clear snapshot view of what the site has to offer and its uniqueness. 
+2.	The site uses a tree structure and follows on path to the game and another path back to the main page making the navigation easy. This is because Spacescape leverages the users prior experience in video gaming (play button) and website navigation (logo’s typically when clicked redirect to the home page). 
+3.	The rules modal clearly states the story behind the game as well as the mechanics of how to play across all devices. 
+
+### As a Returning Visitor: 
+1.	Due to the sites simplistic and deliberate design the user is able to access the rules modal as well as the game and test or supplement their knowledge. 
+2.	The site is unique in its offerings so the user can compare the sites offerings easily with that of competitors. 
+
+### As a Frequent User: 
+1.	The game gets difficult the longer you are alive which is then reflected in the incrementing score counter. 
+2.	The site is highly responsive and is expected to be used on desktops, laptops, tablets & mobile devices in whatever orientation. 
+3.	The game is challenging and combines a unique theme, storyline, gameplay and design so that the user feels motivated to return and tell others. 
+
+[Back To Top](#spacescape)
+
+***
+
+# Validation 
+The sites code was passed through various online validation and responsiveness tools to determine its competences:
+
+## HTML Validator 
+Both pages returned with no errors or warnings. 
+### index.html
+![Home Page Validator](assets/readme-assets/index.html-validation.png) 
+
+### game.html
+![Home Page Corrections](assets/readme-assets/game.html-validation.png) 
+
+## CSS Validator 
+Returned with a few errors regarding the laptop specific media queries created for the site. Upon further research it was suggested to replace “device-width” and “device-height” with “max-width” or “max-height”. This would render the media queries useless and interact with the others so was left as is.  
+
+![CSS Validator](assets/readme-assets/css-validation.png)
+
+## JavaScript Validator 
+Stated that the arrow function used was only available in ES6 which was not an issue. 
+
+![JavaScript Validator](assets/readme-assets/script.js-validation.png)
+
+## Google Mobile-Freindly Test 
+Goolgle mobile freindly results came back as positive as seen below. 
+
+![Google Mobile Validator](assets/readme-assets/google-mobile-freindly-testing.png)
+
+## Lighthouse 
+Lighthouse also came back positive. 
+![Lighthouse](assets/readme-assets/lighthouse-testing.png)
+
+[Back To Top](#spacescape)
+
+***
+# Deployment
+GitPod, a cloud based IDE was used to create, edit and preview the code for Spacescape. Git was used a version control tool to push the code into a GitHub repository which hosted the project and workspace. Finally the project is subsequently deployed using GitHub Pages. The process to do so is as follows:
+1.	Locate the relevant GitHub repository.
+2.	In the tab below the repository name click settings where you will be redirected to a new page. 
+3.	The tab on the right-hand side contains several options, the desired is pages. 
+4.	In the source section choose master from the first drop-down menu titled branch, then root from the second drop-down menu with a folder icon and finally save. 
+5.	Once the process is complete the live URL will be displayed above with the text “Your site is published at”. 
+
+Successively this code can be cloned or forked from the same GitHub repository. 
+
+## Repository Forking 
+Forking a repository simply means creating a copy of the original to be viewed and edited without effecting the source. To do so: 
+1.	In GitHub locate the relevant repository. 
+2.	In the top right-hand side, underneath the user icon click the fork button. 
+3.	The forked repository should load and save to the GitHub account it was created on. 
+
+## Repository Cloning 
+GitHub repositories exist remotely online. Cloning a repository means you create a local copy on your computer and sync between the two locations. To do so: 
+1.	Navigate to the main page of the desired repository. 
+2.	Above the list of files click on the green code button. 
+3.	You will be given the option to clone with HTTPS, SSH & GitHub CLI, chose the desired option, in this case desktop is where the clone will be housed. 
+4.	Finally follow the prompts in GitHub desktop to complete the process. 
+
+
+[Back To Top](#spacescape)
+
+***
+# Credit 
+**The functionality of the game was based on and heavily amended:**  
+-	Code With Ania Kubow (Youtube). 
+-	Keep Coding (Youtube). 
+
+**General code help, inspiration and resources:**
+-	Love Running Walkthrough Project 
+-	W3S
+-	CSS-Tricks
+-	Stack Overflow 
+-	Free Code Camp 
+
+[Back To Top](#spacescape)
+
+# Bibliography
+1.	Clement. J, “Number of video gamers worldwide in 2020, by region”, Statista, 06/24/21, https://www.statista.com/statistics/293304/number-video-gamers/. 
+
+2.	Clement J, “Average weekly hours spent playing video games in selected countries worldwide as of January 2021”, Statista, 04/23/21, https://www.statista.com/statistics/273829/average-game-hours-per-day-of-video-gamers-in-selected-countries/. 
+
+3.	Tom Wijman,”The world’s 2.7 billion gamers will spend $159.3 billion on games in 2020; the market will surpass $200 billion by 2023”, Newzoo, 05/08/20, https://newzoo.com/insights/articles/newzoo-games-market-numbers-revenues-and-audience-2020-2023/. 
+
+4.	Wulf. T, Bowman. N, Rieger. D, Velez. J, Bruer. J, “Video Games as Time Machines: Video Game Nostalgia and the Success of Retro Gaming”, Cogitatio Press, 2018. 
+
+5.	Doyoon. K, “Retrogaming: The power of nostalgia”, HS Insider, 22/09/20, https://highschool.latimes.com/cleveland-charter-high-school/retrogaming-the-power-of-nostalgia/. 
+
+6.	Bowman. N, Wulf. T, “Finding nostalgia in the pixelated video games of decades past”, The Conversation, 15/08/18, https://theconversation.com/finding-nostalgia-in-the-pixelated-video-games-of-decades-past-98518. 
+
+7.	GamingScan, “2021 Gaming Industry Statistics, Trends & Data”, 06/21, https://www.gamingscan.com/gaming-statistics/. 
+
+8.	FinancesOnline, “Number Of Gamers Worldwide 2021/2022: Demographics, Statistics, and Predictions, 2021. 
+
+ 
+
