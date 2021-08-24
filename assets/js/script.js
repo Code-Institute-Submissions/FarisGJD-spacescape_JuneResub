@@ -6,7 +6,7 @@ function  locomotionJump () {
     sprite.classList.add("animate-sprite"); 
     setTimeout(() => {
         sprite.classList.remove("animate-sprite"); 
-    }, 600); 
+    }, 450); 
 }
 
 document.addEventListener("touchstart", () => {
@@ -30,11 +30,11 @@ setInterval (() => {
     const meteoriteObstacleLeft = parseInt(window.getComputedStyle(meteoriteObstacle)
     .getPropertyValue("left")); 
 
-    if (meteoriteObstacleLeft < 50 && meteoriteObstacleLeft > 0 && spriteTop > 149) {
+    if (meteoriteObstacleLeft < 20 && meteoriteObstacleLeft > 0 && spriteTop > 149) {
         alert("GAME OVER!!! \nTHE METEORITE HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
-}, 50); 
+}, 20); 
 
 
 let fireObstacle = document.querySelector(".fire-ball"); 
@@ -44,11 +44,11 @@ setInterval (() => {
     const fireObstacleleft = parseInt(window.getComputedStyle(fireObstacle)
     .getPropertyValue("left")); 
 
-    if (fireObstacleleft < 50 && fireObstacleleft > 0 && spriteTop > 149) {
+    if (fireObstacleleft < 30 && fireObstacleleft > 0 && spriteTop > 149) {
         alert("GAME OVER!!! \nTHE FIREBALL HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
-}, 50); 
+}, 30); 
 
 let ufoObstacle = document.querySelector(".ufo-obstacle");
 
@@ -58,12 +58,12 @@ setInterval (() => {
     const ufoObstacleLeft = parseInt(window.getComputedStyle(ufoObstacle)
     .getPropertyValue("left")); 
 
-    if (ufoObstacleLeft < 50 && ufoObstacleLeft > 0 && spriteTop > 149) {
+    if (ufoObstacleLeft < 45 && ufoObstacleLeft > 0 && spriteTop > 149) {
         alert("GAME OVER!!! \nTHE SPACESHIP HAS INTERCEPTED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
     console.log(obstacleLeft); 
-}, 50); 
+}, 45); 
 
 let martianObstacle = document.querySelector(".martian-obstacle");
 

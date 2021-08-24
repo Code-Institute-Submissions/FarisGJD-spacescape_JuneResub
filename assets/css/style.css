@@ -235,14 +235,14 @@ input {
 }
 
 .animate-sprite {
-    animation: sprite-jump 0.5s linear; 
+    animation: sprite-jump 0.4s linear; 
 }
 
 @keyframes sprite-jump {
-    0% {top: 300px;}
+    0% {top: 200px;}
     30% {top: 100px;}
     70%{top: 100px;}
-    100%{top: 300px;}
+    100%{top: 200px;}
 }
 
 /* Game Obstacles & Animation */ 
@@ -254,7 +254,7 @@ input {
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: meteorite-obstacle 5s linear infinite; 
+    animation: meteorite-obstacle 3s linear infinite; 
 }
 
 .meteorite {
@@ -1190,7 +1190,9 @@ input {
         100% {top: 50px;}
     }
 
-
+    .animate-sprite {
+        animation: sprite-jump 0.3s linear; 
+    }
 
     .meteorite-obstacle {
         height: 10rem;
