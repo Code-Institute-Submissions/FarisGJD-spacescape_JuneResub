@@ -167,7 +167,7 @@ The inception of Spacescape resulted from the gap in the market for Retrogaming 
 -	Game – the main landscape of the site which includes interactive and responsive player sprite and obstacles. 
 -	Game Over Alert Box – validates and gives feedback to the user such as game over, score and restarts the page. 
 
-[Back To Top](#mindx)
+[Back To Top](#spacescape)
 
 ***
 # Skeleton 
@@ -183,7 +183,7 @@ Balsamic was used to create wireframes, thus determining the basic navigation an
 ![Site Wireframe](assets/readme-assets/game-phone.png)  
  
 
-[Back To Top](#mindx)
+[Back To Top](#spacescape)
 
 ***
 # Surface
@@ -197,3 +197,89 @@ The next colour grouping is #ffdd5c, #feaf34, #fea200, #fb6a04 and #ff5100 which
 
 Finally #00000, #ffffff and #ff3e4f are used as accents (e.g. font colours and further validation). 
 ![Color Scheme](assets/readme-assets/accenting-colours.png)
+
+## Typography
+Two different fonts are used throughout the site which were deliberate stylistic choices. The first VT323, an obvious choice as it is a pixelated style and has a font weight of 400 so excellent for important pieces of information (logo, score counter and player options headings). The next was Orbitron which imitates the text style within old school terminals and a complementary choice for large chunks of text. This said both fonts don’t have a default font family which made it hard to choose a web-safe font. In the end a simple sans-serif font was used, the same done in the 90’s.  
+
+## Imagery
+The images used within Spacescape strictly follow the 8-bit (pixilated) and space themes, respectively and are used to tell a story. For example, the spaceship on the home page orbiting the planet Kepler-452b follows the story told within the rule’s modal and sets the beginning of the game. Next when the user clicks play, and is greeted with the astronaut (sprite) and various interplanetary obstacles which also reflect the story within the modal and informs them that game is starting. 
+
+## Features
+### Header
+-	Logo – introduces Spacescapes identity and begins to open the users mind for what is ahead. Also acts as a navigation to the home page within the game page. 
+-	Score Counter – visual cue to the user that this is a game and is one of the main aspects of the site that gives the user constant feedback. 
+
+![Header](assets/readme-assets/header.png)
+
+### Background Image 
+-	Background Image – used to tie in the story told within the rules modal and sets the stage for the game. It is also animated, echoing the movement in space as well as makes the game more dynamic. 
+
+![Background Image](assets/readme-assets/background-images.png)
+
+### index.html
+-	Player Controls – The play button initiates the game by directing the user to the games page. The rules button opens up a terminal style modal which fully explains the back story of the game in addition to the rules of how of play on various devices. The buttons are also animated to replicate zero-gravity adding to the overall theme and indicate responsiveness to the user when hovered over. 
+
+![Home Page](assets/readme-assets/player-option1.png)
+![Home Page](assets/readme-assets/player-options2.png)
+![Home Page](assets/readme-assets/rules-modal.png)
+
+### game.html 
+-	Game Landscape – contains the player sprite and various obstacles. This was designed specifically to get harder as the score counter increased meaning more obstacles in varying sizes and speeds spawning. 
+-	Alert – finally when the user loses a game over alert appears with their score and varying messages from each obstacle. The alert was deliberately not designed and left as the computers default, again reflecting the old style game play. 
+
+![Game Page](assets/readme-assets/game-landscape1.png)
+![Game Page](assets/readme-assets/game-landscape2.png)
+![Game Page](assets/readme-assets/game-landscape3.png)
+![Game Page](assets/readme-assets/gameover-alert.png)
+
+### Features To Implement
+-	Game background sounds (e.g. sprite and obstacle effects). 
+-	Increase in difficulty and as a result a settings modal. 
+-	Background, logo and score counter change colour periodically. 
+-	Ability for sprite to shoot laser, eliminating obstacles. 
+
+[Back To Top](#spacescape)
+
+***
+# Technologies Used 
+-	HTML5 – Programming Language.
+-	CSS3 – Programming Language.
+-	JavaScript – Programming Language. 
+-	Google Fonts – typography.
+-	GitHub – cloud based hosting service, managing repositories.
+-	GitPod – integrated development environment used to develop project. 
+-	Git – version control tool 
+-	Code Institute GitPiod Template – provides GitPod extensions making code creating easier and manageable.
+-	Google Chrome Development Tools – used for debugging and in browser editing. 
+-	Coolers – colour pallet generator. 
+-	Photoshop – editing of site photos. 
+-	Compress PNG – compress images for optimum usage. 
+-	Balsamic – create wireframes. 
+-	Favicon – used to create favicon. 
+-	Lighthouse – website performance review. 
+-	Web Formatter – formatting, HTML, CSS & JavaScript code. 
+-	W3C Validator – validate HTML & CSS code. 
+-	JavaScript Validator – validate JavaScript code. 
+-	Pinetools – image to pixel converter. 
+
+[Back To Top](#mindx)
+
+***
+# Search Engine Optimization
+Various SEO techniques were implemented in order to prove the quantity and quality of traffic towards the site from search engines. 
+-	Crawlable Links. 
+-	Keyword and Meta Description tags have been used within the head of each page, creating better relationships between Spacescape and search engines. 
+
+[Back To Top](#mindx)
+
+***
+# Bugs & Issues
+-	Player options ridge border was not taking the coded colour (#000000) on smaller screen sizes. The bug has not been resolved but upon closer inspection looked better than the original idea so was kept. 
+-	Original player settings options was an image and named mission control. This was slowing down the speed of the site since a lot of images were used and was deemed unimportant. 
+-	Landscape orientation (mobile devices) was causing a lot of issues so max-height media queries were implemented to combat this.  
+-	Spaceship and obstacle animations were causing the page to scroll horizontally creating a bad user experience. This was resolved by using overflow hidden. 
+-	Spaceship animation stopping in the middle of smaller screen sizes which was due to the animation being given a viewport width value rather than a percentage (which resolved the problem). 
+-	Player controls were too big at laptop screen sizes due to its container overflowing. This caused issues since overflow hidden was used to address the spaceship overflow which meant some of the buttons could not be accessed. To resolve these special media queries were used to target laptop screens in addition to player options given a horizontal flex orientation rather than vertical. 
+-	Initially the sprite had a zero-gravity animation similar to the player options. This was causing issues with the JavaScript code to make the sprite jump which meant the initial animation had to be removed. 
+-	Collision detection was another problem as the computer was used to calculate the distance between the top of the sprite and the left of the obstacle. This caused issues as obstacles ranged in size and speed meaning it was not getting a 100% accurate reading. To resolve this, various speeds, size changes, sprite jump height and JavaScript measurements were tweaked to get the best overall result. 
+-	Finally on mobile landscape orientation the collision detection was not working meaning more tweaks as above. 
