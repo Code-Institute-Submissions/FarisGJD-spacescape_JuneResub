@@ -235,7 +235,7 @@ input {
 }
 
 .animate-sprite {
-    animation: sprite-jump 0.95s linear; 
+    animation: sprite-jump 0.5s linear; 
 }
 
 @keyframes sprite-jump {
@@ -248,13 +248,13 @@ input {
 /* Game Obstacles & Animation */ 
 
 .meteorite-obstacle {
-    height: 23rem;
-    width: 30rem;
+    height: 20rem;
+    width: 27rem;
     transform: rotate(45deg);
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: meteorite-obstacle 3s linear infinite; 
+    animation: meteorite-obstacle 5s linear infinite; 
 }
 
 .meteorite {
@@ -313,7 +313,7 @@ input {
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: alien-obstacle 35s linear infinite; 
+    animation: alien-obstacle 30s linear infinite; 
 }
 
 
@@ -333,7 +333,7 @@ input {
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: planetary-obstacle1 40s linear infinite; 
+    animation: planetary-obstacle1 45s linear infinite; 
 }
 
  .planet1 {
@@ -353,7 +353,7 @@ input {
     position: absolute; 
     bottom: 7rem;
     right: 0; 
-    animation: planetary-obstacle1 45s linear infinite; 
+    animation: planetary-obstacle1 50s linear infinite; 
 }
 
 .planet2 {

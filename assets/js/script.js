@@ -6,7 +6,7 @@ function  locomotionJump () {
     sprite.classList.add("animate-sprite"); 
     setTimeout(() => {
         sprite.classList.remove("animate-sprite"); 
-    }, 800); 
+    }, 600); 
 }
 
 document.addEventListener("touchstart", () => {
@@ -30,11 +30,11 @@ setInterval (() => {
     const meteoriteObstacleLeft = parseInt(window.getComputedStyle(meteoriteObstacle)
     .getPropertyValue("left")); 
 
-    if (meteoriteObstacleLeft < 20 && meteoriteObstacleLeft > 0 && spriteTop > 250) {
+    if (meteoriteObstacleLeft < 50 && meteoriteObstacleLeft > 0 && spriteTop > 149) {
         alert("GAME OVER!!! \nTHE METEORITE HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
-}, 20); 
+}, 50); 
 
 
 let fireObstacle = document.querySelector(".fire-ball"); 
@@ -44,11 +44,11 @@ setInterval (() => {
     const fireObstacleleft = parseInt(window.getComputedStyle(fireObstacle)
     .getPropertyValue("left")); 
 
-    if (fireObstacleleft < 30 && fireObstacleleft > 0 && spriteTop > 250) {
+    if (fireObstacleleft < 50 && fireObstacleleft > 0 && spriteTop > 149) {
         alert("GAME OVER!!! \nTHE FIREBALL HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
-}, 30); 
+}, 50); 
 
 let ufoObstacle = document.querySelector(".ufo-obstacle");
 
@@ -58,12 +58,12 @@ setInterval (() => {
     const ufoObstacleLeft = parseInt(window.getComputedStyle(ufoObstacle)
     .getPropertyValue("left")); 
 
-    if (ufoObstacleLeft < 40 && ufoObstacleLeft > 0 && spriteTop > 250) {
-        alert("GAME OVER!!! \nTHE ALIENS HAVE CAPTURED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
+    if (ufoObstacleLeft < 50 && ufoObstacleLeft > 0 && spriteTop > 149) {
+        alert("GAME OVER!!! \nTHE SPACESHIP HAS INTERCEPTED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
     console.log(obstacleLeft); 
-}, 40); 
+}, 50); 
 
 let martianObstacle = document.querySelector(".martian-obstacle");
 
@@ -73,8 +73,8 @@ setInterval (() => {
     const martianObstacleLeft = parseInt(window.getComputedStyle(martianObstacle)
     .getPropertyValue("left")); 
 
-    if (martianObstacleLeft < 50 && martianObstacleLeft > 0 && spriteTop > 250) {
-        alert("GAME OVER!!! \nTHE ALIENS HAVE CAPTURED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
+    if (martianObstacleLeft < 50 && martianObstacleLeft > 0 && spriteTop > 149) {
+        alert("GAME OVER!!! \nTHE MARTIANS HAVE CAPTURED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
     console.log(obstacleLeft); 
@@ -88,11 +88,11 @@ setInterval (() => {
     const planetaryObstacle1Left = parseInt(window.getComputedStyle(planetaryObstacle1)
     .getPropertyValue("left")); 
 
-    if (planetaryObstacle1Left < 60 && planetaryObstacle1Left > 0 && spriteTop > 300) {
+    if (planetaryObstacle1Left < 60 && planetaryObstacle1Left > 0 && spriteTop > 140) {
         alert("GAME OVER!!! \n THE PLANETS MASSIVE GRAVITATIONAL PULL HAS DRAWN YOU IN \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
-}, 60); 
+}, 55); 
 
 let planetaryObstacle2  = document.querySelector(".planetary-obstacle2");
 
@@ -102,11 +102,11 @@ setInterval (() => {
     const planetaryObstacle2Left = parseInt(window.getComputedStyle(planetaryObstacle2)
     .getPropertyValue("left")); 
 
-    if (planetaryObstacle2Left < 70 && planetaryObstacle2Left > 0 && spriteTop > 320) {
+    if (planetaryObstacle2Left < 70 && planetaryObstacle2Left > 0 && spriteTop > 140) {
         alert("GAME OVER!!! \n THE PLANETS MASSIVE GRAVITATIONAL PULL HAS DRAWN YOU IN \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
-}, 70); 
+}, 60); 
 
 // Player Settings - Modals 
 let modalBtn = document.querySelector(".open-modal"); 
@@ -120,19 +120,4 @@ modalBtn.addEventListener("click", function () {
 modalClose.addEventListener("click", function () {
     modalBg.classList.remove("modal-toggle")
 }); 
-
-// JavaScript Obstacle Detection Media Queries 
-const meteoriteMq = window.matchMedia ("(max-height: 400px)");
-setInterval (() => {
-    scoreCounter.innerText++;
-    const spriteTop = parseInt(window.getComputedStyle(sprite)
-    .getPropertyValue("top")); 
-    const meteoriteObstacleLeft = parseInt(window.getComputedStyle(meteoriteObstacle)
-    .getPropertyValue("left")); 
-
-    if (meteoriteObstacleLeft < 20 && meteoriteObstacleLeft > 0 && spriteTop > 30) {
-        alert("GAME OVER!!! \nTHE METEORITE HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
-        location.reload();
-    }
-}, 20); 
 
