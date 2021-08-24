@@ -66,15 +66,15 @@ setInterval (() => {
     console.log(obstacleLeft); 
 }, 40); 
 
-let alienObstacle = document.querySelector(".alien-obstacle");
+let martianObstacle = document.querySelector(".martian-obstacle");
 
 setInterval (() => {
     const spriteTop = parseInt(window.getComputedStyle(sprite)
     .getPropertyValue("top")); 
-    const alienObstacleLeft = parseInt(window.getComputedStyle(alienObstacle)
+    const martianObstacleLeft = parseInt(window.getComputedStyle(martianObstacle)
     .getPropertyValue("left")); 
 
-    if (alienObstacleLeft < 50 && alienObstacleLeft > 0 && spriteTop > 250) {
+    if (martianObstacleLeft < 50 && martianObstacleLeft > 0 && spriteTop > 250) {
         alert("GAME OVER!!! \nTHE ALIENS HAVE CAPTURED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
         location.reload();
     }
@@ -109,17 +109,16 @@ setInterval (() => {
     }
 }, 70); 
 
-
 // Player Settings - Modals 
-// let modalBtn = document.querySelector(".open-modal"); 
-// let modalBg = document.querySelector(".outer-modal");
-// let modalClose = document.querySelector(".close-modal"); 
+let modalBtn = document.querySelector(".open-modal"); 
+let modalBg = document.querySelector(".outer-modal");
+let modalClose = document.querySelector(".close-modal"); 
 
-// modalBtn.addEventListener("click", function () {
-//     modalBg.classList.add("modal-toggle")
-// }); 
+modalBtn.addEventListener("click", function () {
+    modalBg.classList.add("modal-toggle")
+}); 
 
-// modalClose.addEventListener("click", function () {
-//     modalBg.classList.remove("modal-toggle")
-// }); 
+modalClose.addEventListener("click", function () {
+    modalBg.classList.remove("modal-toggle")
+}); 
 
