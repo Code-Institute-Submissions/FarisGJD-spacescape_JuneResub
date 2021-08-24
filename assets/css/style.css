@@ -98,7 +98,7 @@ header a {
     align-items: center;
     font-size: 5rem;
     text-transform: uppercase;
-    justify-content: space-between; 
+    justify-content: space-around; 
     position: absolute;
     left: 0; 
     right: 0; 
