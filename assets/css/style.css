@@ -28,7 +28,7 @@ h3 {
 }
 
 /* Background Image, Spaceship & Shooting Star Animations */
-#background-image {
+.background-image {
   background: url("../images/background-image-horizon.jpg");
   image-rendering: pixelated;
   filter: saturate(130%);
@@ -87,7 +87,7 @@ header a {
   text-shadow: #000000 0 18px 0, #76f6f0 0 21px 0, #2392d2 0 36px 0, #006aaf 0 54px 0, #004891 0 72px 0, #022345 0 90px 0, #76f6f0 0 93px 0;
 }
 
-#score-counter {
+.score {
   font-size: 7.5rem;
   text-shadow: #000000 0 4px 0, #76f6f0 0 5px 0, #2392d2 0 8px 0, #006aaf 0 12px 0, #004891 0 16px 0, #022345 0 20px 0, #76f6f0 0 21px 0;
   margin-top: 6rem;
@@ -1704,4 +1704,24 @@ input {
     height: 20rem;
     top: 42rem;
   }
+}
+
+.score {
+  display: none;
+}
+
+.game {
+  display: none;
+}
+
+.game-toggle {
+  display: block;
+}
+
+.score-toggle{
+  display: block;
+}
+
+.game-home-toggle {
+  display: none;
 }

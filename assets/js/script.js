@@ -1,6 +1,17 @@
+// Play Button 
+const game = document.querySelector(".game");
+const play = document.querySelector(".play-button");
+const home = document.querySelector(".home-page")
+const scoreCounter = document.querySelector(".score")
+
+play.addEventListener("click", function() {
+  game.classList.add("game-toggle");
+  home.classList.add("game-home-toggle");
+  scoreCounter.classList.add("game-toggle"); 
+})
+
 // Sprite Controls
 let sprite = document.getElementById("astronaut-sprite");
-let scoreCounter = document.getElementById("score-counter");
 
 function locomotionJump() {
   sprite.classList.add("animate-sprite");

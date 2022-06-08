@@ -13,25 +13,23 @@
 
     <title>SPACESCAPE</title>
   </head>
-  <body>
+  <body class="background-image">
+    <!-- Logo & Score Counter -->
+    <header>
+      <a href="index.html">
+        <h1 id="logo">Spacescape</h1>
+      </a>
+      <h2 class="score">0</h2>
+  </header>  
+
     <!-- Background Image, Spaceship & Shooting Star -->
-    <main id="background-image">
+    <main class="home-page">
       <div id="spaceship"></div>
-      <section>
-        <!-- Logo & Score Counter -->
-        <header>
-          <a href="index.html">
-            <h1 id="logo">Spacescape</h1>
-          </a>
-        </header>
-      </section>
 
       <!-- Player Controls -->
       <section id="player-controls">
         <div>
-          <a href="game.html">
-            <h2>Play</h2>
-          </a>
+          <h2 class="play-button">Play</h2>
         </div>
 
         <div>
@@ -64,6 +62,24 @@
       </section>
     </main>
 
+   <!-- Character & Game Obstacles -->
+    <main>
+      <div class="game">
+        <div id="astronaut-sprite"></div>
+
+        <div class="meteorite-obstacle meteorite"></div>
+
+        <div class="fire-obstacle fire-ball"></div>
+
+        <div class="ufo-obstacle ufo"></div>
+
+        <div class="martian-obstacle martian"></div>
+
+        <div class="planetary-obstacle1 planet1"></div>
+
+        <div class="planetary-obstacle2 planet2"></div>
+      </div>
+    </main>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
