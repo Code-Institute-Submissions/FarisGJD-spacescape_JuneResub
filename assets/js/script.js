@@ -39,7 +39,7 @@ setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const meteoriteObstacleLeft = parseInt(window.getComputedStyle(meteoriteObstacle).getPropertyValue("left"));
 
-  if (meteoriteObstacleLeft < 20 && meteoriteObstacleLeft > 0 && spriteTop > 149) {
+  if (meteoriteObstacleLeft < 100 && meteoriteObstacleLeft > 0 && spriteTop > 190) {
     alert("GAME OVER!!! \nTHE METEORITE HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
