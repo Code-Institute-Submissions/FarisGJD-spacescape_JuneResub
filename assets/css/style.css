@@ -91,7 +91,14 @@ header a {
   font-size: 7.5rem;
   text-shadow: #000000 0 4px 0, #76f6f0 0 5px 0, #2392d2 0 8px 0, #006aaf 0 12px 0, #004891 0 16px 0, #022345 0 20px 0, #76f6f0 0 21px 0;
   margin-top: 6rem;
+  display: none;
+  text-align: center;
 }
+
+.score-toggle {
+  display: block;
+}
+
 
 /* Player Controls */
 
@@ -231,17 +238,32 @@ input {
   color: #ff3e4f;
 }
 
+/* Gameplay Container */ 
+.game {
+  display: none;
+}
+
+.game-toggle {
+  display: block;
+}
+
+.game-home-toggle {
+  display: none;
+}
+
 /* Player Sprite & Animations */
 
 #astronaut-sprite {
   height: 40rem;
   width: 30rem;
+  border-radius: 50%;
   background: url("../images/player-sprite.png");
   image-rendering: pixelated;
   background-size: cover;
   position: absolute;
   bottom: 1rem;
   left: -10rem;
+  background-color: red;  
 }
 
 .animate-sprite {
@@ -1704,24 +1726,4 @@ input {
     height: 20rem;
     top: 42rem;
   }
-}
-
-.score {
-  display: none;
-}
-
-.game {
-  display: none;
-}
-
-.game-toggle {
-  display: block;
-}
-
-.score-toggle{
-  display: block;
-}
-
-.game-home-toggle {
-  display: none;
 }
