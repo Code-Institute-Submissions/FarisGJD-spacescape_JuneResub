@@ -39,7 +39,7 @@ setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const meteoriteObstacleLeft = parseInt(window.getComputedStyle(meteoriteObstacle).getPropertyValue("left"));
 
-  if (meteoriteObstacleLeft < 100 && meteoriteObstacleLeft > 0 && spriteTop > 190) {
+  if (meteoriteObstacleLeft < 100 && meteoriteObstacleLeft > 0 && spriteTop > 200) {
     alert("GAME OVER!!! \nTHE METEORITE HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
@@ -50,7 +50,7 @@ setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const fireObstacleleft = parseInt(window.getComputedStyle(fireObstacle).getPropertyValue("left"));
 
-  if (fireObstacleleft < 30 && fireObstacleleft > 0 && spriteTop > 149) {
+  if (fireObstacleleft < 185 && fireObstacleleft > 0 && spriteTop > 200) {
     alert("GAME OVER!!! \nTHE FIREBALL HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
