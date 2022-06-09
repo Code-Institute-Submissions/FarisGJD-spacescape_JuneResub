@@ -300,6 +300,7 @@ input {
 .meteorite {
   background: url("../images/meteorite.png") center center;
   background-size: cover;
+  background-color: blue;  
 }
 
 @keyframes meteorite-obstacle {
@@ -324,6 +325,7 @@ input {
 .fire-ball {
   background: url("../images/fireball.png") center center;
   background-size: cover;
+  background-color: green;  
 }
 
 @keyframes fire-obstacle {
@@ -338,6 +340,7 @@ input {
 .ufo-obstacle {
   height: 30rem;
   width: 30rem;
+  border-radius: 50%;
   position: absolute;
   bottom: 7rem;
   right: 0;
@@ -347,6 +350,7 @@ input {
 .ufo {
   background: url("../images/ufo.png");
   background-size: cover;
+  background-color: gold;  
 }
 
 @keyframes alien-obstacle {
@@ -361,6 +365,7 @@ input {
 .martian-obstacle {
   height: 32rem;
   width: 32rem;
+  border-radius: 50%;
   position: absolute;
   bottom: 7rem;
   right: 0;
@@ -370,6 +375,7 @@ input {
 .martian {
   background: url("../images/martian.png");
   background-size: cover;
+  background-color: yellowgreen;
 }
 
 @keyframes alien-obstacle {
@@ -384,6 +390,7 @@ input {
 .planetary-obstacle1 {
   height: 34rem;
   width: 34rem;
+  border-radius: 50%;
   position: absolute;
   bottom: 7rem;
   right: 0;
@@ -393,6 +400,7 @@ input {
 .planet1 {
   background: url("../images/planet1.png");
   background-size: cover;
+  background-color: purple;  
 }
 
 @keyframes planetary-obstacle1 {
@@ -407,6 +415,7 @@ input {
 .planetary-obstacle2 {
   height: 35rem;
   width: 35rem;
+  border-radius: 50%;
   position: absolute;
   bottom: 7rem;
   right: 0;
@@ -416,6 +425,7 @@ input {
 .planet2 {
   background: url("../images/planet2.png");
   background-size: cover;
+  background-color: brown;  
 }
 
 @keyframes planetary-obstacle2 {
@@ -541,7 +551,7 @@ input {
     text-shadow: #000000 0 15px 0, #76f6f0 0 18px 0, #2392d2 0 30px 0, #006aaf 0 45px 0, #004891 0 55px 0, #022345 0 70px 0, #76f6f0 0 73px 0;
   }
 
-  #score-counter {
+  .score {
     font-size: 7rem;
   }
 
@@ -714,7 +724,7 @@ input {
     text-shadow: #000000 0 12px 0, #76f6f0 0 15px 0, #2392d2 0 24px 0, #006aaf 0 36px 0, #004891 0 48px 0, #022345 0 60px 0, #76f6f0 0 63px 0;
   }
 
-  #score-counter {
+  .score {
     font-size: 6.5rem;
     margin-top: 5rem;
   }
@@ -804,7 +814,7 @@ input {
     text-shadow: #000000 0 10px 0, #76f6f0 0 13px 0, #2392d2 0 20px 0, #006aaf 0 30px 0, #004891 0 40px 0, #022345 0 50px 0, #76f6f0 0 53px 0;
   }
 
-  #score-counter {
+  .score {
     font-size: 5rem;
     text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
   }
@@ -889,7 +899,7 @@ input {
     text-shadow: #000000 0 9px 0, #76f6f0 0 12px 0, #2392d2 0 18px 0, #006aaf 0 27px 0, #004891 0 36px 0, #022345 0 45px 0, #76f6f0 0 48px 0;
   }
 
-  #score-counter {
+  .score {
     font-size: 4.5rem;
     margin-top: 4rem;
   }
@@ -974,7 +984,7 @@ input {
     text-shadow: #000000 0 5px 0, #76f6f0 0 7px 0, #2392d2 0 10px 0, #006aaf 0 15px 0, #004891 0 20px 0, #022345 0 25px 0, #76f6f0 0 27px 0;
   }
 
-  #score-counter {
+  .score {
     font-size: 4rem;
     text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
     margin-top: 2rem;
@@ -1075,7 +1085,7 @@ input {
     text-shadow: #000000 0 4px 0, #76f6f0 0 6px 0, #2392d2 0 8px 0, #006aaf 0 12px 0, #004891 0 16px 0, #022345 0 20px 0, #76f6f0 0 22px 0;
   }
 
-  #score-counter {
+  .score {
     font-size: 3.5rem;
     margin-top: 1.5rem;
   }
@@ -1164,7 +1174,7 @@ input {
     text-shadow: #000000 0 10px 0, #76f6f0 0 13px 0, #2392d2 0 20px 0, #006aaf 0 30px 0, #004891 0 40px 0, #022345 0 50px 0, #76f6f0 0 53px 0;
   }
 
-  #score-counter {
+  .score {
     font-size: 4rem;
     text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
     margin-top: 4rem;
@@ -1265,7 +1275,7 @@ input {
     text-shadow: #000000 0 5px 0, #76f6f0 0 7px 0, #2392d2 0 10px 0, #006aaf 0 15px 0, #004891 0 20px 0, #022345 0 25px 0, #76f6f0 0 27px 0;
   }
 
-  #score-counter {
+  .score {
     font-size: 2.5rem;
     text-shadow: #000000 0 1px 0, #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0, #004891 0 5px 0, #022345 0 6px 0, #76f6f0 0 7px 0;
     margin-top: 2.5rem;
@@ -1349,7 +1359,7 @@ input {
     text-shadow: #000000 0 4px 0, #76f6f0 0 6px 0, #2392d2 0 8px 0, #006aaf 0 12px 0, #004891 0 16px 0, #022345 0 20px 0, #76f6f0 0 22px 0;
   }
 
-  #score-counter {
+  .score {
     font-size: 2rem;
     text-shadow: #000000 0 1px 0, #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0, #004891 0 5px 0, #022345 0 6px 0, #76f6f0 0 7px 0;
     margin-top: 2.5rem;
@@ -1382,7 +1392,7 @@ input {
     text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
   }
 
-  #score-counter {
+  .score {
     font-size: 2rem;
     text-shadow: #000000 0 1px 0, #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0, #004891 0 5px 0, #022345 0 6px 0, #76f6f0 0 7px 0;
     margin-top: 1.5rem;
