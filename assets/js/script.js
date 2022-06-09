@@ -11,7 +11,7 @@ play.addEventListener("click", function() {
 })
 
 // Sprite Controls
-let sprite = document.getElementById("astronaut-sprite");
+const sprite = document.getElementById("astronaut-sprite");
 
 function locomotionJump() {
   sprite.classList.add("animate-sprite");
@@ -33,7 +33,7 @@ document.addEventListener("keypress", () => {
 });
 
 // Obstacles, Game Over & Score Counter Detection
-let meteoriteObstacle = document.querySelector(".meteorite-obstacle");
+const meteoriteObstacle = document.querySelector(".meteorite-obstacle");
 setInterval(() => {
   scoreCounter.innerText++;
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
@@ -43,9 +43,9 @@ setInterval(() => {
     alert("GAME OVER!!! \nTHE METEORITE HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
-}, 20);
+}, 10);
 
-let fireObstacle = document.querySelector(".fire-ball");
+const fireObstacle = document.querySelector(".fire-ball");
 setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const fireObstacleleft = parseInt(window.getComputedStyle(fireObstacle).getPropertyValue("left"));
@@ -54,55 +54,55 @@ setInterval(() => {
     alert("GAME OVER!!! \nTHE FIREBALL HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
-}, 30);
+}, 10);
 
-let ufoObstacle = document.querySelector(".ufo-obstacle");
+const ufoObstacle = document.querySelector(".ufo-obstacle");
 
 setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const ufoObstacleLeft = parseInt(window.getComputedStyle(ufoObstacle).getPropertyValue("left"));
 
-  if (ufoObstacleLeft < 45 && ufoObstacleLeft > 0 && spriteTop > 149) {
+  if (ufoObstacleLeft < 183 && ufoObstacleLeft > 0 && spriteTop > 200) {
     alert("GAME OVER!!! \nTHE SPACESHIP HAS INTERCEPTED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
-}, 45);
+}, 10);
 
-let martianObstacle = document.querySelector(".martian-obstacle");
+const martianObstacle = document.querySelector(".martian-obstacle");
 
 setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const martianObstacleLeft = parseInt(window.getComputedStyle(martianObstacle).getPropertyValue("left"));
 
-  if (martianObstacleLeft < 50 && martianObstacleLeft > 0 && spriteTop > 149) {
+  if (martianObstacleLeft < 136 && martianObstacleLeft > 0 && spriteTop > 200) {
     alert("GAME OVER!!! \nTHE MARTIANS HAVE CAPTURED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
-}, 50);
+}, 10);
 
-let planetaryObstacle1 = document.querySelector(".planetary-obstacle1");
+const planetaryObstacle1 = document.querySelector(".planetary-obstacle1");
 
 setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const planetaryObstacle1Left = parseInt(window.getComputedStyle(planetaryObstacle1).getPropertyValue("left"));
 
-  if (planetaryObstacle1Left < 55 && planetaryObstacle1Left > 0 && spriteTop > 140) {
+  if (planetaryObstacle1Left < 195 && planetaryObstacle1Left > 0 && spriteTop > 200) {
     alert("GAME OVER!!! \n THE PLANETS MASSIVE GRAVITATIONAL PULL HAS DRAWN YOU IN \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
-}, 55);
+}, 10);
 
-let planetaryObstacle2 = document.querySelector(".planetary-obstacle2");
+const planetaryObstacle2 = document.querySelector(".planetary-obstacle2");
 
 setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const planetaryObstacle2Left = parseInt(window.getComputedStyle(planetaryObstacle2).getPropertyValue("left"));
 
-  if (planetaryObstacle2Left < 60 && planetaryObstacle2Left > 0 && spriteTop > 140) {
+  if (planetaryObstacle2Left < 195 && planetaryObstacle2Left > 0 && spriteTop > 200) {
     alert("GAME OVER!!! \n THE PLANETS MASSIVE GRAVITATIONAL PULL HAS DRAWN YOU IN \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
-}, 60);
+}, 10);
 
 // Player Settings - Modals
 let modalBtn = document.querySelector(".open-modal");
