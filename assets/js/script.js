@@ -36,13 +36,14 @@ document.addEventListener("keypress", () => {
 const meteoriteObstacle = document.querySelector(".meteorite-obstacle");
 setInterval(() => {
   scoreCounter.innerText++;
-  const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
-  const meteoriteObstacleLeft = parseInt(window.getComputedStyle(meteoriteObstacle).getPropertyValue("left"));
+  let spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
+  let meteoriteObstacleLeft = parseInt(window.getComputedStyle(meteoriteObstacle).getPropertyValue("left"));
 
-  if (meteoriteObstacleLeft < 100 && meteoriteObstacleLeft > 0 && spriteTop > 200) {
+  if (meteoriteObstacleLeft < 30 && meteoriteObstacleLeft > 0 && spriteTop > 250) {
     alert("GAME OVER!!! \nTHE METEORITE HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
+
 }, 10);
 
 const fireObstacle = document.querySelector(".fire-ball");
@@ -50,7 +51,7 @@ setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const fireObstacleleft = parseInt(window.getComputedStyle(fireObstacle).getPropertyValue("left"));
 
-  if (fireObstacleleft < 185 && fireObstacleleft > 0 && spriteTop > 200) {
+  if (fireObstacleleft < 30 && fireObstacleleft > 0 && spriteTop > 250) {
     alert("GAME OVER!!! \nTHE FIREBALL HAS STRUCK YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
@@ -62,7 +63,7 @@ setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const ufoObstacleLeft = parseInt(window.getComputedStyle(ufoObstacle).getPropertyValue("left"));
 
-  if (ufoObstacleLeft < 183 && ufoObstacleLeft > 0 && spriteTop > 200) {
+  if (ufoObstacleLeft < 30 && ufoObstacleLeft > 0 && spriteTop > 250) {
     alert("GAME OVER!!! \nTHE SPACESHIP HAS INTERCEPTED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
@@ -74,7 +75,7 @@ setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const martianObstacleLeft = parseInt(window.getComputedStyle(martianObstacle).getPropertyValue("left"));
 
-  if (martianObstacleLeft < 136 && martianObstacleLeft > 0 && spriteTop > 200) {
+  if (martianObstacleLeft < 25 && martianObstacleLeft > 0 && spriteTop > 250) {
     alert("GAME OVER!!! \nTHE MARTIANS HAVE CAPTURED YOU. \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
@@ -86,7 +87,7 @@ setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const planetaryObstacle1Left = parseInt(window.getComputedStyle(planetaryObstacle1).getPropertyValue("left"));
 
-  if (planetaryObstacle1Left < 195 && planetaryObstacle1Left > 0 && spriteTop > 200) {
+  if (planetaryObstacle1Left < 20 && planetaryObstacle1Left > 0 && spriteTop > 250) {
     alert("GAME OVER!!! \n THE PLANETS MASSIVE GRAVITATIONAL PULL HAS DRAWN YOU IN \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
@@ -98,14 +99,12 @@ setInterval(() => {
   const spriteTop = parseInt(window.getComputedStyle(sprite).getPropertyValue("top"));
   const planetaryObstacle2Left = parseInt(window.getComputedStyle(planetaryObstacle2).getPropertyValue("left"));
 
-  if (planetaryObstacle2Left < 195 && planetaryObstacle2Left > 0 && spriteTop > 200) {
+  if (planetaryObstacle2Left < 20 && planetaryObstacle2Left > 0 && spriteTop > 250) {
     alert("GAME OVER!!! \n THE PLANETS MASSIVE GRAVITATIONAL PULL HAS DRAWN YOU IN \nYou Got A Score Of: " + scoreCounter.innerText);
     location.reload();
   }
 }, 10);
 
-// Obstacles & Game Over Detection Media Queries
-const mediaQuery = window.matchMedia('(min-width: 768px)')
 
 // Player Settings - Modals
 let modalBtn = document.querySelector(".open-modal");
