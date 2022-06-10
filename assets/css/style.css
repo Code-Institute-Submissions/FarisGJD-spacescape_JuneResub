@@ -1,1471 +1,1223 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&family=VT323&display=swap");
-
 /* Create A Base 10 Unit For Measurements */
-
-html {
-  font-size: 62.5%;
+ html {
+     font-size: 62.5%;
 }
-
 /* Create Custom Default Settings For Document */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 }
-
-body {
-  color: #ffffff;
-  background: #000000;
-  font-family: Orbitron, sans-serif;
+ body {
+     color: #ffffff;
+     background: #000000;
+     font-family: Orbitron, sans-serif;
 }
-
 /* Heading Styling */
-#logo,
-h2,
-h3 {
-  font-family: VT323;
+ #logo, h2, h3 {
+     font-family: VT323;
 }
-
 /* Background Image, Spaceship & Shooting Star Animations */
-.background-image {
-  background: url("../images/background-image-horizon.jpg") center center;
-  image-rendering: pixelated;
-  filter: saturate(130%);
-  min-height: 100vh;
-  width: 100%;
-  background-size: cover;
-  position: relative;
-  animation: space-movement 40s linear infinite;
-  overflow: hidden;
+ .background-image {
+     background: url("../images/background-image-horizon.jpg") center center;
+     image-rendering: pixelated;
+     filter: saturate(130%);
+     min-height: 100vh;
+     width: 100%;
+     background-size: cover;
+     position: relative;
+     animation: space-movement 40s linear infinite;
+     overflow: hidden;
 }
-
-@keyframes space-movement {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100vw 0;
-  }
+ @keyframes space-movement {
+     0% {
+         background-position: 0 0;
+    }
+     100% {
+         background-position: 100vw 0;
+    }
 }
-
-#spaceship {
-  background: url("../images/spaceship.png");
-  background-size: cover;
-  height: 58rem;
-  width: 58rem;
-  position: absolute;
-  top: 11.5%;
-  transform: rotate(90deg);
-  animation: ship-movement 20s infinite linear;
+ #spaceship {
+     background: url("../images/spaceship.png");
+     background-size: cover;
+     height: 58rem;
+     width: 58rem;
+     position: absolute;
+     top: 11.5%;
+     transform: rotate(90deg);
+     animation: ship-movement 20s infinite linear;
 }
-
-@keyframes ship-movement {
-  from {
-    left: -620px;
-  }
-  to {
-    left: 100%;
-  }
+ @keyframes ship-movement {
+     from {
+         left: -620px;
+    }
+     to {
+         left: 100%;
+    }
 }
-
 /* Logo & Score Counter */
-
-header {
-  text-align: center;
+ header {
+     text-align: center;
 }
-
-header a {
-  text-decoration: none;
-  color: inherit;
+ header a {
+     text-decoration: none;
+     color: inherit;
 }
-
-#logo {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 18rem;
-  text-shadow: #000000 0 18px 0, #76f6f0 0 21px 0, #2392d2 0 36px 0, #006aaf 0 54px 0, #004891 0 72px 0, #022345 0 90px 0, #76f6f0 0 93px 0;
+ #logo {
+     display: inline-block;
+     text-transform: uppercase;
+     font-size: 18rem;
+     text-shadow: #000000 0 18px 0, #76f6f0 0 21px 0, #2392d2 0 36px 0, #006aaf 0 54px 0, #004891 0 72px 0, #022345 0 90px 0, #76f6f0 0 93px 0;
 }
-
-.score {
-  font-size: 7.5rem;
-  text-shadow: #000000 0 4px 0, #76f6f0 0 5px 0, #2392d2 0 8px 0, #006aaf 0 12px 0, #004891 0 16px 0, #022345 0 20px 0, #76f6f0 0 21px 0;
-  margin-top: 6rem;
-  display: none;
-  text-align: center;
+ .score {
+     font-size: 7.5rem;
+     text-shadow: #000000 0 4px 0, #76f6f0 0 5px 0, #2392d2 0 8px 0, #006aaf 0 12px 0, #004891 0 16px 0, #022345 0 20px 0, #76f6f0 0 21px 0;
+     margin-top: 6rem;
+     display: none;
+     text-align: center;
 }
-
-.score-toggle {
-  display: block;
+ .score-toggle {
+     display: block;
 }
-
-
 /* Player Controls */
-
-#player-controls {
-  width: 40rem;
-  height: 50rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 5rem;
-  text-transform: uppercase;
-  justify-content: space-around;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 34%;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
+ #player-controls {
+     width: 40rem;
+     height: 50rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-size: 5rem;
+     text-transform: uppercase;
+     justify-content: space-around;
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 34%;
+     margin-left: auto;
+     margin-right: auto;
+     z-index: 1;
 }
-
-#player-controls a {
-  text-decoration: none;
-  color: inherit;
+ #player-controls a {
+     text-decoration: none;
+     color: inherit;
 }
-
-#player-controls h2 {
-  background-color: #000000;
-  width: 40rem;
-  text-align: center;
-  border: #222222 outset 10px;
-  box-shadow: #76f6f0 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #2392d2 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #006aaf 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #004891 0px 0px 0px 28px, #000000 0px 0px 0px 32px;
-  animation: zero-gravity-controls 6s ease-in-out infinite;
+ #player-controls h2 {
+     background-color: #000000;
+     width: 40rem;
+     text-align: center;
+     border: #222222 outset 10px;
+     box-shadow: #76f6f0 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #2392d2 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #006aaf 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #004891 0px 0px 0px 28px, #000000 0px 0px 0px 32px;
+     animation: zero-gravity-controls 6s ease-in-out infinite;
 }
-
-@keyframes zero-gravity-controls {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(15px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+ @keyframes zero-gravity-controls {
+     0% {
+         transform: translateY(0px);
+    }
+     50% {
+         transform: translateY(15px);
+    }
+     100% {
+         transform: translateY(0px);
+    }
 }
-
-#player-controls h2:hover {
-  background-color: #ff3e4f;
-  cursor: pointer;
-  box-shadow: #ffdd5c 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #feaf34 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #fe9200 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #fb6a04 0px 0px 0px 28px, #000000 0px 0px 0px 32px,
-    #ff5100 0px 0px 0px 36px;
-  text-shadow: #000000 2px 3px, #000000 2px 6px;
+ #player-controls h2:hover {
+     background-color: #ff3e4f;
+     cursor: pointer;
+     box-shadow: #ffdd5c 0px 0px 0px 4px, #000000 0px 0px 0px 8px, #feaf34 0px 0px 0px 12px, #000000 0px 0px 0px 16px, #fe9200 0px 0px 0px 20px, #000000 0px 0px 0px 24px, #fb6a04 0px 0px 0px 28px, #000000 0px 0px 0px 32px, #ff5100 0px 0px 0px 36px;
+     text-shadow: #000000 2px 3px, #000000 2px 6px;
 }
-
 /* Player Controls - Terminal Modal */
-
-.outer-modal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  background-color: rgb(0, 0, 0, 0.7);
-  z-index: 2;
-  opacity: 0;
-  visibility: hidden;
+ .outer-modal {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: fixed;
+     height: 100vh;
+     width: 100vw;
+     top: 0;
+     left: 0;
+     background-color: rgb(0, 0, 0, 0.7);
+     z-index: 2;
+     opacity: 0;
+     visibility: hidden;
 }
-
-.inner-modal {
-  width: 95rem;
-  height: 54rem;
-  background: radial-gradient(circle at center, #004891, #022345, #000000 100%);
-  background: url("../images/terminal.jpg") center center;
-  background-size: cover;
-  font-size: 2rem;
-  text-shadow: #000000 2px 2px;
-  border-radius: 50px;
-  overflow-y: auto;
+ .inner-modal {
+     width: 95rem;
+     height: 54rem;
+     background: radial-gradient(circle at center, #004891, #022345, #000000 100%);
+     background: url("../images/terminal.jpg") center center;
+     background-size: cover;
+     font-size: 2rem;
+     text-shadow: #000000 2px 2px;
+     border-radius: 50px;
+     overflow-y: auto;
 }
-
-.inner-modal h4 {
-  font-size: 5rem;
-  text-align: center;
-  margin-top: 4rem;
+ .inner-modal h4 {
+     font-size: 5rem;
+     text-align: center;
+     margin-top: 4rem;
 }
-
-.inner-modal p {
-  line-height: 3.1rem;
-  padding: 0 6rem;
-  margin: 2rem;
+ .inner-modal p {
+     line-height: 3.1rem;
+     padding: 0 6rem;
+     margin: 2rem;
 }
-
-#settings-modal-content {
-  display: flex;
-  justify-content: space-between;
-  margin: 11rem;
+ #settings-modal-content {
+     display: flex;
+     justify-content: space-between;
+     margin: 11rem;
 }
-
-.settings-options {
-  display: inline-flex;
-  flex-direction: column;
-  font-size: 2.5rem;
-  align-items: center;
+ .settings-options {
+     display: inline-flex;
+     flex-direction: column;
+     font-size: 2.5rem;
+     align-items: center;
 }
-
-.settings-options h5 {
-  font-size: 3rem;
+ .settings-options h5 {
+     font-size: 3rem;
 }
-
-.settings-options label {
-  margin: 3rem;
+ .settings-options label {
+     margin: 3rem;
 }
-
-input {
-  cursor: pointer;
+ input {
+     cursor: pointer;
 }
-
-.modal-toggle {
-  visibility: visible;
-  opacity: 1;
+ .modal-toggle {
+     visibility: visible;
+     opacity: 1;
 }
-
-.close-modal {
-  font-size: 2rem;
-  padding-bottom: 30px;
-  cursor: pointer;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+ .close-modal {
+     font-size: 2rem;
+     padding-bottom: 30px;
+     cursor: pointer;
+     text-align: center;
+     display: flex;
+     justify-content: center;
 }
-
-.close-modal:hover {
-  color: #ff3e4f;
+ .close-modal:hover {
+     color: #ff3e4f;
 }
-
-/* Gameplay Container */ 
-.game {
-  display: none;
+/* Gameplay Container */
+ .game {
+     display: none;
 }
-
-.game-toggle {
-  display: block;
+ .game-toggle {
+     display: block;
 }
-
-.game-home-toggle {
-  display: none;
+ .game-home-toggle {
+     display: none;
 }
-
 /* Player Sprite & Animations */
-
-#astronaut-sprite {
-  height: 22rem; 
-  width: 22rem; 
-  border-radius: 50%;
-  background: url("../images/player-sprite.png") center center no-repeat; 
-  background-size: 200%;
-  background-color: red;
-  position: absolute;
-  bottom: 6.5rem;
+ #astronaut-sprite {
+     height: 22rem;
+     width: 22rem;
+     border-radius: 50%;
+     background: url("../images/player-sprite.png") center center no-repeat;
+     background-size: 200%;
+     position: absolute;
+     bottom: 6.5rem;
 }
-
-.animate-sprite {
-  animation: sprite-jump 0.7s linear;
+ .animate-sprite {
+     animation: sprite-jump 0.7s linear;
 }
-
-@keyframes sprite-jump {
-  0% {
-    top: 250px;
-  }
-  30% {
-    top: 150px;
-  }
-  70% {
-    top: 150px;
-  }
-  100% {
-    top: 250px;
-  }
+ @keyframes sprite-jump {
+     0% {
+         top: 300px;
+    }
+     30% {
+         top: 200px;
+    }
+     70% {
+         top: 200px;
+    }
+     100% {
+         top: 300px;
+    }
+    /* 0% {
+         top: 250px;
+    }
+     30% {
+         top: 150px;
+    }
+     70% {
+         top: 150px;
+    }
+     100% {
+         top: 250px;
+    }
+     */
 }
-
 /* Game Obstacles & Animation */
-
-.meteorite-obstacle {
-  height: 16rem;
-  width: 20rem;
-  border-radius: 50%;
-  transform: rotate(45deg);
-  position: absolute;
-  bottom: 7rem;
-  right: 0;
-  animation: meteorite-obstacle 2.5s linear infinite;
+ .meteorite-obstacle {
+     height: 16rem;
+     width: 20rem;
+     border-radius: 50%;
+     transform: rotate(45deg);
+     position: absolute;
+     bottom: 7rem;
+     right: 0;
+     animation: meteorite-obstacle 2.5s linear infinite;
 }
-
-.meteorite {
-  background: url("../images/meteorite.png") center center no-repeat;
-  background-size: 138%; 
-  background-color: #004891;
+ .meteorite {
+     background: url("../images/meteorite.png") center center no-repeat;
+     background-size: 138%;
 }
-
-@keyframes meteorite-obstacle {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: -25%;
-  }
+ @keyframes meteorite-obstacle {
+     0% {
+         left: 100%;
+    }
+     100% {
+         left: -25%;
+    }
 }
-
-.fire-obstacle {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 10%;
-  transform: rotate(45deg);
-  position: absolute;
-  bottom: 6rem;
-  right: 0;
-  animation: fire-obstacle 15s linear infinite;
+ .fire-obstacle {
+     height: 20rem;
+     width: 20rem;
+     border-radius: 10%;
+     transform: rotate(45deg);
+     position: absolute;
+     bottom: 6rem;
+     right: 0;
+     animation: fire-obstacle 12s linear infinite;
 }
-
-.fire-ball {
-  background: url("../images/fireball.png") center center no-repeat;
-  background-size: 110%;
-  background-color: #222222;
+ .fire-ball {
+     background: url("../images/fireball.png") center center no-repeat;
+     background-size: 110%;
 }
-
-@keyframes fire-obstacle {
-  0% {
-    left: 400%;
-  }
-  100% {
-    left: -400%;
-  }
+ @keyframes fire-obstacle {
+     0% {
+         left: 400%;
+    }
+     100% {
+         left: -400%;
+    }
 }
-
-.ufo-obstacle {
-  height: 24rem;
-  width: 30rem;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 7rem;
-  right: 0;
-  animation: alien-obstacle 25s linear infinite;
+ .ufo-obstacle {
+     height: 24rem;
+     width: 30rem;
+     border-radius: 50%;
+     position: absolute;
+     bottom: 7rem;
+     right: 0;
+     animation: alien-obstacle 25s linear infinite;
 }
-
-.ufo {
-  background: url("../images/ufo.png") center center no-repeat;
-  background-size: 120%;
-  background-color: #006aaf;
+ .ufo {
+     background: url("../images/ufo.png") center center no-repeat;
+     background-size: 120%;
 }
-
-@keyframes alien-obstacle {
-  0% {
-    left: 600%;
-  }
-  100% {
-    left: -600%;
-  }
+ @keyframes alien-obstacle {
+     0% {
+         left: 600%;
+    }
+     100% {
+         left: -600%;
+    }
 }
-
-.martian-obstacle {
-  height: 32rem;
-  width: 28rem;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 5rem;
-  right: 0;
-  animation: martian-obstacle 35s linear infinite;
+ .martian-obstacle {
+     height: 32rem;
+     width: 28rem;
+     border-radius: 50%;
+     position: absolute;
+     bottom: 5rem;
+     right: 0;
+     animation: martian-obstacle 35s linear infinite;
 }
-
-.martian {
-  background: url("../images/martian.png") center center no-repeat;
-  background-size: 120%; 
-  background-color: #fb6a04;
+ .martian {
+     background: url("../images/martian.png") center center no-repeat;
+     background-size: 120%;
 }
-
-@keyframes martian-obstacle {
-  0% {
-    left: 1000%;
-  }
-  100% {
-    left: -1000%;
-  }
+ @keyframes martian-obstacle {
+     0% {
+         left: 1000%;
+    }
+     100% {
+         left: -1000%;
+    }
 }
-
-.planetary-obstacle1 {
-  height: 34rem;
-  width: 34rem;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 7rem;
-  right: 0;
-  animation: planetary-obstacle1 45s linear infinite;
+ .planetary-obstacle1 {
+     height: 34rem;
+     width: 34rem;
+     border-radius: 50%;
+     position: absolute;
+     bottom: 7rem;
+     right: 0;
+     animation: planetary-obstacle1 45s linear infinite;
 }
-
-.planet1 {
-  background: url("../images/planet1.png") center center no-repeat;
-  background-size: 135%; 
+ .planet1 {
+     background: url("../images/planet1.png") center center no-repeat;
+     background-size: 135%;
 }
-
-@keyframes planetary-obstacle1 {
-  0% {
-    left: 1500%;
-  }
-  100% {
-    left: -1500%;
-  }
+ @keyframes planetary-obstacle1 {
+     0% {
+         left: 1500%;
+    }
+     100% {
+         left: -1500%;
+    }
 }
-
-.planetary-obstacle2 {
-  height: 35rem;
-  width: 35rem;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 7rem;
-  right: 0;
-  animation: planetary-obstacle2 60s linear infinite;
+ .planetary-obstacle2 {
+     height: 35rem;
+     width: 35rem;
+     border-radius: 50%;
+     position: absolute;
+     bottom: 7rem;
+     right: 0;
+     animation: planetary-obstacle2 60s linear infinite;
 }
-
-.planet2 {
-  background: url("../images/planet2.png") center center no-repeat;
-  background-size: 135%;
-  background-color: #004891;
+ .planet2 {
+     background: url("../images/planet2.png") center center no-repeat;
+     background-size: 135%;
 }
-
-@keyframes planetary-obstacle2 {
-  0% {
-    left: 2000%;
-  }
-  100% {
-    left: -2000%;
-  }
+ @keyframes planetary-obstacle2 {
+     0% {
+         left: 2000%;
+    }
+     100% {
+         left: -2000%;
+    }
 }
-
 /* General Media Queries - Max Width */
-
 /* Screen Size: 1200px & Below */
-@media screen and (max-width: 1200px) {
-  #spaceship {
-    width: 55rem;
-    height: 55rem;
-    top: 10rem;
-  }
-
-  #astronaut-sprite {
-    height: 18rem;
-    width: 18rem;
-  }
-
-  .meteorite-obstacle {
-    height: 14rem;
-    width: 18rem;
-  }
-
-  .fire-obstacle {
-    height: 18rem;
-    width: 18rem;
-  }
-
-  .ufo-obstacle {
-    height: 22rem;
-    width: 28rem;
-  }
-
-  .martian-obstacle {
-    height: 28rem;
-    width: 24rem;
-  }
-
-  .planetary-obstacle1 {
-    height: 30rem;
-    width: 30rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 30rem;
-    width: 30rem;
-  }
+ @media screen and (max-width: 1200px) {
+     #spaceship {
+         width: 55rem;
+         height: 55rem;
+         top: 10rem;
+    }
+     #astronaut-sprite {
+         height: 18rem;
+         width: 18rem;
+    }
+     .meteorite-obstacle {
+         height: 14rem;
+         width: 18rem;
+    }
+     .fire-obstacle {
+         height: 18rem;
+         width: 18rem;
+    }
+     .ufo-obstacle {
+         height: 22rem;
+         width: 28rem;
+    }
+     .martian-obstacle {
+         height: 28rem;
+         width: 24rem;
+    }
+     .planetary-obstacle1 {
+         height: 30rem;
+         width: 30rem;
+    }
+     .planetary-obstacle2 {
+         height: 30rem;
+         width: 30rem;
+    }
 }
-
 /* Screen Size: 1024px & Below */
-@media screen and (max-width: 1024px) {
-  #spaceship {
-    width: 50rem;
-    height: 50rem;
-    top: 12rem;
-  }
-
-  #astronaut-sprite {
-    height: 16rem;
-    width: 16rem;
-  }
-
-  .meteorite-obstacle {
-    height: 13rem;
-    width: 16rem;
-  }
-
-  .fire-obstacle {
-    height: 16rem;
-    width: 16rem;
-  }
-
-  .ufo-obstacle {
-    height: 20rem;
-    width: 26rem;
-  }
-
-  .martian-obstacle {
-    height: 26rem;
-    width: 22rem;
-  }
-
-  .planetary-obstacle1 {
-    height: 26rem;
-    width: 26rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 27rem;
-    width: 27rem;
-  }
-
-  .inner-modal {
-    width: 90rem;
-    height: 51rem;
-  }
-
-  .close-modal {
-    font-size: 1.5rem;
-  }
+ @media screen and (max-width: 1024px) {
+     #spaceship {
+         width: 50rem;
+         height: 50rem;
+         top: 12rem;
+    }
+     #astronaut-sprite {
+         height: 16rem;
+         width: 16rem;
+    }
+     .meteorite-obstacle {
+         height: 13rem;
+         width: 16rem;
+    }
+     .fire-obstacle {
+         height: 16rem;
+         width: 16rem;
+    }
+     .ufo-obstacle {
+         height: 20rem;
+         width: 26rem;
+    }
+     .martian-obstacle {
+         height: 26rem;
+         width: 22rem;
+    }
+     .planetary-obstacle1 {
+         height: 26rem;
+         width: 26rem;
+    }
+     .planetary-obstacle2 {
+         height: 27rem;
+         width: 27rem;
+    }
+     .inner-modal {
+         width: 90rem;
+         height: 51rem;
+    }
+     .close-modal {
+         font-size: 1.5rem;
+    }
 }
-
 /* Screen Size: 900px & Below */
-@media screen and (max-width: 900px) {
-  #spaceship {
-    width: 45rem;
-    height: 45rem;
-    top: 33rem;
-  }
-
-  #logo {
-    font-size: 15rem;
-    text-shadow: #000000 0 15px 0, #76f6f0 0 18px 0, #2392d2 0 30px 0, #006aaf 0 45px 0, #004891 0 55px 0, #022345 0 70px 0, #76f6f0 0 73px 0;
-  }
-
-  .score {
-    font-size: 7rem;
-  }
-
-  #player-controls {
-    width: 35rem;
-    height: 45rem;
-    font-size: 4.5rem;
-  }
-
-  #player-controls h2 {
-    width: 35rem;
-    border: #222222 outset 8px;
-  }
-
-  #astronaut-sprite {
-    height: 14rem;
-    width: 14rem;
-  }
-
-  .meteorite-obstacle {
-    height: 12rem;
-    width: 14rem;
-  }
-
-  .fire-obstacle {
-    height: 10rem;
-    width: 10rem;
-  }
-
-  .ufo-obstacle {
-    height: 18rem;
-    width: 24rem;
-  }
-
-  .martian-obstacle {
-    height: 24rem;
-    width: 20rem;
-  }
-
-  .planetary-obstacle1 {
-    height: 23rem;
-    width: 23rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 24rem;
-    width: 24rem;
-  }
-
-  .inner-modal {
-    width: 76rem;
-    height: 44rem;
-  }
-
-  .close-modal {
-    font-size: 1.2rem;
-  }
-
-  #settings-modal-content {
-    margin: 9rem;
-  }
-
-  .settings-options {
-    font-size: 2rem;
-  }
-
-  .settings-options h5 {
-    font-size: 2.5rem;
-  }
+ @media screen and (max-width: 900px) {
+     #spaceship {
+         width: 45rem;
+         height: 45rem;
+         top: 33rem;
+    }
+     #logo {
+         font-size: 15rem;
+         text-shadow: #000000 0 15px 0, #76f6f0 0 18px 0, #2392d2 0 30px 0, #006aaf 0 45px 0, #004891 0 55px 0, #022345 0 70px 0, #76f6f0 0 73px 0;
+    }
+     .score {
+         font-size: 7rem;
+    }
+     #player-controls {
+         width: 35rem;
+         height: 45rem;
+         font-size: 4.5rem;
+    }
+     #player-controls h2 {
+         width: 35rem;
+         border: #222222 outset 8px;
+    }
+     #astronaut-sprite {
+         height: 14rem;
+         width: 14rem;
+    }
+     .meteorite-obstacle {
+         height: 12rem;
+         width: 14rem;
+    }
+     .fire-obstacle {
+         height: 10rem;
+         width: 10rem;
+    }
+     .ufo-obstacle {
+         height: 18rem;
+         width: 24rem;
+    }
+     .martian-obstacle {
+         height: 24rem;
+         width: 20rem;
+    }
+     .planetary-obstacle1 {
+         height: 23rem;
+         width: 23rem;
+    }
+     .planetary-obstacle2 {
+         height: 24rem;
+         width: 24rem;
+    }
+     .inner-modal {
+         width: 76rem;
+         height: 44rem;
+    }
+     .close-modal {
+         font-size: 1.2rem;
+    }
+     #settings-modal-content {
+         margin: 9rem;
+    }
+     .settings-options {
+         font-size: 2rem;
+    }
+     .settings-options h5 {
+         font-size: 2.5rem;
+    }
 }
-
 /* Screen Size: 769px & Below */
-@media screen and (max-width: 769px) {
-  #spaceship {
-    width: 40rem;
-    height: 40rem;
-    top: 36rem;
-  }
-
-  #logo {
-    font-size: 13rem;
-    text-shadow: #000000 0 13px 0, #76f6f0 0 16px 0, #2392d2 0 26px 0, #006aaf 0 39px 0, #004891 0 52px 0, #022345 0 65px 0, #76f6f0 0 68px 0;
-  }
-
-  #player-controls {
-    width: 30rem;
-    height: 40rem;
-    font-size: 4rem;
-  }
-
-  #player-controls h2 {
-    width: 30rem;
-    box-shadow: #76f6f0 0 0 0 3px, #000000 0 0 0 6px, #2392d2 0 0 0 9px, #000000 0 0 0 12px, #006aaf 0 0 0 15px, #000000 0 0 0 18px, #004891 0 0 0 21px, #000000 0 0 0 24px, #022345 0 0 0 27px;
-    border: #222222 outset 7px;
-  }
-
-  #player-controls h2:hover {
-    box-shadow: #ffdd5c 0 0 0 3px, #000000 0 0 0 6px, #feaf34 0 0 0 9px, #000000 0 0 0 12px, #fe9200 0 0 0 15px, #000000 0 0 0 18px, #fb6a04 0 0 0 21px, #000000 0 0 0 24px, #ff5100 0 0 0 27px;
-  }
-
-  #astronaut-sprite {
-    height: 12rem;
-    width: 12rem;
-  }
-
-  .meteorite-obstacle {
-    height: 10rem;
-    width: 12rem;
-  }
-
-  .ufo-obstacle {
-    height: 14rem;
-    width: 20rem;
-  }
-
-  .martian-obstacle {
-    height: 22rem;
-    width: 18rem;
-  }
-
-  .planetary-obstacle1 {
-    height: 21rem;
-    width: 21rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 22rem;
-    width: 22rem;
-  }
-
-  .inner-modal {
-    width: 60rem;
-    height: 34rem;
-  }
-
-  .inner-modal h4 {
-    font-size: 4rem;
-  }
-
-  #settings-modal-content {
-    margin: 7rem;
-  }
-
-  .settings-options {
-    font-size: 1.5rem;
-  }
-
-  .settings-options h5 {
-    font-size: 2rem;
-  }
+ @media screen and (max-width: 769px) {
+     #spaceship {
+         width: 40rem;
+         height: 40rem;
+         top: 36rem;
+    }
+     #logo {
+         font-size: 13rem;
+         text-shadow: #000000 0 13px 0, #76f6f0 0 16px 0, #2392d2 0 26px 0, #006aaf 0 39px 0, #004891 0 52px 0, #022345 0 65px 0, #76f6f0 0 68px 0;
+    }
+     #player-controls {
+         width: 30rem;
+         height: 40rem;
+         font-size: 4rem;
+    }
+     #player-controls h2 {
+         width: 30rem;
+         box-shadow: #76f6f0 0 0 0 3px, #000000 0 0 0 6px, #2392d2 0 0 0 9px, #000000 0 0 0 12px, #006aaf 0 0 0 15px, #000000 0 0 0 18px, #004891 0 0 0 21px, #000000 0 0 0 24px, #022345 0 0 0 27px;
+         border: #222222 outset 7px;
+    }
+     #player-controls h2:hover {
+         box-shadow: #ffdd5c 0 0 0 3px, #000000 0 0 0 6px, #feaf34 0 0 0 9px, #000000 0 0 0 12px, #fe9200 0 0 0 15px, #000000 0 0 0 18px, #fb6a04 0 0 0 21px, #000000 0 0 0 24px, #ff5100 0 0 0 27px;
+    }
+     #astronaut-sprite {
+         height: 12rem;
+         width: 12rem;
+    }
+     .meteorite-obstacle {
+         height: 10rem;
+         width: 12rem;
+    }
+     .ufo-obstacle {
+         height: 14rem;
+         width: 20rem;
+    }
+     .martian-obstacle {
+         height: 22rem;
+         width: 18rem;
+    }
+     .planetary-obstacle1 {
+         height: 21rem;
+         width: 21rem;
+    }
+     .planetary-obstacle2 {
+         height: 22rem;
+         width: 22rem;
+    }
+     .inner-modal {
+         width: 60rem;
+         height: 34rem;
+    }
+     .inner-modal h4 {
+         font-size: 4rem;
+    }
+     #settings-modal-content {
+         margin: 7rem;
+    }
+     .settings-options {
+         font-size: 1.5rem;
+    }
+     .settings-options h5 {
+         font-size: 2rem;
+    }
 }
-
 /* Screen Size: 650px & Below */
-@media screen and (max-width: 650px) {
-  #spaceship {
-    width: 35rem;
-    height: 35rem;
-    top: 33rem;
-  }
-
-  #logo {
-    font-size: 12rem;
-    text-shadow: #000000 0 12px 0, #76f6f0 0 15px 0, #2392d2 0 24px 0, #006aaf 0 36px 0, #004891 0 48px 0, #022345 0 60px 0, #76f6f0 0 63px 0;
-  }
-
-  .score {
-    font-size: 6.5rem;
-    margin-top: 5rem;
-  }
-
-  #player-controls {
-    width: 25rem;
-    height: 35rem;
-    font-size: 3.5rem;
-  }
-
-  #player-controls h2 {
-    width: 25rem;
-  }
-
-  #astronaut-sprite {
-    height: 10rem;
-    width: 10rem;
-  }
-
-  .meteorite-obstacle {
-    height: 8rem;
-    width: 10rem;
-  }
-
-  .fire-obstacle {
-    height: 8rem;
-    width: 8rem;
-  }
-
-  .ufo-obstacle {
-    height: 12rem;
-    width: 18rem;
-  }
-
-  .martian-obstacle {
-    height: 20rem;
-    width: 16rem;
-  }
-
-  .planetary-obstacle1 {
-    height: 18rem;
-    width: 18rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 19rem;
-    width: 19rem;
-  }
-
-  .inner-modal {
-    width: 50rem;
-    height: 28rem;
-  }
-
-  .inner-modal h4 {
-    font-size: 3rem;
-  }
-
-  .inner-modal p {
-    line-height: 2.7rem;
-  }
-
-  #settings-modal-content {
-    margin: 6rem 6rem 2rem 6rem;
-  }
-
-  .settings-options {
-    font-size: 1.3rem;
-  }
-
-  .settings-options h5 {
-    font-size: 1.8rem;
-  }
+ @media screen and (max-width: 650px) {
+     #spaceship {
+         width: 35rem;
+         height: 35rem;
+         top: 33rem;
+    }
+     #logo {
+         font-size: 12rem;
+         text-shadow: #000000 0 12px 0, #76f6f0 0 15px 0, #2392d2 0 24px 0, #006aaf 0 36px 0, #004891 0 48px 0, #022345 0 60px 0, #76f6f0 0 63px 0;
+    }
+     .score {
+         font-size: 6.5rem;
+         margin-top: 5rem;
+    }
+     #player-controls {
+         width: 25rem;
+         height: 35rem;
+         font-size: 3.5rem;
+    }
+     #player-controls h2 {
+         width: 25rem;
+    }
+     #astronaut-sprite {
+         height: 10rem;
+         width: 10rem;
+    }
+     .meteorite-obstacle {
+         height: 8rem;
+         width: 10rem;
+    }
+     .fire-obstacle {
+         height: 8rem;
+         width: 8rem;
+    }
+     .ufo-obstacle {
+         height: 12rem;
+         width: 18rem;
+    }
+     .martian-obstacle {
+         height: 20rem;
+         width: 16rem;
+    }
+     .planetary-obstacle1 {
+         height: 18rem;
+         width: 18rem;
+    }
+     .planetary-obstacle2 {
+         height: 19rem;
+         width: 19rem;
+    }
+     .inner-modal {
+         width: 50rem;
+         height: 28rem;
+    }
+     .inner-modal h4 {
+         font-size: 3rem;
+    }
+     .inner-modal p {
+         line-height: 2.7rem;
+    }
+     #settings-modal-content {
+         margin: 6rem 6rem 2rem 6rem;
+    }
+     .settings-options {
+         font-size: 1.3rem;
+    }
+     .settings-options h5 {
+         font-size: 1.8rem;
+    }
 }
-
 /* Screen Size: 550px & Below */
-@media screen and (max-width: 550px) {
-  #spaceship {
-    width: 30rem;
-    height: 30rem;
-    top: 38rem;
-  }
-
-  #logo {
-    font-size: 10rem;
-    text-shadow: #000000 0 10px 0, #76f6f0 0 13px 0, #2392d2 0 20px 0, #006aaf 0 30px 0, #004891 0 40px 0, #022345 0 50px 0, #76f6f0 0 53px 0;
-  }
-
-  .score {
-    font-size: 5rem;
-    text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
-  }
-
-  #player-controls {
-    width: 20rem;
-    height: 30rem;
-    font-size: 3rem;
-  }
-
-  #player-controls h2 {
-    width: 20rem;
-    box-shadow: #76f6f0 0 0 0 2px, #000000 0 0 0 4px, #2392d2 0 0 0 6px, #000000 0 0 0 8px, #006aaf 0 0 0 10px, #000000 0 0 0 12px, #004891 0 0 0 14px, #000000 0 0 0 16px, #022345 0 0 0 18px;
-    border: #222222 outset 6px;
-  }
-
-  #player-controls h2:hover {
-    box-shadow: #ffdd5c 0 0 0 2px, #000000 0 0 0 4px, #feaf34 0 0 0 6px, #000000 0 0 0 8px, #fe9200 0 0 0 10px, #000000 0 0 0 12px, #fb6a04 0 0 0 14px, #000000 0 0 0 16px, #ff5100 0 0 0 18px;
-    text-shadow: #000000 2px 2px, #000000 2px 4px;
-  }
-
-  #astronaut-sprite {
-    height: 8rem;
-    width: 8rem;
-  }
-
-  .meteorite-obstacle {
-    height: 7rem;
-    width: 8rem;
-  }
-
-  .fire-obstacle {
-    height: 6rem;
-    width: 6rem;
-  }
-
-  .ufo-obstacle {
-    height: 10rem;
-    width: 16rem;
-  }
-
-  .martian-obstacle {
-    height: 16rem;
-    width: 12rem;
-  }
-
-  .planetary-obstacle1 {
-    height: 16rem;
-    width: 16rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 17rem;
-    width: 17rem;
-  }
-
-  .inner-modal {
-    width: 46rem;
-    height: 27rem;
-  }
-
-  .inner-modal h4 {
-    font-size: 2.5rem;
-  }
-
-  .inner-modal p {
-    padding: 0 4rem;
-  }
+ @media screen and (max-width: 550px) {
+     #spaceship {
+         width: 30rem;
+         height: 30rem;
+         top: 38rem;
+    }
+     #logo {
+         font-size: 10rem;
+         text-shadow: #000000 0 10px 0, #76f6f0 0 13px 0, #2392d2 0 20px 0, #006aaf 0 30px 0, #004891 0 40px 0, #022345 0 50px 0, #76f6f0 0 53px 0;
+    }
+     .score {
+         font-size: 5rem;
+         text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
+    }
+     #player-controls {
+         width: 20rem;
+         height: 30rem;
+         font-size: 3rem;
+    }
+     #player-controls h2 {
+         width: 20rem;
+         box-shadow: #76f6f0 0 0 0 2px, #000000 0 0 0 4px, #2392d2 0 0 0 6px, #000000 0 0 0 8px, #006aaf 0 0 0 10px, #000000 0 0 0 12px, #004891 0 0 0 14px, #000000 0 0 0 16px, #022345 0 0 0 18px;
+         border: #222222 outset 6px;
+    }
+     #player-controls h2:hover {
+         box-shadow: #ffdd5c 0 0 0 2px, #000000 0 0 0 4px, #feaf34 0 0 0 6px, #000000 0 0 0 8px, #fe9200 0 0 0 10px, #000000 0 0 0 12px, #fb6a04 0 0 0 14px, #000000 0 0 0 16px, #ff5100 0 0 0 18px;
+         text-shadow: #000000 2px 2px, #000000 2px 4px;
+    }
+     #astronaut-sprite {
+         height: 8rem;
+         width: 8rem;
+    }
+     .meteorite-obstacle {
+         height: 7rem;
+         width: 8rem;
+    }
+     .fire-obstacle {
+         height: 6rem;
+         width: 6rem;
+    }
+     .ufo-obstacle {
+         height: 10rem;
+         width: 16rem;
+    }
+     .martian-obstacle {
+         height: 16rem;
+         width: 12rem;
+    }
+     .planetary-obstacle1 {
+         height: 16rem;
+         width: 16rem;
+    }
+     .planetary-obstacle2 {
+         height: 17rem;
+         width: 17rem;
+    }
+     .inner-modal {
+         width: 46rem;
+         height: 27rem;
+    }
+     .inner-modal h4 {
+         font-size: 2.5rem;
+    }
+     .inner-modal p {
+         padding: 0 4rem;
+    }
 }
-
 /* Screen Size: 481px & Below */
-@media screen and (max-width: 481px) {
-  #spaceship {
-    width: 25rem;
-    height: 25rem;
-    top: 36rem;
-  }
-
-  #logo {
-    font-size: 9rem;
-    text-shadow: #000000 0 9px 0, #76f6f0 0 12px 0, #2392d2 0 18px 0, #006aaf 0 27px 0, #004891 0 36px 0, #022345 0 45px 0, #76f6f0 0 48px 0;
-  }
-
-  .score {
-    font-size: 4.5rem;
-    margin-top: 4rem;
-  }
-
-  #player-controls {
-    width: 15rem;
-    height: 25rem;
-    font-size: 2.5rem;
-  }
-
-  #player-controls h2 {
-    width: 15rem;
-    border: #222222 outset 5px;
-  }
-
-  #astronaut-sprite {
-    height: 6rem;
-    width: 6rem;
-  }
-
-  .meteorite-obstacle {
-    height: 6rem;
-    width: 7rem;
-  }
-
-  .fire-obstacle {
-    height: 5rem;
-    width: 5rem;
-  }
-
-  .ufo-obstacle {
-    height: 7rem;
-    width: 13rem;
-  }
-
-  .martian-obstacle {
-    height: 12rem;
-    width: 8rem;
-  }
-
-  .planetary-obstacle1 {
-    height: 13rem;
-    width: 13rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 14rem;
-    width: 14rem;
-  }
-
-  .inner-modal {
-    width: 40rem;
-    height: 23rem;
-  }
-
-  #settings-modal-content {
-    margin: 3rem 3rem 1rem 3rem;
-  }
-
-  .settings-options {
-    font-size: 1.3rem;
-  }
-
-  .settings-options h5 {
-    font-size: 1.8rem;
-  }
+ @media screen and (max-width: 481px) {
+     #spaceship {
+         width: 25rem;
+         height: 25rem;
+         top: 36rem;
+    }
+     #logo {
+         font-size: 9rem;
+         text-shadow: #000000 0 9px 0, #76f6f0 0 12px 0, #2392d2 0 18px 0, #006aaf 0 27px 0, #004891 0 36px 0, #022345 0 45px 0, #76f6f0 0 48px 0;
+    }
+     .score {
+         font-size: 4.5rem;
+         margin-top: 4rem;
+    }
+     #player-controls {
+         width: 15rem;
+         height: 25rem;
+         font-size: 2.5rem;
+    }
+     #player-controls h2 {
+         width: 15rem;
+         border: #222222 outset 5px;
+    }
+     #astronaut-sprite {
+         height: 6rem;
+         width: 6rem;
+    }
+     .meteorite-obstacle {
+         height: 6rem;
+         width: 7rem;
+    }
+     .fire-obstacle {
+         height: 5rem;
+         width: 5rem;
+    }
+     .ufo-obstacle {
+         height: 7rem;
+         width: 13rem;
+    }
+     .martian-obstacle {
+         height: 12rem;
+         width: 8rem;
+    }
+     .planetary-obstacle1 {
+         height: 13rem;
+         width: 13rem;
+    }
+     .planetary-obstacle2 {
+         height: 14rem;
+         width: 14rem;
+    }
+     .inner-modal {
+         width: 40rem;
+         height: 23rem;
+    }
+     #settings-modal-content {
+         margin: 3rem 3rem 1rem 3rem;
+    }
+     .settings-options {
+         font-size: 1.3rem;
+    }
+     .settings-options h5 {
+         font-size: 1.8rem;
+    }
 }
-
 /* Screen Size: 400px & Below */
-@media screen and (max-width: 400px) {
-  #spaceship {
-    width: 20rem;
-    height: 20rem;
-    top: 49rem;
-  }
-
-  #logo {
-    font-size: 7rem;
-    text-shadow: #000000 0 5px 0, #76f6f0 0 7px 0, #2392d2 0 10px 0, #006aaf 0 15px 0, #004891 0 20px 0, #022345 0 25px 0, #76f6f0 0 27px 0;
-  }
-
-  .score {
-    font-size: 4rem;
-    text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
-    margin-top: 2rem;
-  }
-
-  #player-controls {
-    width: 10rem;
-    height: 25rem;
-    font-size: 1.5rem;
-    top: 30%;
-  }
-
-  #player-controls h2 {
-    width: 10rem;
-    box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px;
-  }
-
-  #player-controls h2:hover {
-    box-shadow: #ffdd5c 0 0 0 1px, #000000 0 0 0 2px, #feaf34 0 0 0 3px, #000000 0 0 0 4px, #fe9200 0 0 0 5px, #000000 0 0 0 6px, #fb6a04 0 0 0 7px, #000000 0 0 0 8px, #ff5100 0 0 0 9px;
-    text-shadow: #000000 2px 2px, #000000 2px 2px;
-  }
-
-  .inner-modal {
-    width: 35rem;
-    height: 20rem;
-  }
-
-  .inner-modal h4 {
-    font-size: 2rem;
-  }
-
-  .inner-modal p {
-    padding: 0 2rem;
-  }
-
-  .settings-options {
-    font-size: 1.2rem;
-  }
-
-  .settings-options label {
-    margin: 2rem;
-  }
-
-  .settings-options h5 {
-    font-size: 1.3rem;
-  }
-
-  #astronaut-sprite {
-    height: 4rem;
-    width: 4rem;
-  }
-
-  .meteorite-obstacle {
-    height: 5rem;
-    width: 6rem;
-  }
-
-  .fire-obstacle {
-    height: 4rem;
-    width: 4rem;
-  }
-
-  .ufo-obstacle {
-    height: 5rem;
-    width: 9rem;
-  }
-
-  .martian-obstacle {
-    height: 10rem;
-    width: 6rem;
-  }
-
-  .planetary-obstacle1 {
-    height: 10rem;
-    width: 10rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 11rem;
-    width: 11rem;
-  }
+ @media screen and (max-width: 400px) {
+     #spaceship {
+         width: 20rem;
+         height: 20rem;
+         top: 49rem;
+    }
+     #logo {
+         font-size: 7rem;
+         text-shadow: #000000 0 5px 0, #76f6f0 0 7px 0, #2392d2 0 10px 0, #006aaf 0 15px 0, #004891 0 20px 0, #022345 0 25px 0, #76f6f0 0 27px 0;
+    }
+     .score {
+         font-size: 4rem;
+         text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
+         margin-top: 2rem;
+    }
+     #player-controls {
+         width: 10rem;
+         height: 25rem;
+         font-size: 1.5rem;
+         top: 30%;
+    }
+     #player-controls h2 {
+         width: 10rem;
+         box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px;
+    }
+     #player-controls h2:hover {
+         box-shadow: #ffdd5c 0 0 0 1px, #000000 0 0 0 2px, #feaf34 0 0 0 3px, #000000 0 0 0 4px, #fe9200 0 0 0 5px, #000000 0 0 0 6px, #fb6a04 0 0 0 7px, #000000 0 0 0 8px, #ff5100 0 0 0 9px;
+         text-shadow: #000000 2px 2px, #000000 2px 2px;
+    }
+     .inner-modal {
+         width: 35rem;
+         height: 20rem;
+    }
+     .inner-modal h4 {
+         font-size: 2rem;
+    }
+     .inner-modal p {
+         padding: 0 2rem;
+    }
+     .settings-options {
+         font-size: 1.2rem;
+    }
+     .settings-options label {
+         margin: 2rem;
+    }
+     .settings-options h5 {
+         font-size: 1.3rem;
+    }
+     #astronaut-sprite {
+         height: 4rem;
+         width: 4rem;
+    }
+     .meteorite-obstacle {
+         height: 5rem;
+         width: 6rem;
+    }
+     .fire-obstacle {
+         height: 4rem;
+         width: 4rem;
+    }
+     .ufo-obstacle {
+         height: 5rem;
+         width: 9rem;
+    }
+     .martian-obstacle {
+         height: 10rem;
+         width: 6rem;
+    }
+     .planetary-obstacle1 {
+         height: 10rem;
+         width: 10rem;
+    }
+     .planetary-obstacle2 {
+         height: 11rem;
+         width: 11rem;
+    }
 }
-
 /* Screen Size: 320px & Below */
-@media screen and (max-width: 320px) {
-  #spaceship {
-    width: 15rem;
-    height: 15rem;
-    top: 43rem;
-  }
-
-  #logo {
-    font-size: 6rem;
-    text-shadow: #000000 0 4px 0, #76f6f0 0 6px 0, #2392d2 0 8px 0, #006aaf 0 12px 0, #004891 0 16px 0, #022345 0 20px 0, #76f6f0 0 22px 0;
-  }
-
-  .score {
-    font-size: 3.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .inner-modal {
-    width: 25rem;
-    height: 14rem;
-  }
-
-  .inner-modal h4 {
-    font-size: 1.5rem;
-  }
-
-  .inner-modal p {
-    font-size: 1.2rem;
-    padding: 0 1rem;
-  }
-
-  .settings-options h5 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .settings-options {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-
-  .settings-options label {
-    margin: 1.1rem;
-  }
-
-  #settings-modal-content {
-    margin-top: 0.5rem;
-    justify-content: center;
-  }
-
-  .close-modal {
-    font-size: 1rem;
-  }
+ @media screen and (max-width: 320px) {
+     #spaceship {
+         width: 15rem;
+         height: 15rem;
+         top: 43rem;
+    }
+     #logo {
+         font-size: 6rem;
+         text-shadow: #000000 0 4px 0, #76f6f0 0 6px 0, #2392d2 0 8px 0, #006aaf 0 12px 0, #004891 0 16px 0, #022345 0 20px 0, #76f6f0 0 22px 0;
+    }
+     .score {
+         font-size: 3.5rem;
+         margin-top: 1.5rem;
+    }
+     .inner-modal {
+         width: 25rem;
+         height: 14rem;
+    }
+     .inner-modal h4 {
+         font-size: 1.5rem;
+    }
+     .inner-modal p {
+         font-size: 1.2rem;
+         padding: 0 1rem;
+    }
+     .settings-options h5 {
+         font-size: 1.2rem;
+         text-align: center;
+    }
+     .settings-options {
+         font-size: 1.1rem;
+         text-align: center;
+    }
+     .settings-options label {
+         margin: 1.1rem;
+    }
+     #settings-modal-content {
+         margin-top: 0.5rem;
+         justify-content: center;
+    }
+     .close-modal {
+         font-size: 1rem;
+    }
 }
-
 /* General Media Queries - Max Height */
 /* Screen Height: 540px */
-@media screen and (max-height: 540px) {
-  #logo {
-    font-size: 10rem;
-    text-shadow: #000000 0 10px 0, #76f6f0 0 13px 0, #2392d2 0 20px 0, #006aaf 0 30px 0, #004891 0 40px 0, #022345 0 50px 0, #76f6f0 0 53px 0;
-  }
-
-  .score {
-    font-size: 4rem;
-    text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
-    margin-top: 4rem;
-  }
-
-  #spaceship {
-    height: 30rem;
-    width: 30rem;
-    top: 30rem;
-  }
-
-  #player-controls {
-    height: 8rem;
-    font-size: 3rem;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  #player-controls h2 {
-    width: 17rem;
-    box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px;
-    margin: 3rem;
-  }
-
-  #player-controls h2:hover {
-    box-shadow: #ffdd5c 0 0 0 1px, #000000 0 0 0 2px, #feaf34 0 0 0 3px, #000000 0 0 0 4px, #fe9200 0 0 0 5px, #000000 0 0 0 6px, #fb6a04 0 0 0 7px, #000000 0 0 0 8px, #ff5100 0 0 0 9px;
-    text-shadow: #000000 2px 2px, #000000 2px 2px;
-  }
-
-  .inner-modal {
-    font-size: 1.8rem;
-  }
-
-  .inner-modal h4 {
-    font-size: 4rem;
-  }
-
-  #astronaut-sprite {
-    height: 8rem;
-    width: 8rem;
-  }
-
-  .meteorite-obstacle {
-    height: 7rem;
-    width: 8rem;
-  }
-
-  .fire-obstacle {
-    height: 6rem;
-    width: 6rem;
-  }
-
-  .ufo-obstacle {
-    height: 10rem;
-    width: 16rem;
-  }
-
-  .martian-obstacle {
-    height: 16rem;
-    width: 12rem;
-  }
-
-  .planetary-obstacle1 {
-    height: 16rem;
-    width: 16rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 17rem;
-    width: 17rem;
-  }
-
+ @media screen and (max-height: 540px) {
+     #logo {
+         font-size: 10rem;
+         text-shadow: #000000 0 10px 0, #76f6f0 0 13px 0, #2392d2 0 20px 0, #006aaf 0 30px 0, #004891 0 40px 0, #022345 0 50px 0, #76f6f0 0 53px 0;
+    }
+     .score {
+         font-size: 4rem;
+         text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
+         margin-top: 4rem;
+    }
+     #spaceship {
+         height: 30rem;
+         width: 30rem;
+         top: 30rem;
+    }
+     #player-controls {
+         height: 8rem;
+         font-size: 3rem;
+         flex-direction: row;
+         justify-content: center;
+    }
+     #player-controls h2 {
+         width: 17rem;
+         box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px;
+         margin: 3rem;
+    }
+     #player-controls h2:hover {
+         box-shadow: #ffdd5c 0 0 0 1px, #000000 0 0 0 2px, #feaf34 0 0 0 3px, #000000 0 0 0 4px, #fe9200 0 0 0 5px, #000000 0 0 0 6px, #fb6a04 0 0 0 7px, #000000 0 0 0 8px, #ff5100 0 0 0 9px;
+         text-shadow: #000000 2px 2px, #000000 2px 2px;
+    }
+     .inner-modal {
+         font-size: 1.8rem;
+    }
+     .inner-modal h4 {
+         font-size: 4rem;
+    }
+     #astronaut-sprite {
+         height: 8rem;
+         width: 8rem;
+    }
+     .meteorite-obstacle {
+         height: 7rem;
+         width: 8rem;
+    }
+     .fire-obstacle {
+         height: 6rem;
+         width: 6rem;
+    }
+     .ufo-obstacle {
+         height: 10rem;
+         width: 16rem;
+    }
+     .martian-obstacle {
+         height: 16rem;
+         width: 12rem;
+    }
+     .planetary-obstacle1 {
+         height: 16rem;
+         width: 16rem;
+    }
+     .planetary-obstacle2 {
+         height: 17rem;
+         width: 17rem;
+    }
 }
-
 /* Screen Height: 450px */
-@media screen and (max-height: 450px) {
-  #logo {
-    font-size: 7rem;
-    text-shadow: #000000 0 5px 0, #76f6f0 0 7px 0, #2392d2 0 10px 0, #006aaf 0 15px 0, #004891 0 20px 0, #022345 0 25px 0, #76f6f0 0 27px 0;
-  }
-
-  .score {
-    font-size: 2.5rem;
-    text-shadow: #000000 0 1px 0, #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0, #004891 0 5px 0, #022345 0 6px 0, #76f6f0 0 7px 0;
-    margin-top: 2.5rem;
-  }
-
-  #spaceship {
-    height: 20rem;
-    width: 20rem;
-    top: 20rem;
-  }
-
-  #player-controls {
-    height: 10rem;
-    font-size: 2rem;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  #player-controls h2 {
-    width: 14rem;
-    box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px;
-    margin: 3rem;
-  }
-
-  .inner-modal {
-    width: 50rem;
-    height: 28rem;
-  }
-
-  .inner-modal h4 {
-    font-size: 3rem;
-  }
-
-  .inner-modal p {
-    line-height: 2.7rem;
-  }
-
-  #astronaut-sprite {
-    height: 6rem;
-    width: 6rem;
-  }
-
-  .meteorite-obstacle {
-    height: 6rem;
-    width: 7rem;
-  }
-
-  .fire-obstacle {
-    height: 5rem;
-    width: 5rem;
-  }
-
-  .ufo-obstacle {
-    height: 7rem;
-    width: 13rem;
-  }
-
-  .martian-obstacle {
-    height: 12rem;
-    width: 8rem;
-  }
-
-  .planetary-obstacle1 {
-    height: 13rem;
-    width: 13rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 14rem;
-    width: 14rem;
-  }
+ @media screen and (max-height: 450px) {
+     #logo {
+         font-size: 7rem;
+         text-shadow: #000000 0 5px 0, #76f6f0 0 7px 0, #2392d2 0 10px 0, #006aaf 0 15px 0, #004891 0 20px 0, #022345 0 25px 0, #76f6f0 0 27px 0;
+    }
+     .score {
+         font-size: 2.5rem;
+         text-shadow: #000000 0 1px 0, #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0, #004891 0 5px 0, #022345 0 6px 0, #76f6f0 0 7px 0;
+         margin-top: 2.5rem;
+    }
+     #spaceship {
+         height: 20rem;
+         width: 20rem;
+         top: 20rem;
+    }
+     #player-controls {
+         height: 10rem;
+         font-size: 2rem;
+         flex-direction: row;
+         justify-content: center;
+    }
+     #player-controls h2 {
+         width: 14rem;
+         box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px;
+         margin: 3rem;
+    }
+     .inner-modal {
+         width: 50rem;
+         height: 28rem;
+    }
+     .inner-modal h4 {
+         font-size: 3rem;
+    }
+     .inner-modal p {
+         line-height: 2.7rem;
+    }
+     #astronaut-sprite {
+         height: 6rem;
+         width: 6rem;
+    }
+     .meteorite-obstacle {
+         height: 6rem;
+         width: 7rem;
+    }
+     .fire-obstacle {
+         height: 5rem;
+         width: 5rem;
+    }
+     .ufo-obstacle {
+         height: 7rem;
+         width: 13rem;
+    }
+     .martian-obstacle {
+         height: 12rem;
+         width: 8rem;
+    }
+     .planetary-obstacle1 {
+         height: 13rem;
+         width: 13rem;
+    }
+     .planetary-obstacle2 {
+         height: 14rem;
+         width: 14rem;
+    }
 }
-
 /* Screen Height: 400px - Orientation Landscape */
-@media screen and (max-height: 400px) {
-  #logo {
-    font-size: 6rem;
-    text-shadow: #000000 0 4px 0, #76f6f0 0 6px 0, #2392d2 0 8px 0, #006aaf 0 12px 0, #004891 0 16px 0, #022345 0 20px 0, #76f6f0 0 22px 0;
-  }
-
-  .score {
-    font-size: 2rem;
-    text-shadow: #000000 0 1px 0, #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0, #004891 0 5px 0, #022345 0 6px 0, #76f6f0 0 7px 0;
-    margin-top: 2.5rem;
-  }
-
-  #spaceship {
-    height: 20rem;
-    width: 20rem;
-    top: 20rem;
-  }
-
-  #player-controls {
-    height: 5rem;
-    font-size: 2rem;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  #player-controls h2 {
-    width: 12rem;
-    box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px;
-    margin: 3rem;
-  }
+ @media screen and (max-height: 400px) {
+     #logo {
+         font-size: 6rem;
+         text-shadow: #000000 0 4px 0, #76f6f0 0 6px 0, #2392d2 0 8px 0, #006aaf 0 12px 0, #004891 0 16px 0, #022345 0 20px 0, #76f6f0 0 22px 0;
+    }
+     .score {
+         font-size: 2rem;
+         text-shadow: #000000 0 1px 0, #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0, #004891 0 5px 0, #022345 0 6px 0, #76f6f0 0 7px 0;
+         margin-top: 2.5rem;
+    }
+     #spaceship {
+         height: 20rem;
+         width: 20rem;
+         top: 20rem;
+    }
+     #player-controls {
+         height: 5rem;
+         font-size: 2rem;
+         flex-direction: row;
+         justify-content: center;
+    }
+     #player-controls h2 {
+         width: 12rem;
+         box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px;
+         margin: 3rem;
+    }
 }
-
-/* Screen Height: 370px  */
-@media screen and (max-height: 370px) {
-  #logo {
-    font-size: 5rem;
-    text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
-  }
-
-  .score {
-    font-size: 2rem;
-    text-shadow: #000000 0 1px 0, #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0, #004891 0 5px 0, #022345 0 6px 0, #76f6f0 0 7px 0;
-    margin-top: 1.5rem;
-  }
-
-  #spaceship {
-    height: 15rem;
-    width: 15rem;
-    top: 18rem;
-  }
-
-  #player-controls {
-    height: 1rem;
-    top: 45%;
-    font-size: 1.5rem;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  #player-controls h2 {
-    width: 9rem;
-    box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px;
-    margin: 3rem;
-  }
+/* Screen Height: 370px */
+ @media screen and (max-height: 370px) {
+     #logo {
+         font-size: 5rem;
+         text-shadow: #000000 0 3px 0, #76f6f0 0 4px 0, #2392d2 0 6px 0, #006aaf 0 9px 0, #004891 0 12px 0, #022345 0 15px 0, #76f6f0 0 16px 0;
+    }
+     .score {
+         font-size: 2rem;
+         text-shadow: #000000 0 1px 0, #76f6f0 0 2px 0, #2392d2 0 3px 0, #006aaf 0 4px 0, #004891 0 5px 0, #022345 0 6px 0, #76f6f0 0 7px 0;
+         margin-top: 1.5rem;
+    }
+     #spaceship {
+         height: 15rem;
+         width: 15rem;
+         top: 18rem;
+    }
+     #player-controls {
+         height: 1rem;
+         top: 45%;
+         font-size: 1.5rem;
+         flex-direction: row;
+         justify-content: center;
+    }
+     #player-controls h2 {
+         width: 9rem;
+         box-shadow: #76f6f0 0 0 0 1px, #000000 0 0 0 2px, #2392d2 0 0 0 3px, #000000 0 0 0 4px, #006aaf 0 0 0 5px, #000000 0 0 0 6px, #004891 0 0 0 7px, #000000 0 0 0 8px, #022345 0 0 0 9px;
+         margin: 3rem;
+    }
 }
-
 /* Screen Height: 320px - Orientation Landscape */
-@media screen and (max-height: 320px) {
-  .inner-modal {
-    width: 42rem;
-    height: 23rem;
-    font-size: 1.5rem;
-  }
-
-  .inner-modal h4 {
-    font-size: 2.5rem;
-  }
-
-  #player-controls {
-    top: 55%;
-  }
+ @media screen and (max-height: 320px) {
+     .inner-modal {
+         width: 42rem;
+         height: 23rem;
+         font-size: 1.5rem;
+    }
+     .inner-modal h4 {
+         font-size: 2.5rem;
+    }
+     #player-controls {
+         top: 55%;
+    }
 }
-
 /* Device Specific Media Queries - Laptop & Phones */
 /* Screen Width: 1024px & Screen Height: 768px */
-@media only screen and (device-width: 1024px) and (device-height: 768px) {
-  #spaceship {
-    height: 33rem;
-    width: 33rem;
-    top: 45rem;
-  }
-  #logo {
-    font-size: 15rem;
-    text-shadow: #000000 0 15px 0, #76f6f0 0 18px 0, #2392d2 0 30px 0, #006aaf 0 45px 0, #004891 0 60px 0, #022345 0 75px 0, #76f6f0 0 78px 0;
-  }
-  #player-controls {
-    font-size: 2rem;
-    flex-direction: row;
-    justify-content: center;
-    height: 20rem;
-  }
-  #player-controls h2 {
-    width: 15rem;
-    margin: 8rem;
-  }
-  #player-controls h2:hover {
-    text-shadow: #000000 2px 3px, #000000 2px 4px;
-  }
+ @media only screen and (device-width: 1024px) and (device-height: 768px) {
+     #spaceship {
+         height: 33rem;
+         width: 33rem;
+         top: 45rem;
+    }
+     #logo {
+         font-size: 15rem;
+         text-shadow: #000000 0 15px 0, #76f6f0 0 18px 0, #2392d2 0 30px 0, #006aaf 0 45px 0, #004891 0 60px 0, #022345 0 75px 0, #76f6f0 0 78px 0;
+    }
+     #player-controls {
+         font-size: 2rem;
+         flex-direction: row;
+         justify-content: center;
+         height: 20rem;
+    }
+     #player-controls h2 {
+         width: 15rem;
+         margin: 8rem;
+    }
+     #player-controls h2:hover {
+         text-shadow: #000000 2px 3px, #000000 2px 4px;
+    }
 }
-
 /* Screen Width: 1600px & Screen Height: 900px */
-@media only screen and (device-width: 1600px) and (device-height: 900px) {
-  #spaceship {
-    height: 47rem;
-    width: 47rem;
-    top: 52rem;
-  }
-
-  #player-controls {
-    flex-direction: row;
-    justify-content: center;
-    height: 25rem;
-    top: 42%;
-  }
-
-  #player-controls h2 {
-    margin: 5rem;
-  }
+ @media only screen and (device-width: 1600px) and (device-height: 900px) {
+     #spaceship {
+         height: 47rem;
+         width: 47rem;
+         top: 52rem;
+    }
+     #player-controls {
+         flex-direction: row;
+         justify-content: center;
+         height: 25rem;
+         top: 42%;
+    }
+     #player-controls h2 {
+         margin: 5rem;
+    }
 }
-
 /* Screen Width: 1366px & Screen Height: 768x */
-@media only screen and (device-width: 1366px) and (device-height: 768px) {
-  #spaceship {
-    height: 37rem;
-    width: 37rem;
-    top: 48rem;
-  }
-
-  #logo {
-    font-size: 15rem;
-    text-shadow: #000000 0 16px 0, #76f6f0 0 19px 0, #2392d2 0 32px 0, #006aaf 0 48px 0, #004891 0 61px 0, #022345 0 76px 0, #76f6f0 0 79px 0;
-  }
-
-  #player-controls {
-    font-size: 4rem;
-    flex-direction: row;
-    justify-content: center;
-    height: 15rem;
-    top: 45%;
-  }
-
-  #player-controls h2 {
-    width: 30rem;
-    margin: 6rem;
-  }
+ @media only screen and (device-width: 1366px) and (device-height: 768px) {
+     #spaceship {
+         height: 37rem;
+         width: 37rem;
+         top: 48rem;
+    }
+     #logo {
+         font-size: 15rem;
+         text-shadow: #000000 0 16px 0, #76f6f0 0 19px 0, #2392d2 0 32px 0, #006aaf 0 48px 0, #004891 0 61px 0, #022345 0 76px 0, #76f6f0 0 79px 0;
+    }
+     #player-controls {
+         font-size: 4rem;
+         flex-direction: row;
+         justify-content: center;
+         height: 15rem;
+         top: 45%;
+    }
+     #player-controls h2 {
+         width: 30rem;
+         margin: 6rem;
+    }
 }
-
 /* Screen Width: 1280px & Screen Height: 800px */
-@media only screen and (device-width: 1280px) and (device-height: 800px) {
-  #spaceship {
-    height: 33rem;
-    width: 33rem;
-    top: 45rem;
-  }
-
-  #logo {
-    font-size: 15rem;
-    text-shadow: #000000 0 15px 0, #76f6f0 0 18px 0, #2392d2 0 30px 0, #006aaf 0 45px 0, #004891 0 60px 0, #022345 0 75px 0, #76f6f0 0 78px 0;
-  }
-
-  #player-controls {
-    font-size: 2rem;
-    flex-direction: row;
-    justify-content: center;
-    height: 20rem;
-  }
-
-  #player-controls h2 {
-    width: 20rem;
-    margin: 8rem;
-  }
-
-  #player-controls h2:hover {
-    text-shadow: #000000 2px 3px, #000000 2px 4px;
-  }
+ @media only screen and (device-width: 1280px) and (device-height: 800px) {
+     #spaceship {
+         height: 33rem;
+         width: 33rem;
+         top: 45rem;
+    }
+     #logo {
+         font-size: 15rem;
+         text-shadow: #000000 0 15px 0, #76f6f0 0 18px 0, #2392d2 0 30px 0, #006aaf 0 45px 0, #004891 0 60px 0, #022345 0 75px 0, #76f6f0 0 78px 0;
+    }
+     #player-controls {
+         font-size: 2rem;
+         flex-direction: row;
+         justify-content: center;
+         height: 20rem;
+    }
+     #player-controls h2 {
+         width: 20rem;
+         margin: 8rem;
+    }
+     #player-controls h2:hover {
+         text-shadow: #000000 2px 3px, #000000 2px 4px;
+    }
 }
-
 /* Screen Width: 411px & Screen Height: 823px */
-@media only screen and (device-width: 411px) and (device-height: 823px) {
-  #spaceship {
-    width: 20rem;
-    height: 20rem;
-    top: 42rem;
-  }
+ @media only screen and (device-width: 411px) and (device-height: 823px) {
+     #spaceship {
+         width: 20rem;
+         height: 20rem;
+         top: 42rem;
+    }
 }

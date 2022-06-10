@@ -1,87 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Spacescape is an intergalactic themed, side-scrolling platform game in which the core objective is to manoeuvre the player character between obstacles, avoiding contact, resulting in death" />
-    <meta name="keywords" content="video game, space, side-scrolling platform game" />
-    <meta name="author" content="Faris Dhoot" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Spacescape is an intergalactic themed, side-scrolling platform game in which the core objective is to manoeuvre the player character between obstacles, avoiding contact, resulting in death" />
+        <meta name="keywords" content="video game, space, side-scrolling platform game" />
+        <meta name="author" content="Faris Dhoot" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="icon" href="assets/images/favicon.png" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="icon" href="assets/images/favicon.png" />
 
-    <title>SPACESCAPE</title>
-  </head>
-  <body>
-    <!-- Background Image, Spaceship & Shooting Star -->
-    <main class="home-page background-image">
-        <!-- Logo -->
-      <header>
-        <a href="index.html">
-          <h1 id="logo">Spacescape</h1>
-        </a>
-    </header>  
+        <title>SPACESCAPE</title>
+    </head>
+    <body>
+        <!-- Background Image, Spaceship & Shooting Star -->
+        <main class="home-page background-image">
+            <!-- Logo -->
+            <header>
+                <a href="index.html">
+                    <h1 id="logo">Spacescape</h1>
+                </a>
+            </header>
 
-      <div id="spaceship"></div>
+            <div id="spaceship"></div>
 
-      <!-- Player Controls -->
-      <section id="player-controls">
-        <div>
-          <h2 class="play-button">Play</h2>
-        </div>
+            <!-- Player Controls -->
+            <section id="player-controls">
+                <div>
+                    <h2 class="play-button">Play</h2>
+                </div>
 
-        <div>
-          <h2 class="open-modal">Rules</h2>
-        </div>
-      </section>
+                <div>
+                    <h2 class="open-modal">Rules</h2>
+                </div>
+            </section>
 
-      <!-- Player Controls Modal -->
-      <section>
-        <div class="outer-modal">
-          <div class="inner-modal">
-            <h4>Assignment Expedition</h4>
-            <p>
-              # The year is 2083; you are stationed 1402 light years away, by the exoplanet Kepler-452b otherwise known as Earth 2.0. A coalition of world leaders and government bodies have assigned you the mission of exploring the
-              potential habitability of Kepler which is thought to be desolate.
-            </p>
-            <p>
-              # As you exit your spacecraft and approach the planet’s atmosphere, you notice a strange grouping of objects hurdling towards you. OH NO! it looks like the native species have detected your presence and are not too please.
-              Quick; avoid being captured or worse, killed and intercept your orbiting spaceship, reporting your findings to ground control.
-            </p>
+            <!-- Player Controls Modal -->
+            <section>
+                <div class="outer-modal">
+                    <div class="inner-modal">
+                        <h4>Assignment Expedition</h4>
+                        <p>
+                            # The year is 2083; you are stationed 1402 light years away, by the exoplanet Kepler-452b otherwise known as Earth 2.0. A coalition of world leaders and government bodies have assigned you the mission of
+                            exploring the potential habitability of Kepler which is thought to be desolate.
+                        </p>
+                        <p>
+                            # As you exit your spacecraft and approach the planet’s atmosphere, you notice a strange grouping of objects hurdling towards you. OH NO! it looks like the native species have detected your presence and are not
+                            too please. Quick; avoid being captured or worse, killed and intercept your orbiting spaceship, reporting your findings to ground control.
+                        </p>
 
-            <h4>Manoeuvers</h4>
-            <p>
-              # The strategy is simple, avoid all obstacles by clicking any key on (desktop/laptop) or single tap the screen (mobile/tablet) to make your sprite jump, avoiding death. Beware not all obstacles are created equal. Some are
-              larger in size and speed. Your best bet is to time your movements wisely, the longer you’re outside the safety of your ship the harder the obstacles become. Good Luck!
-            </p>
-            <span class="close-modal">X</span>
-          </div>
-        </div>
-      </section>
-    </main>
+                        <h4>Manoeuvers</h4>
+                        <p>
+                            # The strategy is simple, avoid all obstacles by clicking any key on (desktop/laptop) or single tap the screen (mobile/tablet) to make your sprite jump, avoiding death. Beware not all obstacles are created equal.
+                            Some are larger in size and speed. Your best bet is to time your movements wisely, the longer you’re outside the safety of your ship the harder the obstacles become. Good Luck!
+                        </p>
+                        <span class="close-modal">X</span>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-   <!-- Score Counter, Character & Game Obstacles -->
-    <main>
-      <div class="game background-image">
+        <!-- Score Counter, Character & Game Obstacles -->
+        <main>
+            <div class="game background-image">
+                <h2 class="score">0</h2>
+                <div id="sprite"></div>
+                <div id="astronaut-sprite"></div>
 
-        <h2 class="score">0</h2>
-        <div id="sprite"></div>
-        <div id="astronaut-sprite"></div>
+                <div class="meteorite-obstacle meteorite"></div>
 
-        <div class="meteorite-obstacle meteorite"></div>
+                <div class="fire-obstacle fire-ball"></div>
 
-        <div class="fire-obstacle fire-ball"></div>
+                <div class="ufo-obstacle ufo"></div>
 
-        <div class="ufo-obstacle ufo"></div>
+                <div class="martian-obstacle martian"></div>
 
-        <div class="martian-obstacle martian"></div>
+                <div class="planetary-obstacle1 planet1"></div>
 
-        <div class="planetary-obstacle1 planet1"></div>
-
-        <div class="planetary-obstacle2 planet2"></div>
-      </div>
-    </main>
-    <script src="assets/js/script.js"></script>
-  </body>
+                <div class="planetary-obstacle2 planet2"></div>
+            </div>
+        </main>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
