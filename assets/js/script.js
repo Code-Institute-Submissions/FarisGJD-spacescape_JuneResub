@@ -104,6 +104,9 @@ setInterval(() => {
   }
 }, 10);
 
+// Obstacles & Game Over Detection Media Queries
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+
 // Player Settings - Modals
 let modalBtn = document.querySelector(".open-modal");
 let modalBg = document.querySelector(".outer-modal");

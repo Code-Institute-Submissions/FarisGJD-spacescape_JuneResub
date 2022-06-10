@@ -258,6 +258,8 @@ input {
   width: 22rem; 
   border-radius: 50%;
   background: url("../images/player-sprite.png") center center no-repeat; 
+  background-size: 200%;
+  background-color: red;
   position: absolute;
   bottom: 6.5rem;
 }
@@ -296,7 +298,8 @@ input {
 
 .meteorite {
   background: url("../images/meteorite.png") center center no-repeat;
-  background-size: 28rem 28rem;
+  background-size: 138%; 
+  background-color: #004891;
 }
 
 @keyframes meteorite-obstacle {
@@ -314,14 +317,15 @@ input {
   border-radius: 10%;
   transform: rotate(45deg);
   position: absolute;
-  bottom: 10rem;
+  bottom: 6rem;
   right: 0;
   animation: fire-obstacle 15s linear infinite;
 }
 
 .fire-ball {
   background: url("../images/fireball.png") center center no-repeat;
-  background-size: 23rem 23rem;
+  background-size: 110%;
+  background-color: #222222;
 }
 
 @keyframes fire-obstacle {
@@ -345,7 +349,8 @@ input {
 
 .ufo {
   background: url("../images/ufo.png") center center no-repeat;
-  background-size: 37rem 37rem;
+  background-size: 120%;
+  background-color: #006aaf;
 }
 
 @keyframes alien-obstacle {
@@ -362,14 +367,15 @@ input {
   width: 28rem;
   border-radius: 50%;
   position: absolute;
-  bottom: 7rem;
+  bottom: 5rem;
   right: 0;
   animation: martian-obstacle 35s linear infinite;
 }
 
 .martian {
   background: url("../images/martian.png") center center no-repeat;
-  background-size: 35rem 35rem;
+  background-size: 120%; 
+  background-color: #fb6a04;
 }
 
 @keyframes martian-obstacle {
@@ -393,7 +399,7 @@ input {
 
 .planet1 {
   background: url("../images/planet1.png") center center no-repeat;
-  background-size: 46rem 46rem;
+  background-size: 135%; 
 }
 
 @keyframes planetary-obstacle1 {
@@ -417,7 +423,8 @@ input {
 
 .planet2 {
   background: url("../images/planet2.png") center center no-repeat;
-  background-size: 48rem 48rem;
+  background-size: 135%;
+  background-color: #004891;
 }
 
 @keyframes planetary-obstacle2 {
@@ -440,28 +447,28 @@ input {
   }
 
   #astronaut-sprite {
-    height: 38rem;
-    width: 28rem;
+    height: 18rem;
+    width: 18rem;
   }
 
   .meteorite-obstacle {
-    height: 21rem;
-    width: 28rem;
+    height: 14rem;
+    width: 18rem;
   }
 
   .fire-obstacle {
-    height: 17rem;
-    width: 23rem;
+    height: 18rem;
+    width: 18rem;
   }
 
   .ufo-obstacle {
-    height: 28rem;
+    height: 22rem;
     width: 28rem;
   }
 
   .martian-obstacle {
-    height: 29rem;
-    width: 29rem;
+    height: 28rem;
+    width: 24rem;
   }
 
   .planetary-obstacle1 {
@@ -470,8 +477,8 @@ input {
   }
 
   .planetary-obstacle2 {
-    height: 31rem;
-    width: 31rem;
+    height: 30rem;
+    width: 30rem;
   }
 }
 
@@ -484,40 +491,38 @@ input {
   }
 
   #astronaut-sprite {
-    height: 36rem;
-    width: 26rem;
+    height: 16rem;
+    width: 16rem;
   }
 
   .meteorite-obstacle {
-    height: 19rem;
-    width: 26rem;
-    bottom: 8rem;
+    height: 13rem;
+    width: 16rem;
   }
 
   .fire-obstacle {
-    height: 17rem;
-    width: 21rem;
-    background-size: cover;
+    height: 16rem;
+    width: 16rem;
   }
 
   .ufo-obstacle {
-    height: 26rem;
+    height: 20rem;
     width: 26rem;
   }
 
   .martian-obstacle {
-    height: 27rem;
-    width: 27rem;
+    height: 26rem;
+    width: 22rem;
   }
 
   .planetary-obstacle1 {
-    height: 28rem;
-    width: 28rem;
+    height: 26rem;
+    width: 26rem;
   }
 
   .planetary-obstacle2 {
-    height: 29rem;
-    width: 29rem;
+    height: 27rem;
+    width: 27rem;
   }
 
   .inner-modal {
@@ -559,38 +564,38 @@ input {
   }
 
   #astronaut-sprite {
-    height: 34rem;
-    width: 24rem;
+    height: 14rem;
+    width: 14rem;
   }
 
   .meteorite-obstacle {
-    height: 17rem;
-    width: 24rem;
+    height: 12rem;
+    width: 14rem;
   }
 
   .fire-obstacle {
-    height: 15rem;
-    width: 19rem;
+    height: 10rem;
+    width: 10rem;
   }
 
   .ufo-obstacle {
-    height: 24rem;
+    height: 18rem;
     width: 24rem;
   }
 
   .martian-obstacle {
-    height: 25rem;
-    width: 25rem;
+    height: 24rem;
+    width: 20rem;
   }
 
   .planetary-obstacle1 {
-    height: 26rem;
-    width: 26rem;
+    height: 23rem;
+    width: 23rem;
   }
 
   .planetary-obstacle2 {
-    height: 27rem;
-    width: 27rem;
+    height: 24rem;
+    width: 24rem;
   }
 
   .inner-modal {
@@ -645,40 +650,33 @@ input {
   }
 
   #astronaut-sprite {
-    height: 32rem;
-    width: 22rem;
-    margin-left: 1rem;
+    height: 12rem;
+    width: 12rem;
   }
 
   .meteorite-obstacle {
-    height: 15rem;
-    width: 22rem;
-    bottom: 8.5rem;
-  }
-
-  .fire-obstacle {
-    height: 13rem;
-    width: 17rem;
+    height: 10rem;
+    width: 12rem;
   }
 
   .ufo-obstacle {
-    height: 22rem;
-    width: 22rem;
+    height: 14rem;
+    width: 20rem;
   }
 
   .martian-obstacle {
-    height: 23rem;
-    width: 23rem;
+    height: 22rem;
+    width: 18rem;
   }
 
   .planetary-obstacle1 {
-    height: 24rem;
-    width: 24rem;
+    height: 21rem;
+    width: 21rem;
   }
 
   .planetary-obstacle2 {
-    height: 25rem;
-    width: 25rem;
+    height: 22rem;
+    width: 22rem;
   }
 
   .inner-modal {
@@ -732,39 +730,38 @@ input {
   }
 
   #astronaut-sprite {
-    height: 30rem;
-    width: 20rem;
-    margin-left: 1.5rem;
+    height: 10rem;
+    width: 10rem;
   }
 
   .meteorite-obstacle {
-    height: 13rem;
-    width: 20rem;
+    height: 8rem;
+    width: 10rem;
   }
 
   .fire-obstacle {
-    height: 11rem;
-    width: 15rem;
+    height: 8rem;
+    width: 8rem;
   }
 
   .ufo-obstacle {
-    height: 20rem;
-    width: 20rem;
+    height: 12rem;
+    width: 18rem;
   }
 
   .martian-obstacle {
-    height: 21rem;
-    width: 21rem;
+    height: 20rem;
+    width: 16rem;
   }
 
   .planetary-obstacle1 {
-    height: 22rem;
-    width: 22rem;
+    height: 18rem;
+    width: 18rem;
   }
 
   .planetary-obstacle2 {
-    height: 23rem;
-    width: 23rem;
+    height: 19rem;
+    width: 19rem;
   }
 
   .inner-modal {
@@ -829,39 +826,38 @@ input {
   }
 
   #astronaut-sprite {
-    height: 25rem;
-    width: 17rem;
-    margin-left: 3rem;
+    height: 8rem;
+    width: 8rem;
   }
 
   .meteorite-obstacle {
-    height: 10rem;
-    width: 17rem;
+    height: 7rem;
+    width: 8rem;
   }
 
   .fire-obstacle {
-    height: 9rem;
-    width: 12rem;
+    height: 6rem;
+    width: 6rem;
   }
 
   .ufo-obstacle {
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 16rem;
   }
 
   .martian-obstacle {
     height: 16rem;
-    width: 16rem;
+    width: 12rem;
   }
 
   .planetary-obstacle1 {
-    height: 17rem;
-    width: 17rem;
+    height: 16rem;
+    width: 16rem;
   }
 
   .planetary-obstacle2 {
-    height: 18rem;
-    width: 18rem;
+    height: 17rem;
+    width: 17rem;
   }
 
   .inner-modal {
@@ -908,41 +904,38 @@ input {
   }
 
   #astronaut-sprite {
-    height: 20rem;
-    width: 16rem;
-    margin-left: 4.5rem;
-    bottom: 3rem;
+    height: 6rem;
+    width: 6rem;
   }
 
   .meteorite-obstacle {
-    height: 7rem;
-    width: 14rem;
-    bottom: 10rem;
-  }
-
-  .fire-obstacle {
-    height: 8rem;
+    height: 6rem;
     width: 7rem;
   }
 
+  .fire-obstacle {
+    height: 5rem;
+    width: 5rem;
+  }
+
   .ufo-obstacle {
-    height: 12rem;
-    width: 12rem;
+    height: 7rem;
+    width: 13rem;
   }
 
   .martian-obstacle {
+    height: 12rem;
+    width: 8rem;
+  }
+
+  .planetary-obstacle1 {
     height: 13rem;
     width: 13rem;
   }
 
-  .planetary-obstacle1 {
+  .planetary-obstacle2 {
     height: 14rem;
     width: 14rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 15rem;
-    width: 15rem;
   }
 
   .inner-modal {
@@ -1025,42 +1018,38 @@ input {
   }
 
   #astronaut-sprite {
-    height: 19rem;
-    width: 15rem;
-    margin-left: 5rem;
-    bottom: 3rem;
+    height: 4rem;
+    width: 4rem;
   }
 
   .meteorite-obstacle {
-    height: 6rem;
-    width: 13rem;
-    bottom: 9rem;
+    height: 5rem;
+    width: 6rem;
   }
 
   .fire-obstacle {
-    height: 7rem;
-    width: 6rem;
-    bottom: 8rem;
+    height: 4rem;
+    width: 4rem;
   }
 
   .ufo-obstacle {
-    height: 11rem;
-    width: 11rem;
+    height: 5rem;
+    width: 9rem;
   }
 
   .martian-obstacle {
-    height: 12rem;
-    width: 12rem;
+    height: 10rem;
+    width: 6rem;
   }
 
   .planetary-obstacle1 {
-    height: 13rem;
-    width: 13rem;
+    height: 10rem;
+    width: 10rem;
   }
 
   .planetary-obstacle2 {
-    height: 14rem;
-    width: 14rem;
+    height: 11rem;
+    width: 11rem;
   }
 }
 
@@ -1080,44 +1069,6 @@ input {
   .score {
     font-size: 3.5rem;
     margin-top: 1.5rem;
-  }
-
-  #astronaut-sprite {
-    height: 17rem;
-    width: 13rem;
-    margin-left: 5rem;
-    bottom: 3rem;
-  }
-
-  .meteorite-obstacle {
-    height: 5rem;
-    width: 11rem;
-    bottom: 10rem;
-  }
-
-  .fire-obstacle {
-    height: 6rem;
-    width: 5rem;
-  }
-
-  .ufo-obstacle {
-    height: 9rem;
-    width: 9rem;
-  }
-
-  .martian-obstacle {
-    height: 10rem;
-    width: 10rem;
-  }
-
-  .planetary-obstacle1 {
-    height: 11rem;
-    width: 11rem;
-  }
-
-  .planetary-obstacle2 {
-    height: 12rem;
-    width: 12rem;
   }
 
   .inner-modal {
